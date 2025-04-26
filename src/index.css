@@ -9,6 +9,11 @@ body {
   overflow-x: hidden;
 }
 
+.line-wrapper {
+  overflow: hidden;
+  display: block; /* important: block otherwise span behaves inline */
+}
+
 
 .afacad-flux-thin {
   font-weight: 100;
