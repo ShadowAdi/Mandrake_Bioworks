@@ -1,6 +1,8 @@
 import React, { useRef } from 'react';
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { ScrollTrigger } from 'gsap/all';
+gsap.registerPlugin(ScrollTrigger);
 
 const Header = () => {
     const headerRef = useRef(null);
@@ -12,7 +14,10 @@ const Header = () => {
             opacity: 0,
             y: -200,       // 👈 move from -200px above
             duration: 1.5,  // 👈 shorter and snappier
-            ease: "expo.out" // 👈 expo out feels nice for entering
+            ease: "expo.out",
+            scrollTrigger:{
+                start:"top 40%"
+            }
         })
 
         gsap.set(coverRef.current, {

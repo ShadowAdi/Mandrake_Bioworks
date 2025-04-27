@@ -1,4 +1,5 @@
 import React from 'react'
+import AnimatedText from './AnimatedText'
 
 const Section8 = () => {
     return (
@@ -7,9 +8,8 @@ const Section8 = () => {
         >
             <div className='w-[90%] md:w-4/5 flex pt-4 md:pt-14 pb-14 flex-col items-center h-full mx-auto space-y-12  justify-around'>
                 <div className='flex flex-col w-[90%] md:w-[60%] space-y-2 md:space-y-6 mx-auto  items-center justify-center'>
-                    <h1 style={{fontFamily:"'Afacad Flux', serif"}} className='text-4xl  uppercase  font-bold text-center bg-[linear-gradient(to_right,_#e0f4eb,_#b8e8e5,_#90dcd7,_#90dadc)] bg-clip-text text-transparent'>
-                        OUR Advisors
-                    </h1>
+                   
+                    <AnimatedText text={"OUR Advisors"}/>
                     <h4 className='text-xs md:w-full w-[80%] md:text-sm text-white text-center '>
                     We’re guided by Mentors who have spent decades in the Plant Breeding Industry
                     </h4>

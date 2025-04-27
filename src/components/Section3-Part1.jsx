@@ -1,11 +1,12 @@
 import React from 'react'
 import bgImage from "/Gradient.jpg";
+import AnimatedText from './AnimatedText';
 
 
 const Section3Part1 = () => {
     return (
         <section
-         className="flex flex-col items-center w-full mx-auto  py-8 px-4 justify-center relative gap-12"
+            className="flex flex-col items-center w-full mx-auto  py-8 px-4 justify-center relative gap-12"
             style={{
                 backgroundImage: `url(${bgImage})`,
                 backgroundSize: 'cover',
@@ -13,10 +14,8 @@ const Section3Part1 = () => {
                 backgroundRepeat: "no-repeat"
             }}
         >
-            <h1 style={{fontFamily:"'Afacad Flux', serif"}} className='text-xl md:text-4xl  lg:text-5xl  text-center font-bold bg-[linear-gradient(to_right,_#e0f4eb,_#b8e8e5,_#90dcd7,_#90dadc)] bg-clip-text text-transparent'>
-                At Mandrake, we’re re-inventing crop
-                development from the ground up
-            </h1>
+            <AnimatedText text={"At Mandrake, we’re re-inventing crop development from the ground up"} />
+
             <div className='w-full md:w-[90%] lg:w-[75%] space-y-8 flex flex-col gap-6 items-center justify-center mx-auto'>
                 <div className='flex flex-col md:flex-row justify-between items-center w-full gap-8'>
                     <div className='flex flex-col gap-1 items-center md:items-start text-center md:text-left flex-1 justify-center'>
