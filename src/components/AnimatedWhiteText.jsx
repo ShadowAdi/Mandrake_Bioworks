@@ -3,7 +3,7 @@ import gsap from 'gsap';
 import React, { useRef } from 'react'
 import SplitType from 'split-type';
 
-const AnimatedWhiteText = ({text}) => {
+const AnimatedWhiteText = ({text,className}) => {
   const textWrapperRef = useRef(null);
   const textRef = useRef(null);
   useGSAP(() => {
@@ -26,9 +26,7 @@ const AnimatedWhiteText = ({text}) => {
 
   return (
     <div ref={textWrapperRef} className="overflow-hidden ">
-      <h1 ref={textRef} style={{ fontFamily: "'Afacad Flux', serif" }} className='text-sm md:text-4xl 
-     lg:text-5xl   text-white font-semibold md:font-bold text-center'>
-        
+      <h1 ref={textRef} style={{ fontFamily: "'Afacad Flux', serif" }} className={className}>
         {text}
       </h1>
     </div>
