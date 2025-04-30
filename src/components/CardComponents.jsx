@@ -2,15 +2,15 @@ import React from 'react'
 
 const CardComponents = () => {
     return (
-        <div className='flex flex-col cursor-pointer flex-1 items-center lg:items-start  gap-3 xl:gap-5 relative'>
+        <div className='flex flex-col cursor-pointer flex-1 items-center lg:items-start gap-1 md:gap-3 xl:gap-5 relative'>
             <span className='text-xs md:text-sm text-white font-medium text-center lg:text-left'>
                 Seed companies
             </span>
-            <h1 style={{fontFamily:"'Afacad Flux', serif"}} className='text-lg md:text-xl lg:text-2xl font-bold text-white'>
+            <h1 style={{fontFamily:"'Afacad Flux', serif"}} className='text-base md:text-xl lg:text-2xl font-bold text-white'>
                 Supercharge
                 your Elite Varieties
             </h1>
-            <p className='text-center lg:text-left text-white text-sm  opacity-90 w-full xl:w-[80%]'>
+            <p className='text-center lg:text-left text-white text-[10px]  opacity-90 w-full xl:w-[80%]'>
                 Mandrake Bioworks accelerates your
                 breeding programs— identifying,
                 engineering, and testing valuable traits
@@ -21,7 +21,7 @@ const CardComponents = () => {
             </p>
             <div className="w-full flex items-center lg:items-start justify-center lg:justify-start">
                 <button className='px-4 lg:px-7 py-2 lg:py-3 rounded-full bg-white  hover:opacity-90 flex items-center justify-center '>
-                    <span className='text-xs sm:text-sm lg:text-base text-black font-medium'>
+                    <span className='text-[10px] sm:text-sm lg:text-base text-black font-medium'>
                         Get In Touch
                     </span>
 

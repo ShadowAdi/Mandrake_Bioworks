@@ -26,29 +26,29 @@ const Section9 = () => {
 
     return (
         <section
-            className="flex flex-col items-center w-full mx-auto justify-around relative py-4 md:py-16 pb-2 md:pb-10"
+            className="flex flex-col items-center w-full mx-auto justify-center relative py-4 md:py-16 pb-2 md:pb-10 h-screen"
         >
             <div className="w-[90%] md:w-4/5 flex pb-2 flex-col items-center gap-20 mx-auto space-y-1 md:space-y-12 justify-center md:justify-around">
-                <div ref={sectionRef} className="w-full relative  overflow-hidden max-h-[80vh] ">
-                    <div ref={imageWrapperRef} className='absolute h-full w-full top-0 left-0  bg-zinc-100' />
+                <div ref={sectionRef} className="w-full relative  overflow-hidden max-h-[60vh] ">
                     <img
                         ref={imageRef}
                         src="/Gene.jpg"
-                        className="object-contain h-full w-full"
+                        className="object-fill h-full w-full"
                         alt="Gene"
                     />
                 </div>
                 <div className="flex flex-col space-y-2 md:space-y-7 items-center w-[90%] md:w-[70%] justify-center">
                     <AnimatedWhiteText
                         text="Building the Plant Design Factory of the Future"
-                        className="lg:text-4xl md:text-3xl text-2xl xl:text-5xl uppercase text-white font-bold text-center"
+                       className="text-xl  md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl
+                uppercase font-bold text-center text-white  break-words"
                     />
                     <AnimatedWhiteText
-                        className="text-white text-sm md:text-xl text-center"
+                        className="text-white text-[10px] md:text-xl text-center"
                         text="Whether you're interested in joining our team, partnering with us, or simply curious to learn more about our work—let's connect."
                     />
-                    <button className="px-6 md:px-14 py-3 rounded-full bg-[#C4E9A2] hover:opacity-90 flex items-center justify-center">
-                        <span className="text-sm md:text-base text-black font-semibold">
+                    <button className="px-6 md:px-14 py-3 mt-6 rounded-full bg-[#C4E9A2] hover:opacity-90 flex items-center justify-center">
+                        <span className="text-[10px] md:text-base text-black font-semibold">
                             Get In Touch
                         </span>
                     </button>

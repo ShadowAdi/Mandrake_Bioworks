@@ -10,7 +10,7 @@ const Section8 = () => {
                 <div className='flex flex-col w-[90%] md:w-[60%] space-y-2 md:space-y-6 mx-auto  items-center justify-center'>
                    
                     <AnimatedText text={"OUR Advisors"}/>
-                    <h4 className='text-xs md:w-full w-[80%] md:text-sm text-white text-center '>
+                    <h4 className='text-[10px] md:w-full w-[80%] md:text-sm text-white text-center '>
                     We’re guided by Mentors who have spent decades in the Plant Breeding Industry
                     </h4>
 
@@ -19,14 +19,14 @@ const Section8 = () => {
                     <div className='flex flex-col items-center justify-center gap-y-3'>
                         <img src='https://avatar.iran.liara.run/public' className='h-36 w-36 lg:h-56 lg:w-56 xl:h-64 xl:w-64 object-cover rounded-full' />
                         <div className='flex items-center justify-center flex-col space-y-0 md:space-y-1'>
-                            <span className='text-base md:text-lg font-bold text-white'>
+                        <span className='text-sm md:text-lg font-bold text-white'>
                                 Tanay Lohia
                             </span>
-                            <span className='text-xs md:text-sm font-normal text-white'>
+                            <span className='text-[10px] md:text-sm font-normal text-white'>
                                 Founder
                             </span>
                             <div className='flex items-end space-x-1'>
-                                <span className='text-sm md:text-base font-medium text-white'>
+                                <span className='text-[10px] md:text-base font-medium text-white'>
                                     TanayLohia123
                                 </span>
                             </div>

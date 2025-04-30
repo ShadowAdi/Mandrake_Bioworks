@@ -38,7 +38,7 @@ const AnimatedText = ({ text }) => {
 
     return (
         <div ref={textWrapperRef} className="overflow-hidden  ">
-            <h1 ref={textRef} style={{ fontFamily: "'Afacad Flux', serif" }} className="text-xl  md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl
+            <h1 ref={textRef} style={{ fontFamily: "'Afacad Flux', serif" }} className="text-base  md:text-lg lg:text-2xl xl:text-4xl 2xl:text-8xl
                             uppercase font-bold text-center text-white  break-words">
                 {text}
             </h1>

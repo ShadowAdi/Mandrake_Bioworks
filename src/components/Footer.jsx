@@ -19,7 +19,7 @@ const Footer = () => {
                             <div className="p-1 bg-white rounded-full">
                                 <FaLocationDot className="text-black h-3 w-3" />
                             </div>
-                            <p className="text-xs md:text-sm opacity-90 text-white text-center md:text-left">
+                            <p className="text-[10px] md:text-sm opacity-90 text-white text-center md:text-left">
                                 Mandrake Bioworks, Aspire Coworks, <br />
                                 17, 7th Main Rd, 2nd Stage, Indiranagar, <br />
                                 Bengaluru, Karnataka 560038
@@ -29,42 +29,45 @@ const Footer = () => {
                             <div className="p-1 bg-white rounded-full">
                                 <MdEmail className="text-black h-3 w-3" />
                             </div>
-                            <p className="text-xs md:text-sm opacity-90 text-white text-center md:text-left">
+                            <p className="text-[10px] md:text-sm opacity-90 text-white text-center md:text-left">
                                 hello@Mandrakebio.com
                             </p>
                         </div>
                     </div>
 
                     <div className="flex flex-row justify-center md:justify-end gap-10 flex-1  p-6 rounded-lg">
-                        <div className="flex flex-col items-center md:items-start gap-3">
-                            <h1 className="text-base md:text-lg text-white font-semibold">
+                        <div className="flex flex-col flex-1 items-center md:items-start gap-3">
+                            <h1 className="text-xs md:text-lg text-white font-semibold">
                                 About Us
                             </h1>
                             <div className="flex flex-col items-center md:items-start gap-2">
-                                <span className="text-xs md:text-sm opacity-90 text-white font-normal">
+                                <span className="text-[10px] md:text-sm opacity-90 text-white font-normal">
                                     About
                                 </span>
-                                <span className="text-xs md:text-sm opacity-90 text-white font-normal">
+                                <span className="text-[10px]  md:text-sm opacity-90 text-white font-normal">
                                     Portfolio
                                 </span>
-                                <span className="text-xs md:text-sm opacity-90 text-white font-normal">
+                                <span className="text-[10px]  md:text-sm opacity-90 text-white font-normal">
                                     Team
                                 </span>
                             </div>
                         </div>
 
-                        <div className="flex flex-col items-center md:items-start gap-3">
-                            <h1 className="text-base md:text-lg text-white font-semibold">
-                                Support
+                        <div className="flex flex-1 flex-col items-center md:items-start gap-3">
+                        <h1 className="text-xs md:text-lg text-white font-semibold">
+                        Support
                             </h1>
                             <div className="flex flex-col items-center md:items-start gap-2">
-                                <span className="text-xs md:text-sm opacity-90 text-white font-normal">
+                            <span className="text-[10px] md:text-sm opacity-90 text-white font-normal">
+
                                     FAQ
                                 </span>
-                                <span className="text-xs md:text-sm opacity-90 text-white font-normal">
+                                <span className="text-[10px] md:text-sm opacity-90 text-white font-normal">
+
                                     How It Works
                                 </span>
-                                <span className="text-xs md:text-sm opacity-90 text-white font-normal">
+                                <span className="text-[10px] md:text-sm opacity-90 text-white font-normal">
+
                                     Privacy
                                 </span>
                             </div>
@@ -82,7 +85,7 @@ const Footer = () => {
                         <img src='/youtubeLogo.webp' alt='No Image' className='md:h-16 w-8 h-8 md:w-16 object-contain' />
                     </div>
                 </div>
-                <p className='text-xs md:text-base  text-center text-white opacity-90'>
+                <p className='text-[10px] md:text-base  text-center text-white opacity-90'>
                     © Copyright 2025, Mandrake Bioworks All Rights Reserved
                 </p>
             </div>

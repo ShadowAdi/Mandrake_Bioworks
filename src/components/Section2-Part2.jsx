@@ -37,18 +37,22 @@ const Section2Part2 = () => {
         });
     }, []);
     return (
-        <div className='md:w-4/5 w-[80%] flex pb-3 min-h-screen md:pb-8 flex-col items-center  mx-auto space-y-8  justify-center py-4 md:py-16 '>
-            <AnimatedText text="What If Agriculture Stole a Page from Pharma's Playbook?
-"/>
-            <div className='h-[60vh] w-full'>
+        <div className='md:w-4/5 w-[80%] flex pb-3 min-h-screen md:pb-8 flex-col items-center  mx-auto space-y-4  justify-center py-4 md:py-10 '>
+            <div className="overflow-hidden  ">
+                <h1 style={{ fontFamily: "'Afacad Flux', serif" }} className="text-lg  md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl
+                            uppercase font-bold text-center text-white  break-words">
+                    What If Agriculture Stole a Page from Pharma's Playbook?
+                </h1>
+            </div>
+            <div className=' h-[40vh] md:h-[60vh] w-full'>
                 <img src='/Scientist.png' className='object-contain h-full w-full' />
             </div>
             <div className='flex flex-col space-y-9 items-center w-[90%] md:w-[70%] justify-center'>
                 <p className="
-    text-[10px]  md:text-xs lg:text-sm xl:text-base 2xl:text-3xl
-    text-center text-white font-normal
-  ">
-                    Industries like pharmaceuticals and materials science have revolutionized their  innovation cycles by integrating AI-driven discovery with automated lab workflows. The result? Dramatically reduced costs, accelerated timelines, and entirely new realms of possibility..
+text-[10px]  md:text-sm lg:text-base 2xl:text-3xl
+text-center text-white font-normal
+">
+                    Industries like pharmaceuticals and materials science have revolutionized their  innovation cycles by integrating AI-driven discovery with automated lab workflows. The result? Dramatically reduced costs, accelerated timelines, and entirely new realms of possibility.
                 </p>
             </div>
         </div>
