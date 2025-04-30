@@ -58,10 +58,10 @@ const Header = () => {
     return (
         <header
             ref={headerRef}
-            className='header flex w-full z-[100] justify-between items-start'
+            className='header flex  z-[100] w-[90%] justify-between items-start'
         >
             <div className="flex flex-col items-start space-y-0.5">
-                <div className="h-24 w-24 overflow-hidden flex items-start justify-start">
+                <div className="h-24 w-24 lg:h-32 lg:w-32 overflow-hidden flex items-start justify-start">
                     <img
                         className='object-contain cursor-pointer object-top h-full w-full filter invert'
                         src='/MandrakeBlackLogoCropped.png'
@@ -70,7 +70,7 @@ const Header = () => {
                 </div>
             </div>
             <button onMouseEnter={handleHover} onMouseLeave={handleLeave} className='border relative border-white px-3 rounded-full overflow-hidden flex items-center justify-center md:px-6 py-2'>
-                <span ref={buttonSpanRef} className='text-sm md:text-base text-white z-20'>
+                <span ref={buttonSpanRef} className='text-sm md:text-base lg:text-2xl text-white z-20'>
                     Get In Touch
                 </span>
                 <div ref={coverRef} className='absolute top-0 left-0 bg-white w-full h-full rounded-full' />

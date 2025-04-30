@@ -42,7 +42,7 @@ const Hero = () => {
     }, []);
     return (
         <section
-            className="flex flex-col items-center pb-5  w-full py-5 mx-auto h-screen justify-center relative"
+            className="flex flex-col items-center pb-5   w-full py-5 mx-auto min-h-screen justify-center relative"
             style={{
                 backgroundImage: `url(${bgImage})`,
                 backgroundSize: 'cover',
@@ -50,25 +50,34 @@ const Hero = () => {
                 backgroundRepeat: "no-repeat"
             }}
         >
-            <div className='w-[90%] md:w-4/5 pb-7 flex flex-col items-center h-full mx-auto '>
-                <Header />
-                <div className="flex-1  flex flex-col items-center justify-center space-y-3 ">
-                    <div ref={textWrapperRef} className="overflow-hidden">
+            <Header />
+            <div className='w-[90%] md:w-4/5 pb-7 flex flex-col justify-between items-start h-full mx-auto flex-1'>
+                <div className="flex-1  h-screen flex flex-col items-center justify-center space-y-3 ">
+                    <div ref={textWrapperRef} className="overflow-hidden w-[95%] md:w-[68%]">
                         <h1
                             ref={textRef}
                             style={{ fontFamily: "'Afacad Flux', serif" }}
-                            className='text-3xl md:text-5xl lg:text-6xl text-white font-bold text-center'
+                            className="
+                            text-lg  md:text-xl lg:text-2xl xl:text-3xl 2xl:text-6xl
+                            uppercase font-bold text-center text-white  break-words
+                          "
                         >
                             WHAT IF YOU CAN DESIGN CROPS LIKE YOU DESIGN SOFTWARE
                         </h1>
                     </div>
 
-                    <div ref={underlineRef} className='h-0.5 bg-white w-2/4' />
-                    <div className="w-full md:w-[68%] mx-auto overflow-hidden">
-                        <p ref={paraRef} className='text-center text-white text-sm font-medium'>
+                    <div ref={underlineRef} className='h-0.5 bg-white w-3/4 md:w-2/4' />
+                    <div className="w-[90%] md:w-[68%] mx-auto overflow-hidden">
+                        <p
+                            ref={paraRef}
+                            className="
+    text-[10px]  md:text-sm lg:text-base xl:text-xl 2xl:text-3xl
+    text-center text-white font-medium
+  "
+                        >
                             At Mandrake Bioworks, we're changing the way crops are designed.
-                            By fusing AI & Omics, we can unlock plants to their full potential - making
-                            them stronger, higher yielding, more nutritious.
+                            By fusing AI & Omics, we can unlock plants to their full potential —
+                            making them stronger, higher yielding, more nutritious.
                         </p>
                     </div>
                 </div>

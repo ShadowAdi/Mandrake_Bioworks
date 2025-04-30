@@ -1,12 +1,13 @@
+import React, { useRef } from 'react'
+import AnimatedText from './AnimatedText'
+import SplitType from 'split-type';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
-import React, { useRef } from 'react'
-import SplitType from 'split-type';
 gsap.registerPlugin(ScrollTrigger);
 
 
-const AnimatedText = ({ text }) => {
+const Section2Part2 = () => {
     const textWrapperRef = useRef(null);
     const textRef = useRef(null);
     useGSAP(() => {
@@ -35,15 +36,23 @@ const AnimatedText = ({ text }) => {
             },
         });
     }, []);
-
     return (
-        <div ref={textWrapperRef} className="overflow-hidden  ">
-            <h1 ref={textRef} style={{ fontFamily: "'Afacad Flux', serif" }} className="text-xl  md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl
-                            uppercase font-bold text-center text-white  break-words">
-                {text}
-            </h1>
+        <div className='md:w-4/5 w-[80%] flex pb-3 min-h-screen md:pb-8 flex-col items-center  mx-auto space-y-8  justify-center py-4 md:py-16 '>
+            <AnimatedText text="What If Agriculture Stole a Page from Pharma's Playbook?
+"/>
+            <div className='h-[60vh] w-full'>
+                <img src='/Scientist.png' className='object-contain h-full w-full' />
+            </div>
+            <div className='flex flex-col space-y-9 items-center w-[90%] md:w-[70%] justify-center'>
+                <p className="
+    text-[10px]  md:text-xs lg:text-sm xl:text-base 2xl:text-3xl
+    text-center text-white font-normal
+  ">
+                    Industries like pharmaceuticals and materials science have revolutionized their  innovation cycles by integrating AI-driven discovery with automated lab workflows. The result? Dramatically reduced costs, accelerated timelines, and entirely new realms of possibility..
+                </p>
+            </div>
         </div>
     )
 }
 
-export default AnimatedText
+export default Section2Part2

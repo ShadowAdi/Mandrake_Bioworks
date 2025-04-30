@@ -1,7 +1,9 @@
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/all';
 import React, { useRef } from 'react'
 import SplitType from 'split-type';
+gsap.registerPlugin(ScrollTrigger);
 
 const AnimatedWhiteText = ({text,className}) => {
   const textWrapperRef = useRef(null);
