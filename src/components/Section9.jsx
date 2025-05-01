@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef } from 'react';
 import AnimatedWhiteText from './AnimatedWhiteText';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -9,46 +9,33 @@ gsap.registerPlugin(ScrollTrigger);
 const Section9 = () => {
     const imageRef = useRef(null);
     const sectionRef = useRef(null);
-    const imageWrapperRef = useRef(null)
-
-    useGSAP(() => {
-        gsap.from(imageWrapperRef.current, {
-            scaleY: 100,
-            duration: 2,
-            transformOrigin: "top center",
-            scrollTrigger: {
-                trigger: sectionRef.current,
-                start: "-20% start",
-                scrub: 1
-            }
-        })
-    })
+    const imageWrapperRef = useRef(null);
 
     return (
         <section
-            className="flex flex-col items-center w-full mx-auto justify-center relative py-4 md:py-16 pb-2 md:pb-10 h-screen"
+            className="flex flex-col items-center w-full justify-center relative py-8 md:py-10 min-h-screen"
         >
-            <div className="w-[90%] md:w-4/5 flex pb-2 flex-col items-center gap-20 mx-auto space-y-1 md:space-y-12 justify-center md:justify-around">
-                <div ref={sectionRef} className="w-full relative  overflow-hidden max-h-[60vh] ">
+            <div className="w-[90%] max-w-[1600px] flex flex-col items-center mx-auto gap-8 md:gap-12 lg:gap-16">
+                <div ref={imageWrapperRef} className="w-full max-w-4xl">
                     <img
                         ref={imageRef}
                         src="/Gene.jpg"
-                        className="object-fill h-full w-full"
+                        className="w-full h-auto max-h-[60vh] object-cover rounded-md"
                         alt="Gene"
                     />
                 </div>
-                <div className="flex flex-col space-y-2 md:space-y-7 items-center w-[90%] md:w-[70%] justify-center">
+
+                <div className="flex flex-col items-center text-center w-[80%] px-2  lg:px-16 gap-4 md:gap-6 lg:gap-8 break-words ">
                     <AnimatedWhiteText
                         text="Building the Plant Design Factory of the Future"
-                       className="text-xl  md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl
-                uppercase font-bold text-center text-white  break-words"
+                        className="text-lg md:text:xl lg:text-2xl xl:text-3xl 2xl:text-5xl uppercase font-bold text-white "
                     />
                     <AnimatedWhiteText
-                        className="text-white text-[10px] md:text-xl text-center"
                         text="Whether you're interested in joining our team, partnering with us, or simply curious to learn more about our work—let's connect."
+                        className="text-sm md:text-base lg:text-lg  mx-auto text-white"
                     />
-                    <button className="px-6 md:px-14 py-3 mt-6 rounded-full bg-[#C4E9A2] hover:opacity-90 flex items-center justify-center">
-                        <span className="text-[10px] md:text-base text-black font-semibold">
+                    <button className="px-6 md:px-10 py-2 md:py-3 mt-4 md:mt-6 rounded-full bg-[#C4E9A2] hover:opacity-90">
+                        <span className="text-sm md:text-base text-black font-semibold">
                             Get In Touch
                         </span>
                     </button>

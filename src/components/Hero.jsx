@@ -53,12 +53,12 @@ const Hero = () => {
             <Header />
             <div className='w-[90%] md:w-4/5 pb-7 flex flex-col justify-between items-start h-full mx-auto flex-1'>
                 <div className="flex-1  h-screen flex flex-col items-center justify-center space-y-3 ">
-                    <div ref={textWrapperRef} className="overflow-hidden w-[95%] md:w-[68%]">
+                    <div ref={textWrapperRef} className="overflow-hidden w-[95%] md:w-[75%]">
                         <h1
                             ref={textRef}
                             style={{ fontFamily: "'Afacad Flux', serif" }}
                             className="
-                            text-lg  md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl
+                            text-base  md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl
                             uppercase font-bold text-center text-white  break-words
                           "
                         >

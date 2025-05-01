@@ -79,7 +79,7 @@ const Footer = () => {
             <div className='w-[90%] md:w-2/5 flex flex-col items-center gap-4 '>
                 <div className="flex flex-row items-center justify-center space-x-4">
                     <div className='p-2 items-center overflow-hidden rounded-full flex justify-center bg-white cursor-pointer'>
-                        <img src='/linkedIn.jpg' alt='No Image' className='md:h-16 w-8 h-8 md:w-16 object-contain' />
+                        <img src='/linkedIn.jpg' alt='No Image' className='lg:h-16 h-4 w-4 md:w-8 md:h-8 lg:w-16 object-contain' />
                     </div>
                     <div className='p-2 items-center overflow-hidden flex rounded-full justify-center bg-white cursor-pointer'>
                         <img src='/youtubeLogo.webp' alt='No Image' className='md:h-16 w-8 h-8 md:w-16 object-contain' />

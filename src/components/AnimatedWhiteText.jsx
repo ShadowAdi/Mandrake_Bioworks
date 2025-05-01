@@ -27,7 +27,7 @@ const AnimatedWhiteText = ({text,className}) => {
   }, []);
 
   return (
-    <div ref={textWrapperRef} className="overflow-hidden ">
+    <div ref={textWrapperRef} className="overflow-hidden w-full md:w-[80%]   ">
       <h1 ref={textRef} style={{ fontFamily: "'Afacad Flux', serif" }} className={className}>
         {text}
       </h1>

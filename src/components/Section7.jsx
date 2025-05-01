@@ -17,7 +17,7 @@ const Section7 = () => {
 
                 </div>
 
-                <div className='w-[90%] mx-auto md:flex-row flex-col flex items-center justify-between space-y-10 md:space-x-6'>
+                <div className='w-[90%] mx-auto md:flex-row flex-col flex items-center justify-between gap-6'>
                     <div className='flex flex-col items-center justify-center gap-y-3'>
                         <img src='https://avatar.iran.liara.run/public' className='h-36 w-36 lg:h-56 lg:w-56 xl:h-64 xl:w-64 object-cover rounded-full' />
                         <div className='flex items-center justify-center flex-col space-y-0 md:space-y-1'>

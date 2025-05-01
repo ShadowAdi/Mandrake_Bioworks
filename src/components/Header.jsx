@@ -15,8 +15,8 @@ const Header = () => {
             y: -200,       // 👈 move from -200px above
             duration: 1.5,  // 👈 shorter and snappier
             ease: "expo.out",
-            scrollTrigger:{
-                start:"top 40%"
+            scrollTrigger: {
+                start: "top 40%"
             }
         })
 
@@ -32,12 +32,12 @@ const Header = () => {
             scaleX: 1,
             duration: 1,
             ease: "expo.inOut"
-        },"anim")
+        }, "anim")
         tl.to(buttonSpanRef.current, {
             color: "black",
             duration: 0.3,
             ease: "power2.inOut"
-        },"anim")
+        }, "anim")
     }
 
     const handleLeave = () => {
@@ -46,12 +46,12 @@ const Header = () => {
             scaleX: 0,
             duration: 1,
             ease: "expo.inOut"
-        },"anim")
+        }, "anim")
         tl.to(buttonSpanRef.current, {
             color: "white",
             duration: 0.3,
             ease: "power2.inOut"
-        },"anim")
+        }, "anim")
 
     }
 
@@ -70,7 +70,7 @@ const Header = () => {
                 </div>
             </div>
             <button onMouseEnter={handleHover} onMouseLeave={handleLeave} className='border relative border-white px-3 rounded-full overflow-hidden flex items-center justify-center md:px-6 py-2'>
-                <span ref={buttonSpanRef} className='text-sm md:text-base lg:text-2xl text-white z-20'>
+                <span ref={buttonSpanRef} className='text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl  text-white z-20'>
                     Get In Touch
                 </span>
                 <div ref={coverRef} className='absolute top-0 left-0 bg-white w-full h-full rounded-full' />
