@@ -55,7 +55,7 @@ const Section2Part1 = () => {
         <div className='md:w-4/5 w-[90%]  min-h-screen flex flex-col items-center mx-auto   gap-2 lg:gap-12 justify-center lg:justify-center  py-4 md:py-16'>
             <div ref={textWrapperRef} className="overflow-hidden w-full    ">
                 <h1 ref={textRef} style={{ fontFamily: "'Afacad Flux', serif" }} className="text-xl  md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl
-                uppercase font-bold text-center text-white  break-words">
+                uppercase font-bold text-center text-white  ">
                     Agriculture Is Falling Behind
                 </h1>
 

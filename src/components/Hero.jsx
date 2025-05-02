@@ -58,7 +58,7 @@ const Hero = () => {
                             ref={textRef}
                             style={{ fontFamily: "'Afacad Flux', serif" }}
                             className="
-                            text-base  md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl
+                              text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl
                             uppercase font-bold text-center text-white  
                           "
                         >
