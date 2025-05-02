@@ -9,11 +9,9 @@ gsap.registerPlugin(ScrollTrigger);
 const AnimatedWhiteTextSvg = ({
     text,
     className,
-    highlightLetters = { start: "D", end: "G" } // Default values
 }) => {
     const textWrapperRef = useRef(null);
     const textRef = useRef(null);
-    const overlayRef = useRef(null);
 
     useGSAP(() => {
         const split = new SplitType(textRef.current, {
@@ -21,29 +19,17 @@ const AnimatedWhiteTextSvg = ({
             lineClass: "line-wrapper",
         });
 
-        const chars = split.chars;
-        const startChar = chars.find(c => c.textContent.toUpperCase() === highlightLetters.start.toUpperCase());
-        const endChar = chars.findLast(c => c.textContent.toUpperCase() === highlightLetters.end.toUpperCase());
+        // Wrap each line with a container for the overlay
+        split.lines.forEach((line) => {
+            const wrapper = document.createElement("div");
+            wrapper.className = "relative w-fit inline-block"; // holds both line + overlay
+            line.parentNode.insertBefore(wrapper, line);
+            wrapper.appendChild(line);
 
-        if (startChar && endChar && overlayRef.current) {
-            const startBox = startChar.getBoundingClientRect();
-            const endBox = endChar.getBoundingClientRect();
-            const wrapperBox = textWrapperRef.current.getBoundingClientRect();
-
-            const overlay = overlayRef.current;
-
-
-            const left = startBox.left - wrapperBox.left - 10;
-            const width = endBox.right - startBox.left;
-            const topOffset = (startBox.height / 2) + 10;
-            const extraHeight = 30;
-            const baseHeight = startBox.height + extraHeight;
-
-            overlay.style.left = `${left}px`;
-            overlay.style.width = `${width}px`;
-            overlay.style.top = `${topOffset}px`;
-            overlay.style.height = `${baseHeight}px`;
-        }
+            const overlay = document.createElement("div");
+            overlay.className = "absolute inset-0 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 opacity-60 rounded-sm";
+            wrapper.appendChild(overlay);
+        });
 
         gsap.from(split.lines, {
             yPercent: 100,
@@ -56,40 +42,14 @@ const AnimatedWhiteTextSvg = ({
             },
         });
 
-        gsap.fromTo(
-            overlayRef.current,
-            { scaleX: 0 },
-            {
-                scaleX: 1,
-                transformOrigin: "left center",
-                duration: 1,
-                ease: "expo.out",
-                scrollTrigger: {
-                    trigger: textWrapperRef.current,
-                    start: "top bottom",
-                },
-            }
-        );
-    }, [text, highlightLetters]);
+    }, [text]);
 
     return (
         <div ref={textWrapperRef} className="relative overflow-hidden w-full md:w-[80%]">
-            <div
-                ref={overlayRef}
-                className="absolute bg-[linear-gradient(to_right,_#e0f4eb,_#b8e8e5,_#90dcd7,_#90dadc)] rounded pointer-events-none"
-
-                style={{
-                    position: 'absolute',
-                    height: '45px',
-                    top: '0px',
-                    left: '0px',
-                    width: '0px',
-                }}
-            ></div>
             <h1
                 ref={textRef}
                 style={{ fontFamily: "'Afacad Flux', serif" }}
-                className={className}
+                className={`${className} whitespace-pre-wrap`} 
             >
                 {text}
             </h1>
@@ -97,4 +57,4 @@ const AnimatedWhiteTextSvg = ({
     );
 };
 
-export default AnimatedWhiteTextSvg
+export default AnimatedWhiteTextSvg;

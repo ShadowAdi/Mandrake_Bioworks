@@ -54,7 +54,7 @@ const Section2Part1 = () => {
     return (
         <div className='md:w-4/5 w-[90%]  min-h-screen flex flex-col items-center mx-auto   gap-2 lg:gap-12 justify-center lg:justify-center  py-4 md:py-16'>
             <div ref={textWrapperRef} className="overflow-hidden w-full    ">
-                <h1 ref={textRef} style={{ fontFamily: "'Afacad Flux', serif" }} className="text-xl  md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-8xl
+                <h1 ref={textRef} style={{ fontFamily: "'Afacad Flux', serif" }} className="text-xl  md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl
                 uppercase font-bold text-center text-white  break-words">
                     Agriculture Is Falling Behind
                 </h1>
@@ -65,17 +65,14 @@ const Section2Part1 = () => {
                 <AnimatedWhiteTextSvg
                     className={"text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-6xl uppercase font-semibold text-center text-white"}
                     text={"Decade-Long Timelines."}
-                    highlightLetters={{ start: "D", end: "G" }}
                 />
                 <AnimatedWhiteTextSvg
                     className={"text-base md:text-xl lg:text-2xl xl:text-3xl 2xl:text-6xl uppercase font-semibold text-center text-white break-words"}
                     text={"Millions in Development Costs."}
-                    highlightLetters={{ start: "M", end: "S" }}
                 />
                 <AnimatedWhiteTextSvg
                     className={"text-base md:text-xl lg:text-2xl xl:text-3xl 2xl:text-6xl uppercase font-semibold text-center text-white break-words"}
                     text={"Just. One. Trait."}
-                    highlightLetters={{ start: "J", end: "T" }}
                 />
             </div>
             <div ref={paraWrapperRef} className='flex flex-col space-y-5 items-center w-full md:w-[90%] lg:w-[80%] justify-center'>

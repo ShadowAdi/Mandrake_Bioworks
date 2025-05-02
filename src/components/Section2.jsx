@@ -13,7 +13,7 @@ const Section2 = () => {
 
                 <Section2Part1 />
                 <Section2Part2 />
-                <AnimatedWhiteText text={"We think it's time Agriculture catches up."} className={'text-sm md:text-4xl  lg:text-5xl my-5  text-white font-semibold md:font-bold text-center'} />
+                <AnimatedWhiteText text={"We think it's time Agriculture catches up."} className={'text-base md:text-4xl  lg:text-5xl xl:text-6xl my-0  text-white font-semibold md:font-bold text-center'} />
             </section>
 
         </>
