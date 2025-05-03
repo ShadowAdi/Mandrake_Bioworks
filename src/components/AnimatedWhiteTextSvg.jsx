@@ -1,37 +1,54 @@
-import { useGSAP } from '@gsap/react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/all';
-import React, { useRef } from 'react';
-import SplitType from 'split-type';
-
-gsap.registerPlugin(ScrollTrigger);
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { useRef } from "react";
+import SplitType from "split-type";
 
 const AnimatedWhiteTextSvg = ({
     text,
     className,
+    numWordsToOverlay = 0, // ← Add this
 }) => {
     const textWrapperRef = useRef(null);
     const textRef = useRef(null);
 
     useGSAP(() => {
         const split = new SplitType(textRef.current, {
-            types: "lines, chars",
+            types: "lines, words",
             lineClass: "line-wrapper",
         });
 
-        // Wrap each line with a container for the overlay
+        const wordsToAnimate = [];
+
         split.lines.forEach((line) => {
+            const allWords = Array.from(line.querySelectorAll('.word'));
+            if (numWordsToOverlay === 0 || allWords.length === 0) return;
+
+            let count = 0;
             const wrapper = document.createElement("div");
-            wrapper.className = "relative w-fit inline-block"; // holds both line + overlay
-            line.parentNode.insertBefore(wrapper, line);
-            wrapper.appendChild(line);
+            wrapper.className = "relative w-fit inline-block";
+
+            line.insertBefore(wrapper, allWords[0]);
+
+            for (let i = 0; i < allWords.length && count < numWordsToOverlay; i++) {
+                const word = allWords[i];
+
+                if (word.nodeType === 1 && word.classList.contains("word")) {
+                    wrapper.appendChild(word);
+                    wordsToAnimate.push(word);
+                    count++;
+
+                    if (count < numWordsToOverlay) {
+                        wrapper.appendChild(document.createTextNode(" "));
+                    }
+                }
+            }
 
             const overlay = document.createElement("div");
-            overlay.className = "absolute inset-0 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 opacity-60 rounded-sm";
+            overlay.className = "absolute left-0 right-0 top-1/2 h-[calc(50%+10px)] bg-gradient-to-r from-[#e0f4eb] via-[#b8e8e5] to-[#90dadc] opacity-60 rounded-sm pointer-events-none";
             wrapper.appendChild(overlay);
         });
 
-        gsap.from(split.lines, {
+        gsap.from(wordsToAnimate, {
             yPercent: 100,
             duration: 1,
             ease: "expo.out",
@@ -41,8 +58,7 @@ const AnimatedWhiteTextSvg = ({
                 start: "top bottom",
             },
         });
-
-    }, [text]);
+    }, [text, numWordsToOverlay]);
 
     return (
         <div ref={textWrapperRef} className="relative overflow-hidden w-full md:w-[80%]">
@@ -57,4 +73,5 @@ const AnimatedWhiteTextSvg = ({
     );
 };
 
-export default AnimatedWhiteTextSvg;
+
+export  default AnimatedWhiteTextSvg

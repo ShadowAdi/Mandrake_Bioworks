@@ -7,9 +7,9 @@ const Footer = () => {
         <section
             className="flex flex-col items-center  w-full py-0 pb-4 md:py-12    justify-center "
         >
-            <div className='w-[90%] md:w-[60%]  flex py-2 md:py-8 flex-col space-y-0 md:items-start items-center  mx-auto  justify-center '>
+            <div className='w-[95%] md:w-[80%]  flex py-2 md:py-8 flex-col space-y-0 md:items-start items-center  mx-auto  justify-center '>
                 <div className="flex md:items-start md:justify-start items-center justify-center w-full ">
-                    <img className='h-32 w-32 object-contain object-bottom filter invert'
+                    <img className='h-12 w-32  object-contain object-bottom filter invert'
                         src='/MandrakeLogo.png'
                         alt='Mandrake' />
                 </div>
@@ -19,7 +19,7 @@ const Footer = () => {
                             <div className="p-1 bg-white rounded-full">
                                 <FaLocationDot className="text-black h-3 w-3" />
                             </div>
-                            <p className="text-[10px] md:text-sm opacity-90 text-white text-center md:text-left">
+                            <p className="text-para-sm md:text-para-md lg:text-para-lg xl:text-para-xl  opacity-90 text-white text-center md:text-left">
                                 Mandrake Bioworks, Aspire Coworks, <br />
                                 17, 7th Main Rd, 2nd Stage, Indiranagar, <br />
                                 Bengaluru, Karnataka 560038
@@ -29,14 +29,14 @@ const Footer = () => {
                             <div className="p-1 bg-white rounded-full">
                                 <MdEmail className="text-black h-3 w-3" />
                             </div>
-                            <p className="text-[10px] md:text-sm opacity-90 text-white text-center md:text-left">
+                            <p className="text-para-sm md:text-para-md lg:text-para-lg xl:text-para-xl opacity-90 text-white text-center md:text-left">
                                 hello@Mandrakebio.com
                             </p>
                         </div>
                     </div>
 
-                    <div className="flex flex-row justify-center md:justify-end gap-10 flex-1  p-6 rounded-lg">
-                        <div className="flex flex-col flex-1 items-center md:items-start gap-3">
+                    <div className="flex flex-row justify-center md:justify-end gap-6 flex-1  p-3 ">
+                        <div className="flex flex-col   items-center md:items-start gap-3">
                             <h1 className="text-xs md:text-lg text-white font-semibold">
                                 About Us
                             </h1>
@@ -44,28 +44,21 @@ const Footer = () => {
                                 <span className="text-[10px] md:text-sm opacity-90 text-white font-normal">
                                     About
                                 </span>
-                                <span className="text-[10px]  md:text-sm opacity-90 text-white font-normal">
-                                    Portfolio
-                                </span>
-                                <span className="text-[10px]  md:text-sm opacity-90 text-white font-normal">
+                                <span className="text-[10px] md:text-sm opacity-90 text-white font-normal">
                                     Team
                                 </span>
                             </div>
                         </div>
-
-                        <div className="flex flex-1 flex-col items-center md:items-start gap-3">
-                        <h1 className="text-xs md:text-lg text-white font-semibold">
-                        Support
+                        <div className="flex  flex-col items-center md:items-start gap-3">
+                            <h1 className="text-xs md:text-lg text-white font-semibold">
+                                Support
                             </h1>
                             <div className="flex flex-col items-center md:items-start gap-2">
-                            <span className="text-[10px] md:text-sm opacity-90 text-white font-normal">
+                                <span className="text-[10px] md:text-sm opacity-90 text-white font-normal">
 
                                     FAQ
                                 </span>
-                                <span className="text-[10px] md:text-sm opacity-90 text-white font-normal">
 
-                                    How It Works
-                                </span>
                                 <span className="text-[10px] md:text-sm opacity-90 text-white font-normal">
 
                                     Privacy
@@ -74,15 +67,14 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-
             </div>
-            <div className='w-[90%] md:w-2/5 flex flex-col items-center gap-4 '>
+            <div className='w-[95%] md:w-2/5 flex flex-col items-center gap-4 '>
                 <div className="flex flex-row items-center justify-center space-x-4">
                     <div className='p-2 items-center overflow-hidden rounded-full flex justify-center bg-white cursor-pointer'>
                         <img src='/linkedIn.jpg' alt='No Image' className='lg:h-16 h-4 w-4 md:w-8 md:h-8 lg:w-16 object-contain' />
                     </div>
                     <div className='p-2 items-center overflow-hidden flex rounded-full justify-center bg-white cursor-pointer'>
-                        <img src='/youtubeLogo.webp' alt='No Image' className='md:h-16 w-8 h-8 md:w-16 object-contain' />
+                        <img src='/youtubeLogo.webp' alt='No Image' className='lg:h-16 h-4 w-4 md:w-8 md:h-8 lg:w-16 object-contain' />
                     </div>
                 </div>
                 <p className='text-[10px] md:text-base  text-center text-white opacity-90'>

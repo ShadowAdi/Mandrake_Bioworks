@@ -6,12 +6,12 @@ import SplitType from 'split-type';
 gsap.registerPlugin(ScrollTrigger);
 
 
-const AnimatedText = ({ text }) => {
+const AnimatedText = ({ text,className,divClassName }) => {
     const textWrapperRef = useRef(null);
     const textRef = useRef(null);
     useGSAP(() => {
         const textRefSplit = new SplitType(textRef.current, {
-            types: "lines,chars",
+            types: "lines,words",
             lineClass: "line-wrapper"
         });
 
@@ -37,11 +37,9 @@ const AnimatedText = ({ text }) => {
     }, []);
 
     return (
-        <div ref={textWrapperRef} className="overflow-hidden  ">
+        <div ref={textWrapperRef} className={`overflow-hidden sm:w-full w-[96%] mx-auto `}>
             <h1 ref={textRef} style={{ fontFamily: "'Afacad Flux', serif" }}
-             className="text-base 
-             md:text-lg lg:text-2xl xl:text-4xl 2xl:text-6xl
-                            uppercase font-bold text-center text-white">
+             className={className+" text-center"}>
                 {text}
             </h1>
         </div>

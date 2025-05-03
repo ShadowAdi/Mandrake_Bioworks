@@ -30,13 +30,13 @@ const Section4 = () => {
             className="flex flex-col items-center  w-full  mx-auto  justify-center  md:justify-around relative  py-0 md:py-4 space-y-0 min-h-screen"
         >
             <div className='w-[90%] md:w-4/5  flex pt-4 md:pt-6 pb-2 md:pb-2 flex-col items-center  mx-auto space-y-5 md:space-y-6  justify-around gap-4'>
-                <AnimatedText text={"How are we Different?"} />
-                <div className='object-contain w-full h-40 md:h-60 lg:h-80 items-center flex justify-center'>
+                <AnimatedText className={"text-heading-sm md:text-heading-md lg:text-heading-lg xl:text-heading-xl uppercase font-bold text-center text-white"} text={"How are we Different?"} />
+                <div className='object-contain w-full h-52 md:h-56 lg:h-80 xl:h-96 items-center flex justify-center'>
                     <img src='/Arrow.png' className='object-contain h-full w-full' />
                 </div>
                 <div ref={paraWrapperRef} className='flex flex-col space-y-5 items-center w-full md:w-[90%] lg:w-[80%] justify-center'>
                     <p className="
-                                text-[10px]  md:text-base lg:text-lg 2xl:text-4xl
+ text-para-sm md:text-para-md lg:text-para-lg xl:text-para-xl
                                 text-center text-white font-normal w-full md:w-[60%]
                                 "
                         ref={paraRef}

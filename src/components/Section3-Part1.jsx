@@ -39,7 +39,7 @@ const Section3Part1 = () => {
           start: "top top",
           end: "+=3000",
           pin: true,
-  pinSpacing: true, 
+          pinSpacing: true,
           scrub: true,
         }
       });
@@ -66,7 +66,7 @@ const Section3Part1 = () => {
   return (
     <section
       ref={sectionRef}
-      className="flex flex-col items-center w-full mx-auto py-4 px-4 lg:justify-center justify-around relative gap-12 xl:gap-24 min-h-screen"
+      className="flex flex-col items-center w-full mx-auto py-4 px-6 lg:justify-center justify-around relative gap-12  min-h-screen pb-8 "
       style={{
         backgroundImage: `url(${bgImage})`,
         backgroundSize: 'cover',
@@ -74,24 +74,21 @@ const Section3Part1 = () => {
         backgroundRepeat: "no-repeat"
       }}
     >
-      {/* Constant heading */}
-        <AnimatedText text={"At Mandrake, we’re re-inventing crop development from the ground up"} />
-
-      {/* Content that changes */}
-      <div className='flex flex-col md:flex-row justify-between items-center w-full gap-6 md:w-[80%] lg:w-[70%]'>
+      <AnimatedText divClassName="w-full sm:w-[80%]" className={"text-subheading uppercase leading-6 font-bold text-center w-full text-white"} text={"At Mandrake, we’re re-inventing crop development from the ground up"} />
+      <div className='flex flex-col  md:flex-row justify-between items-center w-full space-y-10 md:space-y-2 md:w-[90%] lg:w-[70%]'>
         <div
           ref={textRef}
-          className='flex flex-col gap-3 items-center md:items-start text-center md:text-left justify-center opacity-100 transition-opacity lg:gap-6'
+          className='flex flex-col gap-2 items-center md:items-start text-center md:text-left justify-center opacity-100 transition-opacity flex-1 '
         >
-          <h3 className="whitespace-nowrap text-base md:text-xl lg:text-4xl text-white font-semibold px-4 md:px-0">
+          <h3 className="  text-white font-semibold px-4 md:px-0 text-subheading">
             {steps[0].title}
           </h3>
-          <p className="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl text-white md:leading-5 max-w-md px-4 md:px-0 w-full">
+          <p className="text-sm md:text-para-md lg:text-para-lg xl:text-para-xl text-white  max-w-md px-4 md:px-0 w-full leading-8 ">
             {steps[0].desc}
           </p>
         </div>
 
-        <div className='flex items-center justify-center h-28 md:h-64 lg:h-72 mt-0'>
+        <div className='flex items-center justify-center h-40 md:h-56 lg:h-72 mt-0'>
           <img
             ref={imageRef}
             className='h-full w-full object-contain transition-transform transition-opacity duration-500'

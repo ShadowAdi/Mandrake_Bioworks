@@ -61,9 +61,9 @@ const Header = () => {
             className='header flex  z-[100] w-[90%] justify-between items-start'
         >
             <div className="flex flex-col items-start space-y-0.5">
-                <div className="h-24 w-24 lg:h-32 lg:w-32 overflow-hidden flex items-start justify-start">
+                <div className="h-12 w-24 lg:h-32 lg:w-32 overflow-hidden flex items-start justify-start ">
                     <img
-                        className='object-contain cursor-pointer object-top h-full w-full filter invert'
+                        className='object-contain cursor-pointer object-top h-full w-full filter invert '
                         src='/MandrakeBlackLogoCropped.png'
                         alt='Mandrake'
                     />

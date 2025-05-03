@@ -10,7 +10,7 @@ const AnimatedWhiteText = ({text,className}) => {
   const textRef = useRef(null);
   useGSAP(() => {
     const textRefSplit = new SplitType(textRef.current, {
-      types: "lines,chars",
+      types: "lines,words",
       lineClass: "line-wrapper"
     });
 
@@ -28,7 +28,7 @@ const AnimatedWhiteText = ({text,className}) => {
   }, []);
 
   return (
-    <div ref={textWrapperRef} className="overflow-hidden w-full md:w-[80%]   ">
+    <div ref={textWrapperRef} className="overflow-hidden w-full    ">
       <h1 ref={textRef} style={{ fontFamily: "'Afacad Flux', serif" }} className={className}>
         {text}
       </h1>

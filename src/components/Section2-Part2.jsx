@@ -16,7 +16,7 @@ const Section2Part2 = () => {
 
     useGSAP(() => {
         const textRefSplit = new SplitType(textRef.current, {
-            types: "lines,chars",
+            types: "lines,words",
             lineClass: "line-wrapper"
         });
         const paraTextSplit = new SplitType(paraRef.current, { types: "chars" })
@@ -55,19 +55,19 @@ const Section2Part2 = () => {
         });
     }, []);
     return (
-        <div className='md:w-4/5 w-[80%] flex pb-3  min-h-screen md:pb-8 flex-col items-center  mx-auto space-y-2 lg:space-y-6  justify-center py-2 md:py-6 '>
+        <div className='md:w-4/5 w-[90%] flex pb-3  min-h-screen md:pb-8 flex-col items-center  mx-auto space-y-2 lg:space-y-6  justify-around py-2 sm:py-8 '>
             <div ref={textWrapperRef} className="overflow-hidden w-full ">
-                <h1 ref={textRef} style={{ fontFamily: "'Afacad Flux', serif" }} className="text-lg  md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl
-                            uppercase font-bold text-center text-white  ">
+                <h1 ref={textRef} style={{ fontFamily: "'Afacad Flux', serif" }} className="text-heading-sm md:text-heading-md lg:text-heading-lg xl:text-heading-xl
+                            uppercase font-bold text-center  text-white  ">
                     What If Agriculture Stole a Page from Pharma's Playbook?
                 </h1>
             </div>
             <div className=' h-[40vh] md:h-[60vh] w-full'>
                 <img src='/Scientist.png' className='object-contain h-full w-full' />
             </div>
-            <div ref={paraWrapperRef} className='flex flex-col space-y-9 items-center w-[90%] md:w-[70%] justify-center'>
+            <div ref={paraWrapperRef} className='flex flex-col space-y-9 items-center w-full md:w-[70%] justify-center'>
                 <p className="
-                            text-center text-white font-normal text-xs  sm:text-sm md:text-base lg:text-lg  xl:text-xl 2xl:text-3xl
+                            text-center text-white font-normal text-para-sm md:text-para-md lg:text-para-lg xl:text-para-xl
                             "
                     ref={paraRef}
                 >
