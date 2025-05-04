@@ -11,7 +11,7 @@ const Section5 = () => {
                         autoPlay
                         loop
                         muted
-                        src="/bioworks_1.mp4"
+                        src="https://res.cloudinary.com/shadowaditya/video/upload/v1746365188/lznhg1airqcreeq1mos6.mp4"
                     />
                     <div className="absolute bottom-10 z-40  right-4 text-white rounded space-y-2 max-w-xs">
                         <span className="text-lg  text-white font-semibold text-left">
@@ -29,7 +29,7 @@ const Section5 = () => {
                         autoPlay
                         loop
                         muted
-                        src="/bioworks_2.mp4"
+                        src="https://res.cloudinary.com/shadowaditya/video/upload/v1746365188/lznhg1airqcreeq1mos6.mp4"
                     />
                     <div className="absolute  bottom-10 left-4  z-40  text-white rounded space-y-2 max-w-xs">
                         <span className="text-lg  text-white font-semibold text-left">
@@ -51,7 +51,7 @@ const Section5 = () => {
                     autoPlay
                     loop
                     muted
-                    src="/bioworks_3.mp4"
+                    src="https://res.cloudinary.com/shadowaditya/video/upload/v1746365179/dvg1v5n85ghetsjywm3a.mp4"
                 />
                 <div className="absolute bottom-10 z-40 left-1/4 text-white rounded space-y-2 max-w-xs">
                     <span className="text-lg  text-white font-semibold text-left">
