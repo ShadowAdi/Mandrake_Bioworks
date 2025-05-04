@@ -5,7 +5,7 @@ export const CardComponent = ({ category, title, description }) => {
   
   return (
     <div
-      className="flex flex-col cursor-pointer items-center xl:items-start gap-2 md:gap-3 xl:gap-5 relative p-4 md:p-6 w-full max-w-md h-full"
+      className="flex flex-col cursor-pointer items-center xl:items-start gap-2 md:gap-2 xl:gap-3 relative p-2 w-full max-w-md h-full"
       style={{
         position: 'relative',
         transition: 'all 0.3s ease',
@@ -40,7 +40,7 @@ export const CardComponent = ({ category, title, description }) => {
         {title}
       </h2>
       
-      <p className="text-center xl:text-left text-white opacity-90 relative z-10 text-para-sm md:text-para-md lg:text-para-lg w-full flex-grow min-h-[8rem]">
+      <p className="text-center  xl:text-left text-white opacity-90 relative z-10 text-para-sm md:text-para-md lg:text-para-md w-full flex-grow min-h-[8rem]">
         {description}
       </p>
       

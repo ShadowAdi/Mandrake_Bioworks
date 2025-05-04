@@ -1,21 +1,24 @@
-import React, { useRef } from 'react'
+import React, { useRef } from 'react';
 import { useGSAP } from '@gsap/react';
 import SplitType from 'split-type';
-import gsap from 'gsap/all';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import AnimatedWhiteTextSvg from './AnimatedWhiteTextSvg';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Section2Part1 = () => {
     const textWrapperRef = useRef(null);
     const textRef = useRef(null);
-    const paraRef = useRef(null)
-    const paraWrapperRef = useRef(null)
+    const paraRef = useRef(null);
+    const paraWrapperRef = useRef(null);
+
     useGSAP(() => {
-        const paraTextSplit = new SplitType(paraRef.current, { types: "chars" })
+        const paraTextSplit = new SplitType(paraRef.current, { types: "chars" });
         const textRefSplit = new SplitType(textRef.current, {
             types: "lines,words",
             lineClass: "word-wrapper"
         });
-
 
         textRefSplit.lines.forEach((line) => {
             line.style.overflow = 'hidden';
@@ -26,7 +29,7 @@ const Section2Part1 = () => {
             line.style.color = 'transparent';
         });
 
-        const tl = gsap.timeline()
+        const tl = gsap.timeline();
         tl.from(textRefSplit.lines, {
             yPercent: 100,
             duration: 1,
@@ -34,7 +37,7 @@ const Section2Part1 = () => {
             stagger: 0.1,
             scrollTrigger: {
                 trigger: textWrapperRef.current,
-                start: "-20% bottom",
+                start: "top bottom-=20%",
                 scrub: 1
             },
         });
@@ -45,13 +48,14 @@ const Section2Part1 = () => {
             ease: "power2.out",
             scrollTrigger: {
                 trigger: paraWrapperRef.current,
-                start: "-20% bottom",
+                start: "top bottom-=20%",
                 scrub: 1
             },
         });
     }, []);
+
     return (
-        <div className='md:w-4/5 w-full min-h-screen flex flex-col items-center mx-auto gap-2 lg:gap-12 justify-center py-4 md:py-16 px-4'>
+        <div className="w-full sm:w-11/12 md:w-4/5 lg:w-3/4 xl:w-2/3 min-h-[100dvh] flex flex-col items-center mx-auto gap-4 sm:gap-6 lg:gap-8 xl:gap-10 justify-center py-4 sm:py-8 md:py-12 lg:py-16 px-4 sm:px-6">
             <div ref={textWrapperRef} className="overflow-hidden w-full">
                 <h1
                     ref={textRef}
@@ -62,42 +66,47 @@ const Section2Part1 = () => {
                 </h1>
             </div>
 
-            <div className='flex flex-col w-full items-center justify-center'>
+            <div className="flex flex-col w-full items-center justify-center ">
                 <AnimatedWhiteTextSvg
                     className="text-subheading uppercase font-semibold text-center text-white"
-                    text="Decade-Long  Timelines."
-                    numWordsToOverlay={1} // ← correct
+                    text="Decade-Long Timelines."
+                    numWordsToOverlay={1}
                 />
                 <AnimatedWhiteTextSvg
                     className="text-subheading uppercase font-semibold text-center text-white"
                     text="Millions in Development Costs."
-                    numWordsToOverlay={1} // ← correct
+                    numWordsToOverlay={1}
                 />
                 <AnimatedWhiteTextSvg
                     className="text-subheading uppercase font-semibold text-center text-white"
                     text="Just. One. Trait."
-                    numWordsToOverlay={3} // ← correct
+                    numWordsToOverlay={3}
                 />
             </div>
 
-
             <div
                 ref={paraWrapperRef}
-                className='flex flex-col space-y-5 items-center w-full md:w-[90%] lg:w-[80%] justify-center'
+                className="flex flex-col space-y-5 items-center w-full sm:w-4/5 md:w-[90%] lg:w-[95%] 2xl:w-3/4 justify-center"
             >
-                <p ref={paraRef} className="text-para-sm md:text-para-md lg:text-para-lg xl:text-para-xl  text-center text-white font-normal">
+                <p
+                    ref={paraRef}
+                    className="text-para-sm sm:text-para-sm lg:text-para-md xl:text-para-xl text-center text-white font-normal leading-relaxed w-full"
+                >
                     Currently, developing new plants means guesswork & a painfully slow and
                     prohibitively expensive process. This inefficiency leaves countless crop
                     improvements undiscovered, severely constraining agricultural innovation
                     when we need it most.
                 </p>
-                <p ref={paraRef} className="text-para-sm md:text-para-md lg:text-para-lg xl:text-para-xl text-center text-white">
+                <p
+                    ref={paraRef}
+                    className="text-para-sm sm:text-para-sm lg:text-para-lg xl:text-para-xl text-center text-white font-normal leading-relaxed w-full"
+                >
                     While agriculture remains fundamental to humanity's survival, it's trapped
                     in outdated breeding methods that miss transformative opportunities.
                 </p>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Section2Part1
+export default Section2Part1;

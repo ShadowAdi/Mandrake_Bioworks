@@ -13,11 +13,10 @@ import Section9 from "./components/Section9";
 
 const App = () => {
   return (
-    <main className="relative min-h-screen w-full flex flex-col items-center justify-center overflow-x-hidden  mx-auto gap-0   ">
+    <main className="relative min-h-[100dvh] w-full flex flex-col items-center justify-center overflow-x-hidden  mx-auto gap-8   ">
       <Hero />
       <Section2 />
       <Section3Part1 />
-  
       <Section4 />
       <Section5 />
       <Section6 />

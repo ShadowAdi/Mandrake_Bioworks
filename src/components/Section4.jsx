@@ -1,18 +1,20 @@
-import React, { useRef } from 'react'
-import AnimatedText from './AnimatedText'
-import AnimatedWhiteText from './AnimatedWhiteText'
-import { useGSAP } from '@gsap/react'
-import SplitType from 'split-type'
-import gsap from 'gsap'
+import React, { useRef } from 'react';
+import AnimatedText from './AnimatedText';
+import { useGSAP } from '@gsap/react';
+import SplitType from 'split-type';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Section4 = () => {
-    const paraRef = useRef(null)
-    const paraWrapperRef = useRef(null)
+    const paraRef = useRef(null);
+    const paraWrapperRef = useRef(null);
 
     useGSAP(() => {
-        const paraTextSplit = new SplitType(paraRef.current, { types: "chars" })
+        const paraTextSplit = new SplitType(paraRef.current, { types: "words" });
 
-        const tl = gsap.timeline()
+        const tl = gsap.timeline();
         tl.from(paraTextSplit.chars, {
             opacity: 0.5,
             stagger: 0.01,
@@ -20,34 +22,45 @@ const Section4 = () => {
             ease: "power2.out",
             scrollTrigger: {
                 trigger: paraWrapperRef.current,
-                start: "-10% bottom",
+                start: "top bottom-=10%",
                 scrub: 1
             },
         });
     }, []);
+
     return (
         <section
-            className="flex flex-col items-center  w-full  mx-auto  justify-center  md:justify-around relative  py-0 md:py-4 space-y-0 min-h-screen"
+            className="relative flex flex-col items-center w-full min-h-[100dvh] py-4 px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 justify-center "
         >
-            <div className='w-[90%] md:w-4/5  flex pt-4 md:pt-6 pb-2 md:pb-2 flex-col items-center  mx-auto space-y-5 md:space-y-6  justify-around gap-4'>
-                <AnimatedText className={"text-heading-sm md:text-heading-md lg:text-heading-lg xl:text-heading-xl uppercase font-bold text-center text-white"} text={"How are we Different?"} />
-                <div className='object-contain w-full h-52 md:h-56 lg:h-80 xl:h-96 items-center flex justify-center'>
-                    <img src='/Arrow.png' className='object-contain h-full w-full' />
+            <div className="w-full sm:w-11/12 md:w-4/5 lg:w-3/4 xl:w-2/3 flex flex-col items-center justify-center mx-auto pt-4 sm:pt-6 pb-2 sm:pb-4 space-y-4 sm:space-y-4 md:space-y-2">
+                <AnimatedText
+                    className="text-heading-sm md:text-heading-md lg:text-heading-lg xl:text-heading-xl uppercase font-bold text-center text-white"
+                    text="How are we Different?"
+                />
+                <div className="w-full h-40 sm:h-44 md:h-48 lg:h-52 xl:h-60 flex items-center justify-center">
+                    <img
+                        src="/Arrow.png"
+                        className="h-full w-full max-w-md object-contain"
+                        alt="Arrow Illustration"
+                    />
                 </div>
-                <div ref={paraWrapperRef} className='flex flex-col space-y-5 items-center w-full md:w-[90%] lg:w-[80%] justify-center'>
-                    <p className="
- text-para-sm md:text-para-md lg:text-para-lg xl:text-para-xl
-                                text-center text-white font-normal w-full md:w-[60%]
-                                "
+                <div
+                    ref={paraWrapperRef}
+                    className="flex flex-col space-y-5 items-center w-full justify-center"
+                >
+                    <p
                         ref={paraRef}
+                        className="text-para-sm sm:text-para-md lg:text-para-lg xl:text-para-xl text-center text-white font-normal w-full sm:w-4/5 md:w-3/4 lg:w-2/3 leading-relaxed"
                     >
-                        We're unlocking the full potential of crops transforming agriculture from an extractive industry into one that's regenerative,productive, and sustainable.
+                        We're unlocking the full potential of crops
+                        transforming agriculture from an extractive
+                        industry into one that's regenerative,
+                        productive, and sustainable.
                     </p>
                 </div>
-
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default Section4
+export default Section4;

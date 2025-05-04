@@ -31,13 +31,13 @@ const AnimatedText = ({ text,className,divClassName }) => {
             stagger: 0.1,
             scrollTrigger: {
                 trigger: textWrapperRef.current,
-                start: "top bottom", // when top of wrapper hits 80% of screen
+                start: "top bottom", // when top of wrapper hits 80% of screen,
             },
         });
     }, []);
 
     return (
-        <div ref={textWrapperRef} className={`overflow-hidden sm:w-full w-[96%] mx-auto `}>
+        <div ref={textWrapperRef} className={`overflow-hidden sm:w-[90%] w-[96%] mx-auto  `}>
             <h1 ref={textRef} style={{ fontFamily: "'Afacad Flux', serif" }}
              className={className+" text-center"}>
                 {text}

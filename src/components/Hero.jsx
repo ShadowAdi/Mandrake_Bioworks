@@ -52,7 +52,7 @@ const Hero = () => {
   
   return (
     <section
-      className="flex flex-col items-center pb-5 w-full py-5 mx-auto min-h-screen justify-center relative"
+      className="flex flex-col items-center pb-5 w-full py-5 mx-auto min-h-[100dvh] justify-center relative"
       style={{
         backgroundImage: `url(${bgImage})`,
         backgroundSize: 'cover',

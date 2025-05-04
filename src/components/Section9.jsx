@@ -14,7 +14,7 @@ const Section9 = () => {
   return (
     <section
       ref={sectionRef}
-      className="flex flex-col items-center w-full justify-center relative py-0 md:py-4 min-h-screen"
+      className="flex flex-col items-center  w-full justify-center  relative py-6 md:py-8 min-h-[100dvh]"
     >
       <div className="w-[90%] flex flex-col items-center mx-auto gap-8 md:gap-12 lg:gap-16">
         <div ref={imageWrapperRef} className="w-full max-w-4xl">
@@ -29,7 +29,7 @@ const Section9 = () => {
         <div className="flex flex-col items-center text-center w-[90%] lg:px-16 gap-4 md:gap-6 lg:gap-8">
           <AnimatedWhiteText
             text="Building the Plant Design Factory of the Future"
-            className="text-subheading uppercase font-bold text-white"
+            className="text-heading-sm md:text-heading-md lg:text-heading-lg xl:text-heading-xl  uppercase font-bold text-white"
           />
           <AnimatedWhiteText
             text="Whether you're interested in joining our team, partnering with us, or simply curious to learn more about our work—let's connect."

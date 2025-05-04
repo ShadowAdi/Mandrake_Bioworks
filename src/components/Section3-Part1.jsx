@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 import bgImage from "/Gradient.jpg";
 import AnimatedText from './AnimatedText';
-import AnimatedWhiteText from './AnimatedWhiteText';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -20,13 +19,13 @@ const Section3Part1 = () => {
       img: "/Placeholder.jpg"
     },
     {
-      title: "Precision Bioengineering",
-      desc: "We deploy AI to design crop blueprints with exact traits using a trait-first approach, optimizing for region and soil.",
+      title: "Hyper Speed Precision Breeding",
+      desc: "A state-of-the-art breeding platform blends novel gene editing methods with accelerated plant growth techniques to quickly embed desirable traits directly into top-performing crops",
       img: "/Placeholder.jpg"
     },
     {
-      title: "Automated Field Testing",
-      desc: "Smart sensors and models run real-time simulations in virtual plots to validate seed performance before field trials.",
+      title: "Predictive Crop Performance",
+      desc: "Digital simulations rapidly predict crop performance in diverse environments. We combine genetic, weather, soil, and climate data, to precisely match the ideal crop variety to specific locations—dramatically reducing timelines & costly field trials.",
       img: "/Placeholder.jpg"
     }
   ];
@@ -36,11 +35,12 @@ const Section3Part1 = () => {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: "top top",
+          start: "10% top",
           end: "+=3000",
           pin: true,
           pinSpacing: true,
           scrub: true,
+          // markers: true
         }
       });
 
@@ -66,33 +66,33 @@ const Section3Part1 = () => {
   return (
     <section
       ref={sectionRef}
-      className="flex flex-col items-center w-full mx-auto py-4 px-6 lg:justify-center justify-around relative gap-12  min-h-screen pb-8 "
+      className="relative flex flex-col items-center w-full min-h-[100dvh] py-8 px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 bg-cover  bg-center justify-around bg-no-repeat"
       style={{
         backgroundImage: `url(${bgImage})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: "no-repeat"
       }}
     >
-      <AnimatedText divClassName="w-full sm:w-[80%]" className={"text-subheading uppercase leading-6 font-bold text-center w-full text-white"} text={"At Mandrake, we’re re-inventing crop development from the ground up"} />
-      <div className='flex flex-col  md:flex-row justify-between items-center w-full space-y-10 md:space-y-2 md:w-[90%] lg:w-[70%]'>
+      <AnimatedText
+        divClassName="w-full sm:w-4/5 md:w-3/4 lg:w-2/3 xl:w-1/2 bg-green-700"
+        className="text-heading-sm md:text-heading-md lg:text-heading-lg xl:text-heading-xl uppercase leading-tight font-bold text-center text-white"
+        text="At Mandrake, we’re re-inventing crop development from the ground up"
+      />
+      <div className="flex flex-col flex-[0.5] md:flex-row justify-center items-center w-full mt-6 sm:mt-8 md:mt-10 lg:mt-12  gap-6 md:gap-8 lg:gap-10 xl:gap-12 lg:w-[90%] xl:w-[80%] mx-auto"> 
         <div
           ref={textRef}
-          className='flex flex-col gap-2 items-center md:items-start text-center md:text-left justify-center opacity-100 transition-opacity flex-1 '
+          className="flex flex-1 flex-col gap-4 items-center md:items-start text-center md:text-left justify-center opacity-100 transition-opacity flex-1 max-w-lg px-4 sm:px-0"
         >
-          <h3 className="  text-white font-semibold px-4 md:px-0 text-subheading">
+          <h3 className="text-subheading text-white font-semibold">
             {steps[0].title}
           </h3>
-          <p className="text-sm md:text-para-md lg:text-para-lg xl:text-para-xl text-white  max-w-md px-4 md:px-0 w-full leading-8 ">
+          <p className="text-para-sm sm:text-para-md lg:text-para-lg xl:text-para-xl text-white leading-relaxed">
             {steps[0].desc}
           </p>
         </div>
-
-        <div className='flex items-center justify-center h-40 md:h-56 lg:h-72 mt-0'>
+        <div className="flex items-center justify-end flex-1 h-48 sm:h-56 md:h-64 lg:h-80 xl:h-96 mt-6 md:mt-0 ">
           <img
             ref={imageRef}
-            className='h-full w-full object-contain transition-transform transition-opacity duration-500'
-            alt='AI Genetic Prospecting Visualization'
+            className="h-full w-full max-w-md object-contain transition-transform transition-opacity duration-500"
+            alt="AI Genetic Prospecting Visualization"
             src={steps[0].img}
           />
         </div>
