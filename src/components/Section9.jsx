@@ -22,7 +22,7 @@ const Section9 = () => {
             ref={imageRef}
             src="/Gene.jpg"
             alt="Gene"
-            className="w-full h-auto max-h-[60vh] lg:max-h-[80vh] object-cover rounded-md"
+            className="w-full h-auto max-h-[40vh] lg:max-h-[80vh] object-cover rounded-md"
           />
         </div>
 
