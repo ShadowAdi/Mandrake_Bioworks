@@ -43,7 +43,7 @@ const Hero = () => {
     
     // Animate words instead of characters
     tl.from(paraTextSplit.words, {
-      opacity: 0.5,
+      opacity: 0.2,
       stagger: 0.05,
       duration: 0.7,
       ease: "power2.out",
@@ -69,7 +69,7 @@ const Hero = () => {
               style={{ fontFamily: "'Afacad Flux', serif" }}
               className="text-heading-sm md:text-heading-md lg:text-heading-lg xl:text-heading-xl uppercase font-bold text-center text-white"
             >
-              WHAT IF YOU CAN DESIGN CROPS LIKE YOU DESIGN SOFTWARE
+              WHAT IF YOU CAN DESIGN CROPS LIKE  SOFTWARE?
             </h1>
           </div>
           

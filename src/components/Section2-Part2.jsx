@@ -41,7 +41,7 @@ const Section2Part2 = () => {
                 trigger: textWrapperRef.current,
                 start: "top bottom", // when top of wrapper hits 80% of screen
             },
-        });
+        },"anim");
         tl.from(paraTextSplit.chars, {
             opacity: 0.5,
             stagger: 0.01,
@@ -52,7 +52,7 @@ const Section2Part2 = () => {
                 start: "-10% bottom",
                 scrub: 1
             },
-        });
+        },"anim");
     }, []);
     return (
         <div className='md:w-4/5 w-[90%] flex pb-3   min-h-[100dvh] md:pb-8 flex-col items-center  mx-auto space-y-2 lg:space-y-4  justify-around py-2 sm:py-8 '>

@@ -21,7 +21,7 @@ const Section5 = () => {
                             Plants designed to handle pests, disease, drought, extreme temperatures, and unpredictable weather on their own — ensuring resilience even in tough environments without toxic inputs.
                         </p>
                     </div>
-                    <div className="absolute inset-0 bg-gradient-to-t from-transparent to-black opacity-50"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black to-black opacity-50"></div>
                 </div>
                 <div className="relative w-full sm:w-1/2 h-full sm:h-full">
                     <video
@@ -42,7 +42,7 @@ const Section5 = () => {
                             traditionally overlooked crops.
                         </p>
                     </div>
-                    <div className="absolute inset-0 bg-gradient-to-t from-transparent to-black opacity-50"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black to-black opacity-50"></div>
                 </div>
             </div>
             <div className="relative w-full h-1/3 sm:h-1/2">
@@ -65,7 +65,7 @@ const Section5 = () => {
 
                     </p>
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-transparent to-black opacity-50"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black to-black opacity-50"></div>
             </div>
         </section>
 

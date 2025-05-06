@@ -11,14 +11,21 @@ const Section2Part1 = () => {
     const textWrapperRef = useRef(null);
     const textRef = useRef(null);
     const paraRef = useRef(null);
+    const para2Ref = useRef(null);
     const paraWrapperRef = useRef(null);
+    const sectionRef = useRef(null)
 
     useGSAP(() => {
-        const paraTextSplit = new SplitType(paraRef.current, { types: "chars" });
+        const paraTextSplit = new SplitType(paraRef.current, { types: "words" });
+        const paraTextSplit1 = new SplitType(para2Ref.current, { types: "words" });
         const textRefSplit = new SplitType(textRef.current, {
             types: "lines,words",
             lineClass: "word-wrapper"
         });
+
+        // Set initial styles
+        gsap.set(paraTextSplit.words, { opacity: 0 });
+        gsap.set(paraTextSplit1.words, { opacity: 0 });
 
         textRefSplit.lines.forEach((line) => {
             line.style.overflow = 'hidden';
@@ -29,33 +36,52 @@ const Section2Part1 = () => {
             line.style.color = 'transparent';
         });
 
-        const tl = gsap.timeline();
-        tl.from(textRefSplit.lines, {
+        gsap.from(textRefSplit.lines, {
             yPercent: 100,
             duration: 1,
             ease: "expo.out",
             stagger: 0.1,
             scrollTrigger: {
-                trigger: textWrapperRef.current,
-                start: "top bottom-=20%",
+                trigger: sectionRef.current,
+                start: "5% bottom",
                 scrub: 1
-            },
+            }
         });
-        tl.from(paraTextSplit.chars, {
-            opacity: 0.5,
-            stagger: 0.01,
-            duration: 1,
-            ease: "power2.out",
-            scrollTrigger: {
-                trigger: paraWrapperRef.current,
-                start: "top bottom-=20%",
-                scrub: 1
-            },
+
+        // Animate first paragraph
+        ScrollTrigger.create({
+            trigger: paraWrapperRef.current,
+            start: "10% bottom",
+            scrub: true,
+            onEnter: () => {
+                gsap.to(paraTextSplit.words, {
+                    opacity: 1,
+                    duration: 1,
+                    stagger: 0.01,
+                    ease: "power2.out"
+                });
+            }
+        });
+
+        // Animate second paragraph
+        ScrollTrigger.create({
+            trigger: para2Ref.current,
+            start: "top bottom",
+            scrub: true,
+            onEnter: () => {
+                gsap.to(paraTextSplit1.words, {
+                    opacity: 1,
+                    duration: 1.5,
+                    stagger: 0.01,
+                    ease: "power2.out"
+                });
+            }
         });
     }, []);
 
+
     return (
-        <div className="w-full sm:w-11/12 md:w-4/5 lg:w-3/4 xl:w-2/3 min-h-[100dvh] flex flex-col items-center mx-auto gap-4 sm:gap-6 lg:gap-8 xl:gap-10 justify-center py-4 sm:py-8 md:py-12 lg:py-16 px-4 sm:px-6">
+        <div ref={sectionRef} className="w-full sm:w-11/12 md:w-4/5 lg:w-3/4 xl:w-2/3 min-h-[100dvh] flex flex-col items-center mx-auto gap-4 sm:gap-6 lg:gap-8 xl:gap-10 justify-center py-4 sm:py-8 md:py-12 lg:py-16 px-4 sm:px-6">
             <div ref={textWrapperRef} className="overflow-hidden w-full">
                 <h1
                     ref={textRef}
@@ -98,7 +124,7 @@ const Section2Part1 = () => {
                     when we need it most.
                 </p>
                 <p
-                    ref={paraRef}
+                    ref={para2Ref}
                     className="text-para-sm sm:text-para-sm lg:text-para-lg xl:text-para-xl text-center text-white font-normal leading-relaxed w-full"
                 >
                     While agriculture remains fundamental to humanity's survival, it's trapped

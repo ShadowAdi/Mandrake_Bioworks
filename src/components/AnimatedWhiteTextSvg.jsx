@@ -18,6 +18,8 @@ const AnimatedWhiteTextSvg = ({
         });
 
         const wordsToAnimate = [];
+        const overlays = [];
+
 
         split.lines.forEach((line) => {
             const allWords = Array.from(line.querySelectorAll('.word'));
@@ -44,20 +46,41 @@ const AnimatedWhiteTextSvg = ({
             }
 
             const overlay = document.createElement("div");
-            overlay.className = "absolute left-0 right-0 top-1/2 h-[calc(50%+10px)] bg-gradient-to-r from-[#e0f4eb] via-[#b8e8e5] to-[#90dadc] opacity-60 rounded-sm pointer-events-none";
+            overlay.className =
+                "absolute left-0 top-1/2 h-[calc(50%+10px)] bg-gradient-to-r from-[#e0f4eb] via-[#b8e8e5] to-[#90dadc] opacity-60 rounded-sm pointer-events-none";
+            overlay.style.transformOrigin = "left";
+            overlay.style.transform = "scaleX(0)";
+            overlay.style.width = "100%";
             wrapper.appendChild(overlay);
+            overlays.push(overlay);
         });
 
-        gsap.from(wordsToAnimate, {
-            yPercent: 100,
-            duration: 1,
-            ease: "expo.out",
-            stagger: 0.1,
+        const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: textWrapperRef.current,
                 start: "top bottom",
             },
         });
+
+        // 1. Animate text from below
+        tl.from(wordsToAnimate, {
+            yPercent: 100,
+            duration: 0.8,
+            ease: "expo.out",
+            stagger: 0.1,
+        });
+
+        // 2. Animate overlay scaleX
+        tl.to(
+            overlays,
+            {
+                scaleX: 1,
+                duration: 0.6,
+                ease: "power2.out",
+                stagger: 0.1,
+            },
+            ">-0.1" // Start a bit before text ends
+        );
     }, [text, numWordsToOverlay]);
 
     return (
@@ -65,7 +88,7 @@ const AnimatedWhiteTextSvg = ({
             <h1
                 ref={textRef}
                 style={{ fontFamily: "'Afacad Flux', serif" }}
-                className={`${className} whitespace-pre-wrap`} 
+                className={`${className} whitespace-pre-wrap`}
             >
                 {text}
             </h1>
@@ -74,4 +97,4 @@ const AnimatedWhiteTextSvg = ({
 };
 
 
-export  default AnimatedWhiteTextSvg
+export default AnimatedWhiteTextSvg
