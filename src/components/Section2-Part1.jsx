@@ -86,7 +86,7 @@ const Section2Part1 = () => {
                 <h1
                     ref={textRef}
                     style={{ fontFamily: "'Afacad Flux', serif" }}
-                    className="text-2xl md:text-4xl 2xl:text-[132px] uppercase font-bold text-center text-white lg:text-5xl xl:text-6xl  xl:leading-snug"
+                    className="text-2xl md:text-4xl 2xl:text-[132px] uppercase font-bold text-center text-white lg:text-5xl xl:text-6xl   xl:leading-snug"
                 >
                     Agriculture Is Falling Behind
                 </h1>
@@ -94,17 +94,17 @@ const Section2Part1 = () => {
 
             <div className="flex flex-col w-full items-center justify-center ">
                 <AnimatedWhiteTextSvg
-                    className="text-base md:text-4xl  uppercase font-semibold text-center text-white lg:text-4xl xl:text-4xl 2xl:text-8xl"
+                    className="text-base md:text-3xl  uppercase font-semibold text-center text-white lg:text-3xl xl:text-4xl 2xl:text-8xl"
                     text="Decade-Long Timelines."
                     numWordsToOverlay={1}
                 />
                 <AnimatedWhiteTextSvg
-                    className="text-base  md:text-3xl uppercase font-semibold text-center text-white  lg:text-4xl xl:text-4xl 2xl:text-8xl"
+                    className="text-base  md:text-3xl uppercase font-semibold text-center text-white  lg:text-3xl xl:text-4xl 2xl:text-8xl"
                     text="Millions in Development Costs."
                     numWordsToOverlay={1}
                 />
                 <AnimatedWhiteTextSvg
-                    className="text-base  md:text-3xl uppercase font-semibold text-center text-white  lg:text-4xl xl:text-4xl 2xl:text-8xl"
+                    className="text-base  md:text-3xl uppercase font-semibold text-center text-white  lg:text-3xl xl:text-4xl 2xl:text-8xl"
                     text="Just. One. Trait."
                     numWordsToOverlay={3}
                 />
@@ -116,7 +116,7 @@ const Section2Part1 = () => {
             >
                 <p
                     ref={paraRef}
-                    className="text-xs sm:text-sm md:text-lg lg:text-2xl  text-center text-white font-normal leading-relaxed w-full 2xl:text-4xl 2xl:leading-[56px]"
+                    className="text-xs sm:text-sm md:text-lg lg:text-xl  text-center text-white font-normal leading-relaxed w-full 2xl:text-4xl 2xl:leading-[56px]"
                 >
                     Currently, developing new plants means guesswork & a painfully slow and
                     prohibitively expensive process. This inefficiency leaves countless crop
@@ -125,7 +125,7 @@ const Section2Part1 = () => {
                 </p>
                 <p
                     ref={para2Ref}
-                    className="text-xs sm:text-sm md:text-lg lg:text-2xl  text-center text-white font-normal leading-relaxed w-full 2xl:leading-[56px] 2xl:text-5xl "
+                    className="text-xs sm:text-sm md:text-lg lg:text-xl  text-center text-white font-normal leading-relaxed w-full 2xl:leading-[56px] 2xl:text-5xl "
                 >
                     While agriculture remains fundamental to humanity's survival, it's trapped
                     in outdated breeding methods that miss transformative opportunities.
