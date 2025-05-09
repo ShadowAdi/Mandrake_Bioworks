@@ -13,6 +13,7 @@ const Section9 = () => {
   const popupRef = useRef(null);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
+
   // GSAP animation for popup
   useGSAP(() => {
     if (isPopupOpen) {
@@ -65,6 +66,8 @@ const Section9 = () => {
             />
             <button
               onClick={handlePopupToggle}
+                            style={{ fontFamily: "'Poppins',sans-serif" }}
+
               className="px-6 md:px-10 py-2 md:py-3 mt-4 md:mt-6 rounded-full bg-[#C4E9A2] hover:opacity-90"
             >
               <span className="text-sm md:text-subheading lg:text-xl text-black font-semibold">
@@ -81,10 +84,15 @@ const Section9 = () => {
         className={`fixed top-0 left-0 w-full h-screen bg-[#282734] flex items-start justify-center 2xl:items-center py-6 z-[9999]`}
         style={{ display: isPopupOpen ? 'flex' : 'none' }} // Initial display state
       >
-        <div className="w-[94%] flex flex-col gap-4 mx-auto text-start text-white">
+        <form
+        action="https://formspree.io/f/xanepgjj"
+          method="POST"
+          className="w-[94%] flex flex-col gap-4 mx-auto text-start text-white"
+        >
           <div className="w-full flex items-center justify-between">
             <h2 className="text-subheading 2xl:text-5xl font-bold">Contact Us</h2>
             <button
+              type="button"
               className="h-6 p-2 w-6 2xl:h-14 2xl:w-14 bg-[#807F87] rounded-full flex items-center justify-center text-[#4E4D58] 2xl:text-5xl text-2xl"
               onClick={handlePopupToggle}
             >
@@ -97,47 +105,61 @@ const Section9 = () => {
               <label className="text-white text-lg 2xl:text-3xl">Who Are you?</label>
               <input
                 type="text"
+                name="name"
                 placeholder="Your Name"
-                className="px-4 py-1 2xl:py-3 w-full outline-0 border-0 text-para-sm sm:text-para-sm xl:text-para-lg 2xl:text-2xl rounded-md bg-[#73727B] text-[#A5A5A9]"
+                required
+                className="px-4 py-1 2xl:py-3 w-full outline-0 border-0 text-para-sm sm:text-para-sm xl:text-para-lg 2xl:text-2xl rounded-md bg-[#73727B] placeholder:text-[#A5A5A9] text-white"
               />
             </div>
+
             <div className="flex flex-col w-full items-start gap-2">
               <label className="text-white text-lg 2xl:text-3xl">What do you work on?</label>
               <textarea
+                name="work"
                 placeholder="Tell us more about what you do-"
                 rows={2}
-                className="px-4  py-1 2xl:py-3  w-full outline-0 border-0 text-para-sm sm:text-para-sm xl:text-para-lg rounded-md bg-[#73727B] text-[#A5A5A9]"
+                required
+                className="px-4 py-1 2xl:py-3 w-full outline-0 border-0 text-para-sm xl:text-para-lg rounded-md bg-[#73727B] placeholder:text-[#A5A5A9] text-white"
               ></textarea>
             </div>
+
             <div className="flex flex-col w-full items-start gap-2">
               <label className="text-white text-lg 2xl:text-3xl">How can we partner?</label>
               <textarea
+                name="partner"
                 placeholder="What got you excited about us?"
                 rows={2}
-                className="px-4  py-1 2xl:py-3  w-full outline-0 border-0 text-para-sm sm:text-para-sm xl:text-para-lg rounded-md bg-[#73727B] text-[#A5A5A9]"
+                required
+                className="px-4 py-1 2xl:py-3 w-full outline-0 border-0 text-para-sm xl:text-para-lg rounded-md bg-[#73727B] placeholder:text-[#A5A5A9] text-white"
               />
             </div>
+
             <div className="flex flex-col w-full items-start gap-2">
               <label className="text-white text-lg 2xl:text-3xl">Drop your contact!</label>
               <input
                 type="text"
-                placeholder="Email or LinkedIn - wherever you want us to reach you"
-                className="px-4  py-1 2xl:py-3  w-full outline-0 border-0 text-para-sm sm:text-para-sm xl:text-para-lg rounded-md bg-[#73727B] text-[#A5A5A9]"
+                name="contact"
+                placeholder="Email or LinkedIn"
+                required
+                className="px-4 py-1 2xl:py-3 w-full outline-0 border-0 text-para-sm xl:text-para-lg rounded-md bg-[#73727B] placeholder:text-[#A5A5A9] text-white"
               />
             </div>
+
             <button
-              onClick={handlePopupToggle}
-              style={{fontFamily:"'Poppins',sans-serif"}}
+              type="submit"
+              style={{ fontFamily: "'Poppins',sans-serif" }}
               className="px-8 w-max py-2 md:py-3 rounded-full bg-[#C4E9A2] hover:opacity-90 block"
             >
-              <span className="text-black font-semibold text-base 2xl:text-subheading">Get In Touch</span>
+              <span className="text-black font-semibold text-base 2xl:text-subheading">Send Message</span>
             </button>
+
             <p className="text-white text-lg 2xl:text-3xl">
               You can also reach us directly at{' '}
               <span className="underline text-[#A3ABB4]">hello@mandrakebio.com</span>
             </p>
           </div>
-        </div>
+        </form>
+
       </div>
     </>
   );
