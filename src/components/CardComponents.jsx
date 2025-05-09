@@ -5,7 +5,7 @@ export const CardComponent = ({ category, title, description, cardNumber }) => {
   const colorMap = {
     1: { start: '#76B1AA', end: '#76B1AA00' }, // full transparent
     2: { start: '#507562', end: '#5075621A' }, // 10% opacity
-    3: { start: '#183D5D', end: '#183D5D1A' }, // ~5% opacity
+    3: { start: '#183D5D', end: '#183D5D00' }, // ~5% opacity
   };
 
   const { start, end } = colorMap[cardNumber] || colorMap[1];
