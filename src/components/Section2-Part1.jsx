@@ -81,12 +81,12 @@ const Section2Part1 = () => {
 
 
     return (
-        <div ref={sectionRef} className="w-full sm:w-11/12 md:w-4/5 lg:w-3/4 xl:w-2/3 min-h-[100dvh] flex flex-col items-center mx-auto gap-4 sm:gap-6 lg:gap-8 xl:gap-10 justify-center py-4 sm:py-8 md:py-12 lg:py-16 px-4 sm:px-6">
+        <div ref={sectionRef} className="w-full sm:w-11/12 md:w-4/5 lg:w-3/4 xl:w-2/3 min-h-[100dvh] flex flex-col py-2 items-center mx-auto gap-4 sm:gap-6 lg:gap-8  justify-around   px-4 sm:px-6 ">
             <div ref={textWrapperRef} className="overflow-hidden w-full">
                 <h1
                     ref={textRef}
                     style={{ fontFamily: "'Afacad Flux', serif" }}
-                    className="text-heading-sm md:text-heading-md lg:text-heading-lg xl:text-heading-xl uppercase font-bold text-center text-white"
+                    className="text-2xl md:text-4xl 2xl:text-[132px] uppercase font-bold text-center text-white lg:text-5xl xl:text-6xl  xl:leading-snug"
                 >
                     Agriculture Is Falling Behind
                 </h1>
@@ -94,17 +94,17 @@ const Section2Part1 = () => {
 
             <div className="flex flex-col w-full items-center justify-center ">
                 <AnimatedWhiteTextSvg
-                    className="text-subheading uppercase font-semibold text-center text-white"
+                    className="text-base md:text-4xl  uppercase font-semibold text-center text-white lg:text-4xl xl:text-4xl 2xl:text-8xl"
                     text="Decade-Long Timelines."
                     numWordsToOverlay={1}
                 />
                 <AnimatedWhiteTextSvg
-                    className="text-subheading uppercase font-semibold text-center text-white"
+                    className="text-base  md:text-3xl uppercase font-semibold text-center text-white  lg:text-4xl xl:text-4xl 2xl:text-8xl"
                     text="Millions in Development Costs."
                     numWordsToOverlay={1}
                 />
                 <AnimatedWhiteTextSvg
-                    className="text-subheading uppercase font-semibold text-center text-white"
+                    className="text-base  md:text-3xl uppercase font-semibold text-center text-white  lg:text-4xl xl:text-4xl 2xl:text-8xl"
                     text="Just. One. Trait."
                     numWordsToOverlay={3}
                 />
@@ -112,11 +112,11 @@ const Section2Part1 = () => {
 
             <div
                 ref={paraWrapperRef}
-                className="flex flex-col space-y-5 items-center w-full sm:w-4/5 md:w-[90%] lg:w-[95%] 2xl:w-3/4 justify-center"
+                className="flex flex-col space-y-3 2xl:space-y-3 items-center w-full sm:w-4/5 md:w-[90%] lg:w-[95%] 2xl:w-[85] justify-around"
             >
                 <p
                     ref={paraRef}
-                    className="text-para-sm sm:text-para-sm lg:text-para-md xl:text-para-xl text-center text-white font-normal leading-relaxed w-full"
+                    className="text-xs sm:text-sm md:text-lg lg:text-2xl  text-center text-white font-normal leading-relaxed w-full 2xl:text-4xl 2xl:leading-[56px]"
                 >
                     Currently, developing new plants means guesswork & a painfully slow and
                     prohibitively expensive process. This inefficiency leaves countless crop
@@ -125,7 +125,7 @@ const Section2Part1 = () => {
                 </p>
                 <p
                     ref={para2Ref}
-                    className="text-para-sm sm:text-para-sm lg:text-para-lg xl:text-para-xl text-center text-white font-normal leading-relaxed w-full"
+                    className="text-xs sm:text-sm md:text-lg lg:text-2xl  text-center text-white font-normal leading-relaxed w-full 2xl:leading-[56px] 2xl:text-5xl "
                 >
                     While agriculture remains fundamental to humanity's survival, it's trapped
                     in outdated breeding methods that miss transformative opportunities.

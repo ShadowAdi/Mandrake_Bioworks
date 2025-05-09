@@ -13,7 +13,7 @@ import Section9 from "./components/Section9";
 
 const App = () => {
   return (
-    <main className="relative min-h-[100dvh] w-full flex flex-col items-center justify-center overflow-x-hidden  mx-auto gap-8   ">
+    <main className="relative min-h-[100dvh] w-full flex flex-col items-center justify-center overflow-x-hidden  mx-auto   ">
       <Hero />
       <Section2 />
       <Section3Part1 />

@@ -21,12 +21,12 @@ const Section3Part1 = () => {
     {
       title: "Hyper Speed Precision Breeding",
       desc: "A state-of-the-art breeding platform blends novel gene editing methods with accelerated plant growth techniques to quickly embed desirable traits directly into top-performing crops",
-      img: "/Scientist.png"
+      img: "/Placeholder.jpg"
     },
     {
       title: "Predictive Crop Performance",
       desc: "Digital simulations rapidly predict crop performance in diverse environments. We combine genetic, weather, soil, and climate data, to precisely match the ideal crop variety to specific locations—dramatically reducing timelines & costly field trials.",
-      img: "/Gene.jpg"
+      img: "/Placeholder.jpg"
     }
   ];
 
@@ -36,7 +36,7 @@ const Section3Part1 = () => {
         scrollTrigger: {
           trigger: sectionRef.current,
           start: "top top",
-          end: "+=6000",
+          end: "+=3000",
           pin: true,
           pinSpacing: true,
           scrub: true,
@@ -45,30 +45,18 @@ const Section3Part1 = () => {
 
       steps.forEach((step, i) => {
         if (i === 0) return;
-
-        const heading = textRef.current.querySelector(".inner-heading");
-        const para = textRef.current.querySelector(".inner-para");
         const img = imageRef.current;
+        const txt = textRef.current;
 
-        // Animate current out
-        tl.to(heading, { yPercent: -100, duration: 1, ease: "power2.in" }, i * 2)
-          .to(para, { yPercent: -100, duration: 1, ease: "power2.in" }, `<0.2`)
-          .to(img, { opacity: 0, y: -50, duration: 1, ease: "power2.in" }, `<0.2`)
-
-          // Content update
+        tl.to(txt, { autoAlpha: 0, duration: 0.3 }, i)
+          .to(img, { autoAlpha: 0, scale: 0.8, duration: 0.3 }, `<`)
           .add(() => {
-            heading.textContent = steps[i].title;
-            para.textContent = steps[i].desc;
+            txt.querySelector("h3").textContent = steps[i].title;
+            txt.querySelector("p").textContent = steps[i].desc;
             img.src = steps[i].img;
-
-            gsap.set([heading, para], { yPercent: 100 });
-            gsap.set(img, { opacity: 0, y: 50 });
           })
-
-          // Animate new content in
-          .to(heading, { yPercent: 0, duration: 1.2, ease: "power2.out" })
-          .to(para, { yPercent: 0, duration: 1.2, ease: "power2.out" }, `<0.2`)
-          .to(img, { opacity: 1, y: 0, duration: 1.2, ease: "power2.out" }, `<0.2`);
+          .to(txt, { autoAlpha: 1, duration:0.3 })
+          .to(img, { autoAlpha: 1, scale: 1, duration: 0.3 }, `<`);
       });
     }, sectionRef);
 
@@ -93,18 +81,15 @@ const Section3Part1 = () => {
           ref={textRef}
           className="flex flex-1 flex-col gap-4 items-center md:items-start text-center md:text-left justify-center opacity-100 transition-opacity flex-1 max-w-lg px-4 sm:px-0"
         >
-          <div className='overflow-hidden'>
-            <h3 className="inner-heading text-subheading text-white font-semibold">
-              {steps[0].title}
-            </h3>
-          </div>
-          <div className="overflow-hidden">
-            <p className="inner-para text-para-sm sm:text-para-md lg:text-para-lg xl:text-para-xl text-white leading-relaxed">
-              {steps[0].desc}
-            </p>
-          </div>
+          <h3 className="text-subheading text-white font-semibold">
+            {steps[0].title}
+          </h3>
+          <p className="text-para-sm sm:text-para-md lg:text-para-lg xl:text-para-xl text-white leading-relaxed">
+            {steps[0].desc}
+          </p>
         </div>
-        <div className="flex items-center justify-end flex-1 h-48 sm:h-56 md:h-64 lg:h-80 xl:h-96 mt-6 md:mt-0 overflow-hidden">
+        <div className="flex items-center justify-end flex-1 h-48 sm:h-56 md:h-64 lg:h-80 xl:h-96 mt-6 md:mt-0 ">
+
           <img
             ref={imageRef}
             className="h-full w-full max-w-md object-contain transition-transform transition-opacity duration-500"

@@ -30,17 +30,17 @@ const Section4 = () => {
 
     return (
         <section
-            className="relative flex flex-col items-center w-full min-h-[100dvh] py-4 px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 justify-center "
+            className="relative flex flex-col items-center w-full min-h-[100dvh]  px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 justify-center "
         >
-            <div className="w-full sm:w-11/12 md:w-4/5 lg:w-3/4 xl:w-2/3 flex flex-col items-center justify-center mx-auto pt-4 sm:pt-6 pb-2 sm:pb-4 space-y-4 sm:space-y-4 md:space-y-2">
+            <div className="w-full sm:w-11/12 md:w-4/5 lg:w-3/4 xl:w-2/3 flex flex-col items-center justify-around flex-1 mx-auto h-full  ">
                 <AnimatedText
-                    className="text-heading-sm md:text-heading-md lg:text-heading-lg xl:text-heading-xl uppercase font-bold text-center text-white"
+                     className="text-3xl md:text-4xl lg:text-6xl 2xl:text-[132px] uppercase font-bold text-center text-white   xl:leading-snug"
                     text="How are we Different?"
                 />
-                <div className="w-full h-40 sm:h-44 md:h-48 lg:h-52 xl:h-60 flex items-center justify-center">
+                <div className="w-full h-72 sm:h-72 md:h-96  2xl:h-[1200px]  flex items-center justify-center">
                     <img
                         src="/Arrow.png"
-                        className="h-full w-full max-w-md object-contain"
+                        className="h-full w-full  object-contain"
                         alt="Arrow Illustration"
                     />
                 </div>
@@ -50,7 +50,7 @@ const Section4 = () => {
                 >
                     <p
                         ref={paraRef}
-                        className="text-para-sm sm:text-para-md lg:text-para-lg xl:text-para-xl text-center text-white font-normal w-full sm:w-4/5 md:w-3/4 lg:w-2/3 leading-relaxed"
+                        className=" text-sm sm:text-sm md:text-lg lg:text-2xl  text-center text-white font-normal leading-relaxed w-full 2xl:text-4xl 2xl:leading-[56px]"
                     >
                         We're unlocking the full potential of crops
                         transforming agriculture from an extractive

@@ -8,7 +8,7 @@ const Section6 = () => {
         >
             <div className='w-[90%] max-w-9xl flex pt-4 md:pt-14 pb-8 flex-col items-center mx-auto space-y-12 justify-around bg'>
                 <AnimatedText
-                    className="text-heading-sm md:text-heading-md lg:text-heading-lg xl:text-heading-xl uppercase font-extrabold text-center text-white"
+                    className="text-heading-sm md:text-heading-md lg:text-heading-lg xl:text-heading-xl  2xl:text-[132px]  uppercase font-extrabold text-center text-white"
                     text="Let's unlock Nature's Potential"
                 />
 
@@ -23,6 +23,7 @@ const Section6 = () => {
                                     your competitive advantage and
                                     slash time-to-market with our
                                     breakthrough platform. "
+                        cardNumber={1}
                     />
                     <CardComponent
                         title="crops perfectly tailored to needs"
@@ -33,6 +34,7 @@ Potatoes engineered for flawless
 processing. We transform agricultural
 possibilities into commercial realities that
 drive your bottom line.  "
+                        cardNumber={2}
                     />
                     <CardComponent
                         title="Hack the code of nature itself"
@@ -44,6 +46,7 @@ of science, driving discoveries
 that rewrite the rules of what's
 possible, and creating abundant,
 sustainable food for billions."
+                        cardNumber={3}
                     />
                 </div>
             </div>

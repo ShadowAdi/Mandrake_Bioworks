@@ -4,6 +4,7 @@ import SplitType from 'split-type';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
+import AnimatedWhiteText from './AnimatedWhiteText';
 gsap.registerPlugin(ScrollTrigger);
 
 
@@ -55,25 +56,29 @@ const Section2Part2 = () => {
         },"anim");
     }, []);
     return (
-        <div className='md:w-4/5 w-[90%] flex pb-3   min-h-[100dvh] md:pb-8 flex-col items-center  mx-auto space-y-2 lg:space-y-4  justify-around py-2 sm:py-8 '>
-            <div ref={textWrapperRef} className="overflow-hidden w-full ">
-                <h1 ref={textRef} style={{ fontFamily: "'Afacad Flux', serif" }} className="text-heading-sm md:text-heading-md lg:text-heading-lg xl:text-heading-xl
-                            uppercase font-bold text-center   text-white  ">
+        <div className='sm:w-full  w-[90%] flex    h-screen  flex-col items-center  mx-auto  justify-around py-2  '>
+            <div ref={textWrapperRef} className="overflow-hidden  w-full ">
+                <h1 ref={textRef} style={{ fontFamily: "'Afacad Flux', serif" }}
+                 className="text-2xl md:text-3xl 2xl:text-[132px] uppercase font-bold text-center text-white lg:text-4xl  xl:leading-snug ">
                     What If Agriculture Stole a Page from Pharma's Playbook?
                 </h1>
             </div>
-            <div className=' h-[40vh] md:h-[60vh] w-full'>
+            <div className=' h-[40vh]  w-full'>
                 <img src='/Scientist.png' className='object-contain h-full w-full' />
             </div>
-            <div ref={paraWrapperRef} className='flex flex-col space-y-9 items-center w-full md:w-[90%] justify-center'>
+            <div ref={paraWrapperRef} className='flex flex-col  items-center w-full md:w-[90%] justify-center'>
                 <p className="
-                            text-center text-white font-normal text-para-sm md:text-para-md lg:text-para-lg xl:text-para-xl
+                         text-[10px] sm:text-sm md:text-lg lg:text-2xl  text-center text-white font-normal leading-relaxed w-full 2xl:text-4xl 2xl:leading-[56px]
                             "
                     ref={paraRef}
                 >
                     Industries like pharmaceuticals and materials science have revolutionized their  innovation cycles by integrating AI-driven discovery with automated lab workflows. The result? Dramatically reduced costs, accelerated timelines, and entirely new realms of possibility.
                 </p>
             </div>
+             <AnimatedWhiteText
+                text="We think it's time Agriculture catches up."
+                className="text-base md:text-3xl  uppercase font-semibold text-center text-white lg:text-5xl xl:text-4xl 2xl:text-8xl"
+            />
         </div>
     )
 }
