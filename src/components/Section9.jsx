@@ -127,6 +127,7 @@ const Section9 = () => {
             </div>
             <button
               onClick={handlePopupToggle}
+              style={{fontFamily:"'Poppins',sans-serif"}}
               className="px-8 w-max py-2 md:py-3 rounded-full bg-[#C4E9A2] hover:opacity-90 block"
             >
               <span className="text-black font-semibold text-base 2xl:text-subheading">Get In Touch</span>
