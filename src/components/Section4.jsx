@@ -37,7 +37,7 @@ const Section4 = () => {
                      className="text-3xl md:text-4xl lg:text-5xl 2xl:text-[132px] uppercase font-bold text-center text-white   xl:leading-snug"
                     text="How are we Different?"
                 />
-                <div className="w-full h-72 sm:h-72 md:h-92  2xl:h-[1200px]  flex items-center justify-center">
+                <div className="w-full h-72 sm:h-60 md:h-60  2xl:h-[1200px]  flex items-center justify-center">
                     <img
                         src="/Arrow.png"
                         className="h-full w-full  object-contain"
