@@ -13,11 +13,11 @@ const Section5 = () => {
                         muted
                         src="https://res.cloudinary.com/shadowaditya/video/upload/v1746365188/lznhg1airqcreeq1mos6.mp4"
                     />
-                    <div className="absolute sm:translate-x-0  bottom-10  md:w-full w-[80%]  z-40 right-1/2 translate-x-1/2  sm:right-4 text-white rounded space-y-2 max-w-xs lg:max-w-sm 2xl:max-w-2xl 2xl:right-10">
-                        <span className="text-xs sm:text-sm lg:text-lg xl:text-2xl 2xl:text-4xl   text-white font-semibold text-left">
+                    <div className="absolute sm:translate-x-0  bottom-10  md:w-full w-[80%]  z-40 right-1/2 translate-x-1/2  sm:right-4 text-white rounded space-y-2 max-w-xs lg:max-w-sm  2xl:right-10 2xl:max-w-4xl ">
+                        <span className="text-xs sm:text-sm lg:text-lg xl:text-2xl    text-white font-semibold text-left 2xl:text-8xl ">
                             Resilient from the ground-up
                         </span>
-                        <p  className="text-[10px] sm:text-xs lg:text-base xl:text-lg 2xl:text-2xl  opacity-90 text-left">
+                        <p  className="text-[10px] sm:text-xs lg:text-base xl:text-lg 2xl:text-4xl  opacity-90 text-left">
                             Plants designed to handle pests, disease, drought, extreme temperatures, and unpredictable weather on their own — ensuring resilience even in tough environments without toxic inputs.
                         </p>
                     </div>
@@ -31,11 +31,11 @@ const Section5 = () => {
                         muted
                         src="https://res.cloudinary.com/shadowaditya/video/upload/v1746365188/lznhg1airqcreeq1mos6.mp4"
                     />
-                    <div className="absolute  md:w-full w-[80%]   bottom-10 left-1/2  -translate-x-1/2 sm:translate-x-0 sm:left-4  z-40  text-white rounded space-y-2 max-w-xs lg:max-w-sm 2xl:left-10  2xl:max-w-2xl">
-                        <span className="text-xs sm:text-sm lg:text-lg  xl:text-2xl  2xl:text-4xl     text-white font-semibold text-left">
+                    <div className="absolute  md:w-full w-[80%]   bottom-10 left-1/2  -translate-x-1/2 sm:translate-x-0 sm:left-4  z-40  text-white rounded space-y-2 max-w-xs lg:max-w-sm 2xl:left-10  2xl:max-w-4xl  ">
+                        <span className="text-xs sm:text-sm lg:text-lg  xl:text-2xl  2xl:text-8xl     text-white font-semibold text-left">
                             Master of All Traits
                         </span>
-                        <p className="text-[10px] sm:text-xs lg:text-base xl:text-lg 2xl:text-2xl      opacity-90 text-left">
+                        <p className="text-[10px] sm:text-xs lg:text-base xl:text-lg 2xl:text-4xl      opacity-90 text-left">
                             Efficiently combining multiple beneficial traits—such
                             as enhanced nutrition, better yields, and longer
                             shelf-life—allowing effective innovation even in
@@ -53,11 +53,11 @@ const Section5 = () => {
                     muted
                     src="https://res.cloudinary.com/shadowaditya/video/upload/v1746365179/dvg1v5n85ghetsjywm3a.mp4"
                 />
-                <div className="absolute bottom-10 z-40 md:w-full w-[80%] -translate-x-1/2 left-1/2 mx-auto md:left-1/4 text-white rounded space-y-2 max-w-xs lg:max-w-sm 2xl:max-w-2xl">
-                    <span className="text-xs sm:text-sm  lg:text-lg  xl:text-2xl 2xl:text-4xl    text-white font-semibold text-left">
+                <div className="absolute bottom-10 z-40 md:w-full w-[80%] -translate-x-1/2 left-1/2 mx-auto md:left-1/4 text-white rounded space-y-2 2xl:max-w-4xl max-w-xs lg:max-w-sm ">
+                    <span className="text-xs sm:text-sm  lg:text-lg  xl:text-2xl 2xl:text-8xl    text-white font-semibold text-left ">
                         Breaking Barriers in Agriculture
                     </span>
-                    <p className="text-[10px] sm:text-xs  lg:text-base xl:text-lg  2xl:text-2xl    opacity-90 text-left">
+                    <p className="text-[10px] sm:text-xs  lg:text-base xl:text-lg  2xl:text-4xl    opacity-90 text-left">
                         We make advanced crop development accessible
                         to everyone. By drastically reducing barriers, farmers
                         worldwide can benefit from better, more productive,

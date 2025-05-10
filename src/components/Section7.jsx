@@ -3,7 +3,7 @@ import AnimatedText from './AnimatedText'
 
 const TeamMember = ({ name, position, username, imageUrl }) => {
   return (
-    <div className='flex flex-col items-center justify-center gap-y-3 md:gap-y-4'>
+    <div className='flex flex-col items-center justify-center gap-y-3 md:gap-y-3'>
       <img 
         src={imageUrl || 'https://avatar.iran.liara.run/public'} 
         className='h-28 w-28 sm:h-36 sm:w-36 md:h-40 md:w-40 lg:h-56 lg:w-56 xl:h-64 xl:w-64 2xl:h-80 2xl:w-80 object-cover rounded-full transition-all duration-300' 
@@ -58,8 +58,8 @@ const Section7 = () => {
     <section
       className="flex flex-col items-center w-full mx-auto justify-center relative py-8 md:py-12 lg:py-16 min-h-[100dvh] "
     >
-      <div className='w-[95%] md:w-4/5 max-w-7xl flex flex-col h-full items-center mx-auto space-y-10 md:space-y-16 lg:space-y-20 justify-around'>
-        <div className='flex flex-col w-[90%] md:w-[70%] lg:w-[60%] space-y-4 mx-auto items-center justify-center'>
+      <div className='w-[95%] md:w-4/5 max-w-7xl flex flex-col h-full items-center mx-auto space-y-10 md:space-y-14 lg:space-y-16 justify-around'>
+        <div className='flex flex-col w-[90%] md:w-[70%] lg:w-[60%] space-y-0 mx-auto items-center justify-center'>
           <AnimatedText 
             className="text-heading-sm md:text-heading-md lg:text-heading-lg xl:text-heading-xl uppercase font-bold text-center text-white" 
             text="OUR TEAM" 

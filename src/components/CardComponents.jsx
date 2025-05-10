@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export const CardComponent = ({ category, title, description, cardNumber }) => {
+export const CardComponent = ({ category, title, description, cardNumber, togglePopup }) => {
   const [isHovered, setIsHovered] = useState(false);
   const colorMap = {
     1: { start: '#76B1AA', end: '#76B1AA00' }, // full transparent
@@ -37,13 +37,13 @@ export const CardComponent = ({ category, title, description, cardNumber }) => {
         }}
       />
 
-      <span className="text-para-sm md:text-para-md lg:text-para-lg text-white font-medium text-center xl:text-left relative z-10 w-full">
+      <span className="text-para-sm md:text-para-md lg:text-para-lg 2xl:text-2xl text-white font-medium text-center xl:text-left relative z-10 w-full">
         {category}
       </span>
 
       <h2
         style={{ fontFamily: "'Afacad Flux', serif" }}
-        className="text-subheading uppercase font-semibold text-center xl:text-left text-white relative z-10 w-full min-h-[4rem]"
+        className="text-subheading uppercase font-semibold text-center xl:text-left text-white relative z-10 w-full min-h-[4rem]  2xl:text-6xl"
       >
         {title}
       </h2>
@@ -53,7 +53,7 @@ export const CardComponent = ({ category, title, description, cardNumber }) => {
       </p>
 
       <div className="w-full flex items-center justify-center xl:justify-start relative z-10 mt-4">
-        <button className="px-4 lg:px-7 py-2 lg:py-3 rounded-full bg-white hover:bg-opacity-90 transition-all flex items-center justify-center">
+        <button onClick={togglePopup} className="px-4 lg:px-7 py-2 lg:py-3 rounded-full bg-white hover:bg-opacity-90 transition-all flex items-center justify-center">
           <span className="text-xs sm:text-sm lg:text-base text-black font-medium">
             Get In Touch
           </span>

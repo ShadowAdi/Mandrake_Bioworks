@@ -69,7 +69,9 @@ const Header = () => {
                     />
                 </div>
             </div>
-            <button onMouseEnter={handleHover} onMouseLeave={handleLeave} className='border relative border-white px-3 rounded-full overflow-hidden flex items-center justify-center md:px-6 py-2'>
+            <button onClick={()=>{
+                window.location.hash="contact"
+            }} onMouseEnter={handleHover} onMouseLeave={handleLeave} className='border relative border-white px-3 rounded-full overflow-hidden flex items-center justify-center md:px-6 py-2'>
                 <span ref={buttonSpanRef} className='text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl  text-white z-20'>
                     Get In Touch
                 </span>

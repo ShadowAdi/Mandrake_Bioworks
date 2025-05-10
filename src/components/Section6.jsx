@@ -1,12 +1,12 @@
-import React from 'react';
 import AnimatedText from './AnimatedText';
 import { CardComponent } from "../components/CardComponents";
 const Section6 = () => {
+
     return (
         <section
-            className="flex flex-col items-center w-full mx-auto justify-center relative py-4 md:py-16 space-y-8 min-h-[100dvh]"
+            className="flex flex-col items-center w-full mx-auto justify-around relative py-4 md:py-16 space-y-8 min-h-[100dvh]"
         >
-            <div className='w-[90%] max-w-9xl flex pt-4 md:pt-14 pb-8 flex-col items-center mx-auto space-y-12 justify-around bg'>
+            <div className='w-[90%] max-w-9xl flex pt-4 md:pt-14 pb-8 flex-col items-center mx-auto space-y-12 justify-around flex-1'>
                 <AnimatedText
                     className="text-heading-sm md:text-heading-md lg:text-heading-lg xl:text-heading-xl  2xl:text-[132px]  uppercase font-extrabold text-center text-white"
                     text="Let's unlock Nature's Potential"
@@ -29,27 +29,29 @@ const Section6 = () => {
                         title="crops perfectly tailored to needs"
                         category="Commercial Partners"
                         description="Corn optimized for biofuel. Tomatoes with
-extended shelf life and superior flavor.
-Potatoes engineered for flawless
-processing. We transform agricultural
-possibilities into commercial realities that
-drive your bottom line.  "
+                        extended shelf life and superior flavor.
+                        Potatoes engineered for flawless
+                        processing. We transform agricultural
+                        possibilities into commercial realities that
+                        drive your bottom line.  "
                         cardNumber={2}
+
                     />
                     <CardComponent
                         title="Hack the code of nature itself"
                         category="Visionary Talent"
                         description="Join a team where you're not just
-building a career— At Mandrake
-Bioworks, you'll be at the forefront
-of science, driving discoveries
-that rewrite the rules of what's
-possible, and creating abundant,
-sustainable food for billions."
+                        building a career— At Mandrake
+                        Bioworks, you'll be at the forefront
+                        of science, driving discoveries
+                        that rewrite the rules of what's
+                        possible, and creating abundant,
+                        sustainable food for billions."
                         cardNumber={3}
                     />
                 </div>
             </div>
+
         </section>
     );
 };

@@ -73,8 +73,8 @@ const Section3Part1 = () => {
     >
       <AnimatedText
         divClassName="w-full sm:w-4/5 md:w-3/4 lg:w-2/3 xl:w-1/2 bg-green-700"
-        className="text-heading-sm md:text-heading-md lg:text-heading-lg xl:text-heading-xl uppercase leading-tight font-bold text-center text-white"
-        text="At Mandrake, we’re re-inventing crop development from the ground up"
+        className="text-heading-sm md:text-heading-md lg:text-heading-lg xl:text-heading-xl uppercase leading-tight font-bold text-center text-white 2xl:text-[132px] "
+        text="At Mandrake, we’re re-inventing crop development from the ground up "
       />
       <div className="flex flex-col flex-[0.5] md:flex-row justify-center items-center w-full mt-6 sm:mt-8 md:mt-10 lg:mt-12  gap-6 md:gap-8 lg:gap-10 xl:gap-12 lg:w-[90%] xl:w-[80%] mx-auto">
         <div

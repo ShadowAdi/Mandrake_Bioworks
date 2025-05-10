@@ -67,9 +67,7 @@ const Section2Part2 = () => {
                 <img src='/Scientist.png' className='object-contain h-full w-full' />
             </div>
             <div ref={paraWrapperRef} className='flex flex-col  items-center w-full md:w-[90%] justify-center'>
-                <p className="
-                         text-[10px] sm:text-sm md:text-lg lg:text-xl  text-center text-white font-normal leading-relaxed w-full 2xl:text-4xl 2xl:leading-[56px]
-                            "
+                <p   className="text-xs sm:text-sm md:text-base lg:text-lg  text-center text-white font-normal leading-relaxed w-full 2xl:text-4xl 2xl:leading-[56px]"
                     ref={paraRef}
                 >
                     Industries like pharmaceuticals and materials science have revolutionized their  innovation cycles by integrating AI-driven discovery with automated lab workflows. The result? Dramatically reduced costs, accelerated timelines, and entirely new realms of possibility.

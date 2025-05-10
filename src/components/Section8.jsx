@@ -13,7 +13,7 @@ const AdvisorCard = ({ name, position, username, imageUrl }) => {
         <span className='text-subheading font-bold text-white text-center'>
           {name}
         </span>
-        <span className='text-para-sm md:text-para-md lg:text-para-lg xl:text-para-xl text-center font-normal text-white'>
+        <span className='text-para-sm md:text-para-md lg:text-para-md xl:text-para-xl text-center font-normal text-white'>
           {position}
         </span>
         {username && (
@@ -58,8 +58,8 @@ const Section8 = () => {
     <section
       className="flex flex-col items-center w-full mx-auto justify-center relative py-8 md:py-12 lg:py-16 min-h-[100dvh]"
     >
-      <div className='w-[95%] md:w-4/5 max-w-7xl flex flex-col h-full items-center mx-auto space-y-10 md:space-y-16 lg:space-y-20 justify-around'>
-        <div className='flex flex-col w-[90%] md:w-[70%] lg:w-[60%] space-y-4 mx-auto items-center justify-center'>
+          <div className='w-[95%] md:w-4/5 max-w-7xl flex flex-col h-full items-center mx-auto space-y-10 md:space-y-14 lg:space-y-16 justify-around'>
+        <div className='flex flex-col w-[90%] md:w-[70%] lg:w-[60%] space-y-0 mx-auto items-center justify-center'>
           <AnimatedText 
             className="text-heading-sm md:text-heading-md lg:text-heading-lg xl:text-heading-xl uppercase font-bold text-center text-white" 
             text="OUR ADVISORS" 
