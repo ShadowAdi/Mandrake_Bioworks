@@ -59,7 +59,7 @@ const Section7 = () => {
       className="flex flex-col items-center w-full mx-auto justify-between relative py-8 md:py-12 lg:py-16 min-h-[100dvh] "
     >
       <div className='w-[95%] md:w-[80%] max-w-8xl flex flex-col h-full items-center mx-auto space-y-10 md:space-y-14 lg:space-y-16 justify-between flex-1'>
-        <div className='flex flex-col w-[90%] md:w-[70%] lg:w-[60%] space-y-0 mx-auto items-center justify-between flex-1 '>
+        <div className='flex flex-col w-[90%] md:w-[70%] lg:w-[60%] space-y-0 mx-auto items-center justify-center flex-1 '>
           <AnimatedText
             className="text-heading-sm sm:text-heading-sm md:text-heading-xl lg:text-heading-xl xl:text-heading-2xl 2xl:text-heading-3xl uppercase font-bold text-center text-white"
             text="OUR TEAM"
