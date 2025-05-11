@@ -13,7 +13,8 @@ const Section2Part2 = () => {
     const textRef = useRef(null);
     const paraRef = useRef(null)
     const paraWrapperRef = useRef(null)
-
+    const textWrapperRef2 = useRef(null);
+    const textRef2 = useRef(null);
 
     useGSAP(() => {
         const textRefSplit = new SplitType(textRef.current, {
@@ -21,6 +22,10 @@ const Section2Part2 = () => {
             lineClass: "line-wrapper"
         });
         const paraTextSplit = new SplitType(paraRef.current, { types: "chars" })
+        const textRefSplit2 = new SplitType(textRef2.current, {
+            types: "lines,words",
+            lineClass: "line-wrapper"
+        });
 
         textRefSplit.lines.forEach((line) => {
             line.style.overflow = 'hidden';
@@ -42,7 +47,7 @@ const Section2Part2 = () => {
                 trigger: textWrapperRef.current,
                 start: "top bottom", // when top of wrapper hits 80% of screen
             },
-        },"anim");
+        }, "anim");
         tl.from(paraTextSplit.chars, {
             opacity: 0.5,
             stagger: 0.01,
@@ -53,30 +58,44 @@ const Section2Part2 = () => {
                 start: "-10% bottom",
                 scrub: 1
             },
-        },"anim");
+        }, "anim");
+
+        tl.from(textRefSplit2.lines, {
+            yPercent: 100,
+            duration: 1,
+            ease: "expo.out",
+            stagger: 0.1,
+            scrollTrigger: {
+                trigger: textWrapperRef2.current,
+                start: "-170% bottom",
+                scrub: 1,
+            },
+        }, "anim");
     }, []);
+
+
     return (
-        <div className='sm:w-full  w-[90%] flex    h-screen  flex-col items-center  mx-auto  justify-around py-2  '>
+        <div className="w-full sm:w-11/12 md:w-4/5 lg:w-[90%] xl:w-[90%] min-h-[100dvh] flex flex-col py-4 items-center mx-auto gap-1 sm:gap-2 lg:gap-2 2xl:gap-2 justify-between px-4 sm:px-6">
             <div ref={textWrapperRef} className="overflow-hidden  w-full ">
                 <h1 ref={textRef} style={{ fontFamily: "'Afacad Flux', serif" }}
-                 className="text-2xl md:text-3xl 2xl:text-[132px] uppercase font-bold text-center text-white lg:text-4xl  xl:leading-snug ">
+                    className="uppercase font-bold text-center text-white text-heading-sm sm:text-heading-sm md:text-heading-lg lg:text-heading-lg xl:text-heading-xl 2xl:text-heading-2xl">
                     What If Agriculture Stole a Page from Pharma's Playbook?
                 </h1>
             </div>
-            <div className=' h-[40vh]  w-full'>
+            <div className=' h-[50vh]  w-full'>
                 <img src='/Scientist.png' className='object-contain h-full w-full' />
             </div>
             <div ref={paraWrapperRef} className='flex flex-col  items-center w-full md:w-[90%] justify-center'>
-                <p   className="text-xs sm:text-sm md:text-base lg:text-lg  text-center text-white font-normal leading-relaxed w-full 2xl:text-4xl 2xl:leading-[56px]"
+                <p    className="text-center text-white font-normal w-full text-para-sm sm:text-para-sm md:text-para-md lg:text-para-lg xl:text-para-xl 2xl:text-para-2xl leading-relaxed"
                     ref={paraRef}
                 >
                     Industries like pharmaceuticals and materials science have revolutionized their  innovation cycles by integrating AI-driven discovery with automated lab workflows. The result? Dramatically reduced costs, accelerated timelines, and entirely new realms of possibility.
                 </p>
             </div>
-             <AnimatedWhiteText
-                text="We think it's time Agriculture catches up."
-                className="text-base md:text-3xl  uppercase font-semibold text-center text-white lg:text-5xl xl:text-4xl 2xl:text-8xl"
-            />
+            <div ref={textWrapperRef2} className="overflow-hidden w-full    ">
+                <h1 ref={textRef2} style={{ fontFamily: "'Afacad Flux', serif" }} className={"uppercase font-semibold text-center text-white text-subheading-sm sm:text-subheading md:text-subheading-md lg:text-subheading-lg xl:text-subheading-xl 2xl:text-subheading-2xl 3xl:text-subheading-3xl "}>
+                    We think it's time Agriculture catches up.      </h1>
+            </div>
         </div>
     )
 }

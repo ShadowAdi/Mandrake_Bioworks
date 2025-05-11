@@ -55,7 +55,7 @@ const Section3Part1 = () => {
             txt.querySelector("p").textContent = steps[i].desc;
             img.src = steps[i].img;
           })
-          .to(txt, { autoAlpha: 1, duration:0.3 })
+          .to(txt, { autoAlpha: 1, duration: 0.3 })
           .to(img, { autoAlpha: 1, scale: 1, duration: 0.3 }, `<`);
       });
     }, sectionRef);
@@ -66,30 +66,29 @@ const Section3Part1 = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative flex flex-col items-center w-full min-h-[100dvh] py-8 px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 bg-cover  bg-center justify-around bg-no-repeat"
+      className="relative flex flex-col items-center w-full min-h-[100vh] py-8 px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 bg-cover  bg-center justify-around bg-no-repeat gap-6 "
       style={{
         backgroundImage: `url(${bgImage})`,
       }}
     >
       <AnimatedText
-        divClassName="w-full sm:w-4/5 md:w-3/4 lg:w-2/3 xl:w-1/2 bg-green-700"
-        className="text-heading-sm md:text-heading-md lg:text-heading-lg xl:text-heading-xl uppercase leading-tight font-bold text-center text-white 2xl:text-[132px] "
+        divClassName="w-full  sm:w-4/5 md:w-3/4 lg:w-2/3 xl:w-1/2 bg-green-700"
+        className="uppercase leading-tight font-bold text-center text-white text-heading-sm sm:text-heading-sm md:text-heading-md lg:text-heading-lg xl:text-heading-lg 2xl:text-heading-2xl "
         text="At Mandrake, we’re re-inventing crop development from the ground up "
       />
-      <div className="flex flex-col flex-[0.5] md:flex-row justify-center items-center w-full mt-6 sm:mt-8 md:mt-10 lg:mt-12  gap-6 md:gap-8 lg:gap-10 xl:gap-12 lg:w-[90%] xl:w-[80%] mx-auto">
+      <div className="flex flex-col flex-1 md:flex-[0.5] md:flex-row  justify-end items-center w-full mt-2 sm:mt-3 md:mt-4 lg:mt-5  pb-6 md:pb-0  gap-5 md:gap-6 lg:gap-7 xl:gap-8 lg:w-[90%] xl:w-[80%] mx-auto">
         <div
           ref={textRef}
-          className="flex flex-1 flex-col gap-4 items-center md:items-start text-center md:text-left justify-center opacity-100 transition-opacity flex-1 max-w-lg px-4 sm:px-0"
+          className="flex  flex-col gap-2  items-center md:items-start text-center md:text-left justify-center opacity-100 transition-opacity md:flex-1  px-4 sm:px-0"
         >
-          <h3 className="text-subheading text-white font-semibold">
+          <h3 className="text-subheading-sm sm:text-subheading md:text-subheading-md lg:text-subheading-lg xl:text-subheading-xl 2xl:text-subheading-2xl 3xl:text-subheading-3xl 2xl:text-subheading-2xl text-white font-semibold">
             {steps[0].title}
           </h3>
-          <p className="text-para-sm sm:text-para-md lg:text-para-lg xl:text-para-xl text-white leading-relaxed">
+          <p  className="text-left text-white font-normal w-full text-para-sm sm:text-para-sm md:text-para-md lg:text-para-lg xl:text-para-xl 2xl:text-para-2xl leading-relaxed">
             {steps[0].desc}
           </p>
         </div>
-        <div className="flex items-center justify-end flex-1 h-48 sm:h-56 md:h-64 lg:h-80 xl:h-96 mt-6 md:mt-0 ">
-
+        <div className="flex items-center justify-end md:flex-1 h-36 sm:h-56 md:h-64 lg:h-80 xl:h-96 mt-1 md:mt-0 ">
           <img
             ref={imageRef}
             className="h-full w-full max-w-md object-contain transition-transform transition-opacity duration-500"

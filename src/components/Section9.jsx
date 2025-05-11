@@ -43,6 +43,7 @@ const Section9 = () => {
   return (
     <>
       <section
+      
         ref={sectionRef}
         className="flex flex-col items-center w-full justify-center relative py-6 md:py-8 min-h-[100dvh]"
         id='contact'

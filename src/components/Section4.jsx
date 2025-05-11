@@ -30,14 +30,14 @@ const Section4 = () => {
 
     return (
         <section
-            className="relative flex flex-col items-center w-full min-h-[100dvh]  px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 justify-center  py-3"
+            className="relative flex flex-col items-center w-full min-h-[100dvh]  px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 justify-around  py-3"
         >
-            <div className="w-full sm:w-11/12 md:w-4/5 lg:w-3/4 xl:w-2/3 flex flex-col items-center justify-around flex-1 mx-auto h-full  ">
+            <div className="w-full sm:w-11/12 md:w-4/5 lg:w-3/4 xl:w-2/3 flex flex-col items-center justify-between flex-1 mx-auto h-full   ">
                 <AnimatedText
-                     className="text-3xl md:text-4xl lg:text-5xl 2xl:text-[132px] uppercase font-bold text-center text-white   xl:leading-snug "
+                     className=" uppercase font-bold text-center text-white  text-heading-sm sm:text-heading-sm md:text-heading-xl lg:text-heading-xl xl:text-heading-xl 2xl:text-heading-2xl "
                     text="How are we Different?"
                 />
-                <div className="w-full h-72 sm:h-60 md:h-60  2xl:h-[1200px]  flex items-center justify-center">
+                <div className="w-full h-72 sm:h-64 md:h-80  2xl:h-[400px]  flex items-center justify-center">
                     <img
                         src="/Arrow.png"
                         className="h-full w-full  object-contain"
@@ -50,7 +50,7 @@ const Section4 = () => {
                 >
                     <p
                         ref={paraRef}
-                    className="text-xs sm:text-sm md:text-base lg:text-lg  text-center text-white font-normal leading-relaxed w-full 2xl:text-4xl 2xl:leading-[56px]"
+              className="text-center text-white font-normal w-full text-para-sm sm:text-para-sm md:text-para-lg lg:text-para-lg xl:text-para-xl 2xl:text-para-2xl leading-relaxed"
                     >
                         We're unlocking the full potential of crops
                         transforming agriculture from an extractive

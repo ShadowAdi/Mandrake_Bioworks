@@ -81,30 +81,33 @@ const Section2Part1 = () => {
 
 
     return (
-        <div ref={sectionRef} className="w-full sm:w-11/12 md:w-4/5 lg:w-3/4 xl:w-2/3 min-h-[100dvh] flex flex-col py-2 items-center mx-auto gap-4 sm:gap-6 lg:gap-8  justify-around   px-4 sm:px-6 ">
-            <div ref={textWrapperRef} className="overflow-hidden w-full">
+        <div
+            ref={sectionRef}
+            className="w-full sm:w-11/12 md:w-4/5 lg:w-[90%] xl:w-[90%] min-h-[100dvh] flex flex-col py-4 items-center mx-auto gap-4 sm:gap-6 lg:gap-10 2xl:gap-12 justify-around px-4 sm:px-6"
+        >
+            <div ref={textWrapperRef} className="overflow-hidden w-full ">
                 <h1
                     ref={textRef}
                     style={{ fontFamily: "'Afacad Flux', serif" }}
-                    className="text-2xl md:text-3xl 2xl:text-[132px] uppercase font-bold text-center text-white lg:text-4xl  xl:leading-snug"
+                    className="uppercase leading font-bold text-center text-white text-heading-sm sm:text-heading-sm md:text-heading-lg lg:text-heading-lg xl:text-heading-xl 2xl:text-heading-2xl"
                 >
                     Agriculture Is Falling Behind
                 </h1>
             </div>
 
-            <div className="flex flex-col w-full items-center justify-center ">
+            <div className="flex flex-col w-full items-center justify-center gap-1 sm:gap-2 lg:gap-3">
                 <AnimatedWhiteTextSvg
-                    className="text-base md:text-3xl  uppercase font-semibold text-center text-white  2xl:text-8xl"
+                    className="text-subheading-sm sm:text-subheading md:text-subheading-md lg:text-subheading-lg xl:text-subheading-xl 2xl:text-subheading-3xl leading-tight uppercase font-semibold text-center text-white "
                     text="Decade-Long Timelines."
                     numWordsToOverlay={1}
                 />
                 <AnimatedWhiteTextSvg
-                    className="text-base md:text-3xl  uppercase font-semibold text-center text-white  2xl:text-8xl"
+                    className="text-subheading-sm sm:text-subheading md:text-subheading-md lg:text-subheading-lg xl:text-subheading-xl 2xl:text-subheading-3xl  leading-tight uppercase font-semibold text-center text-white"
                     text="Millions in Development Costs."
                     numWordsToOverlay={1}
                 />
                 <AnimatedWhiteTextSvg
-                    className="text-base md:text-3xl  uppercase font-semibold text-center text-white  2xl:text-8xl"
+                    className="text-subheading-sm sm:text-subheading md:text-subheading-md lg:text-subheading-lg xl:text-subheading-xl 2xl:text-subheading-3xl leading-tight uppercase font-semibold text-center text-white"
                     text="Just. One. Trait."
                     numWordsToOverlay={3}
                 />
@@ -112,26 +115,26 @@ const Section2Part1 = () => {
 
             <div
                 ref={paraWrapperRef}
-                className="flex flex-col space-y-3 2xl:space-y-3 items-center w-full sm:w-[90%] lg:w-[95%] 2xl:w-[85] justify-around"
+                className="flex flex-col space-y-1 sm:space-y-1 lg:space-y-2 2xl:space-y-3 items-center w-[90%] justify-around "
             >
                 <p
                     ref={paraRef}
-                    className="text-xs sm:text-sm md:text-base lg:text-lg  text-center text-white font-normal leading-relaxed w-full 2xl:text-4xl 2xl:leading-[56px]"
+                 className="text-center text-white font-normal w-full text-para-sm sm:text-para-sm md:text-para-md lg:text-para-lg xl:text-para-xl 2xl:text-para-2xl leading-relaxed"
                 >
-                    Currently, developing new plants means guesswork & a painfully slow and
-                    prohibitively expensive process. This inefficiency leaves countless crop
-                    improvements undiscovered, severely constraining agricultural innovation
-                    when we need it most.
+                    Currently, developing new plants means guesswork & a painfully slow and prohibitively
+                    expensive process. This inefficiency leaves countless crop improvements undiscovered,
+                    severely constraining agricultural innovation when we need it most.
                 </p>
                 <p
                     ref={para2Ref}
-                    className="text-xs sm:text-sm md:text-base lg:text-lg  text-center text-white font-normal leading-relaxed w-full 2xl:text-4xl 2xl:leading-[56px]"
+                  className="text-center text-white font-normal w-full text-para-sm sm:text-para-sm md:text-para-md lg:text-para-lg xl:text-para-xl 2xl:text-para-2xl leading-relaxed"
                 >
-                    While agriculture remains fundamental to humanity's survival, it's trapped
-                    in outdated breeding methods that miss transformative opportunities.
+                    While agriculture remains fundamental to humanity's survival, it's trapped in outdated
+                    breeding methods that miss transformative opportunities.
                 </p>
             </div>
         </div>
+
     );
 };
 

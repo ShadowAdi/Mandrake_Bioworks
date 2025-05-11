@@ -15,13 +15,13 @@ const Hero = () => {
   const paraRef = useRef(null);
 
   useGSAP(() => {
-    const paraTextSplit = new SplitType(paraRef.current, { 
+    const paraTextSplit = new SplitType(paraRef.current, {
       types: "words",
       wordClass: "word-wrapper"
     });
 
     const textRefSplit = new SplitType(textRef.current, {
-      types: "lines,words", 
+      types: "lines,words",
       lineClass: "line-wrapper",
       wordClass: "word-wrapper"
     });
@@ -72,7 +72,7 @@ const Hero = () => {
               <h1
                 ref={textRef}
                 style={{ fontFamily: "'Afacad Flux', serif" }}
-                className="text-heading-sm md:text-heading-md lg:text-heading-lg xl:text-heading-xl uppercase font-bold text-center text-white"
+                className="text-heading-sm md:text-heading-md lg:text-heading-lg xl:text-heading-xl 2xl:text-heading-3xl  uppercase font-bold text-center text-white"
               >
                 WHAT IF YOU CAN DESIGN CROPS LIKE SOFTWARE?
               </h1>
@@ -83,7 +83,7 @@ const Hero = () => {
             <div className="w-[90%] mx-auto overflow-hidden">
               <p
                 ref={paraRef}
-                className="text-para-sm md:text-para-md lg:text-para-lg xl:text-para-xl text-center text-white font-medium whitespace-normal"
+                className="text-para-sm md:text-para-md lg:text-para-lg xl:text-para-xl 2xl:text-para-2xl text-center text-white font-medium whitespace-normal"
               >
                 At Mandrake Bioworks, we're changing the way crops are designed.
                 By fusing AI & Omics, we can unlock plants to their full potential —

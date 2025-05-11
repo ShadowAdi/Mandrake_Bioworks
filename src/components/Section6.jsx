@@ -4,15 +4,15 @@ const Section6 = () => {
 
     return (
         <section
-            className="flex flex-col items-center w-full mx-auto justify-around relative py-4 md:py-16 space-y-8 min-h-[100dvh]"
+            className="flex flex-col items-center w-full mx-auto justify-around relative py-2 md:py-4 space-y-8 min-h-[100dvh]"
         >
-            <div className='w-[90%] max-w-9xl flex pt-4 md:pt-14 pb-8 flex-col items-center mx-auto space-y-12 justify-around flex-1'>
+            <div className='w-[90%]  flex pt-4 md:pt-6 pb-6 flex-col items-center mx-auto space-y-12 justify-around flex-1'>
                 <AnimatedText
-                    className="text-heading-sm md:text-heading-md lg:text-heading-lg xl:text-heading-xl  2xl:text-[132px]  uppercase font-extrabold text-center text-white"
+                    className="text-heading-sm sm:text-heading-sm md:text-heading-md lg:text-heading-lg xl:text-heading-xl 2xl:text-heading-3xl  uppercase font-extrabold text-center text-white"
                     text="Let's unlock Nature's Potential"
                 />
 
-                <div className='w-full  grid grid-cols-1 xl:grid-cols-3 gap-14 justify-items-center'>
+                <div className='w-[90%] sm:w-[60%] mx-auto md:w-full  grid grid-cols-1 lg:grid-cols-3 gap-14 justify-items-center'>
                     <CardComponent
                         title="Supercharge your Elite Varieties"
                         category="Seed companies"
