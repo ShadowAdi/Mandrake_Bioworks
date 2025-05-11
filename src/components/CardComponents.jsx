@@ -12,9 +12,8 @@ export const CardComponent = ({ category, title, description, cardNumber, toggle
 
   return (
     <div
-      className="flex flex-col cursor-pointer items-center lg:items-start gap-0 relative p-2 w-full max-w-max h-full lg:flex-1"
+      className="flex flex-col justify-between items-center lg:items-start p-4 w-full h-full max-w-full"
       style={{
-        position: 'relative',
         transition: 'all 0.3s ease',
       }}
       onMouseEnter={() => setIsHovered(true)}
@@ -53,9 +52,9 @@ export const CardComponent = ({ category, title, description, cardNumber, toggle
       </p>
 
       <div className="w-full flex items-center justify-center lg:justify-start relative z-10 mt-4">
-        <button onClick={()=>{
-                window.location.hash="contact"
-            }} className="px-4 lg:px-7 py-2 lg:py-3 rounded-full bg-white hover:bg-opacity-90 transition-all flex items-center justify-center">
+        <button onClick={() => {
+          window.location.hash = "contact"
+        }} className="px-4 lg:px-7 py-2 lg:py-3 rounded-full bg-white hover:bg-opacity-90 transition-all flex items-center justify-center">
           <span className="text-xs sm:text-sm lg:text-base xl:text-2xl text-black font-medium">
             Get In Touch
           </span>
