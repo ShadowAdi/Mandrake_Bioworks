@@ -72,18 +72,18 @@ const Hero = () => {
               <h1
                 ref={textRef}
                 style={{ fontFamily: "'Afacad Flux', serif" }}
-                className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl uppercase font-bold text-center text-white"
+                className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-7xl uppercase font-bold text-center text-white"
               >
                 WHAT IF YOU CAN DESIGN CROPS LIKE SOFTWARE?
               </h1>
             </div>
 
-            <div ref={underlineRef} className="h-0.5 bg-white w-3/4 md:w-[65%]" />
+            <div ref={underlineRef} className="h-0.5 bg-white w-3/4 md:w-3/4" />
 
             <div className="md:w-[60%] xl:w-[50%] 2xl:w-[40%] w-[90%] mx-auto overflow-hidden">
               <p
                 ref={paraRef}
-                className="text-sm sm:text-base md:text-md lg:text-lg xl:text-xl  2xl:text-3xl text-center text-white font-medium whitespace-normal"
+                className="text-sm sm:text-base md:text-md lg:text-lg xl:text-lg  2xl:text-3xl text-center text-white font-medium whitespace-normal"
               >
                 At Mandrake Bioworks, we're changing the way crops are designed.
                 By fusing AI & Omics, we can unlock plants to their full potential —

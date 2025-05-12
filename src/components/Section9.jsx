@@ -44,26 +44,22 @@ const Section9 = () => {
     <>
       <section
         ref={sectionRef}
-        className="flex flex-col items-center w-full justify-center relative   h-[100dvh]"
+        className="flex flex-col items-center py-8 w-full justify-center relative   min-h-[100dvh]"
         id="contact"
       >
         <div className="w-[95%] sm:w-[90%] h-full flex flex-col items-center mx-auto gap-1 sm:gap-5">
-          <div
-            ref={imageWrapperRef}
-            className="w-full h-[50%] overflow-hidden"
-          >
-            <img
-              ref={imageRef}
-              src="/Gene.jpg"
-              alt="Gene"
-              className="w-full h-full object-contain scale-90 rounded-md"
-            />
-          </div>
 
-          <div className="flex flex-col items-center justify-center text-center w-full sm:w-[80%] lg:px-4 gap-2 md:gap-3 lg:gap-2 h-[50%]">
+          <img
+            src="/Gene.jpg"
+            alt="Gene"
+            className="w-full h-full max-h-[70dvh] object-fill"
+          />
+
+          <div className="flex flex-col items-center 
+          justify-center text-center w-full sm:w-[80%] lg:px-4 gap-3  h-[30%]">
             <AnimatedWhiteText
               text="Building the Plant Design Factory of the Future"
-              className="text-2xl   sm:text-3xl md:text-4xl 2xl:text-9xl uppercase font-bold text-white"
+              className="text-2xl   sm:text-3xl md:text-4xl 2xl:text-7xl uppercase font-bold text-white"
             />
             <AnimatedWhiteText
               text="Whether you're interested in joining our team, partnering with us, or simply curious to learn more about our work—let's connect."

@@ -66,14 +66,14 @@ const Section3Part1 = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative  min-h-[100vh] flex items-center justify-between py-14 bg-cover  bg-center  bg-no-repeat w-full"
+      className="relative  min-h-[100vh] flex items-center  justify-between py-14 bg-cover  bg-center  bg-no-repeat w-full"
       style={{
         backgroundImage: `url(${bgImage})`,
       }}
     >
-      <div className='flex flex-col  items-center w-full  mx-auto justify-between h-full gap-10 '>
+      <div className='flex flex-col  items-center w-full 2xl:w-[90%]    mx-auto justify-between h-full gap-10 '>
       <AnimatedText
-        divClassName="w-full"
+        divClassName="w-full "
         className="uppercase font-bold text-center text-white text-xl sm:text-3xl  lg:text-4xl xl:text-6xl 2xl:text-7xl "
         text="At Mandrake, we’re re-inventing crop development from the ground up "
       />

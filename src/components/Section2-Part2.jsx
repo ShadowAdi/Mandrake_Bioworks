@@ -79,7 +79,7 @@ const Section2Part2 = () => {
             <div ref={textWrapperRef} className="overflow-hidden  w-full ">
                 <h1 ref={textRef} style={{ fontFamily: "'Afacad Flux', serif" }}
                      className="uppercase font-bold text-center text-white 
-    text-xl sm:text-4xl  lg:text-5xl xl:text-6xl 2xl:text-9xl">
+    text-xl sm:text-4xl  lg:text-5xl xl:text-6xl 2xl:text-7xl">
                     What If Agriculture Stole a Page from Pharma's Playbook?
                 </h1>
             </div>
@@ -96,7 +96,7 @@ const Section2Part2 = () => {
                 </p>
             </div>
             <div ref={textWrapperRef2} className="overflow-hidden w-full    ">
-                <h1 ref={textRef2} style={{ fontFamily: "'Afacad Flux', serif" }} className={"uppercase font-semibold text-center text-white  text-xl sm:text-2xl  lg:text-3xl xl:text-4xl 2xl:text-9xl "}>
+                <h1 ref={textRef2} style={{ fontFamily: "'Afacad Flux', serif" }} className={"uppercase font-semibold text-center text-white  text-xl sm:text-2xl  lg:text-3xl xl:text-4xl 2xl:text-7xl "}>
                     We think it's time Agriculture catches up.      </h1>
             </div>
         </div>

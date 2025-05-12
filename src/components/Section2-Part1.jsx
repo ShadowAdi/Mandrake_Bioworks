@@ -90,7 +90,7 @@ const Section2Part1 = () => {
                     ref={textRef}
                     style={{ fontFamily: "'Afacad Flux', serif" }}
                     className="uppercase font-bold text-center text-white 
-    text-3xl sm:text-5xl  lg:text-5xl xl:text-6xl 2xl:text-9xl"
+    text-3xl sm:text-5xl  lg:text-5xl xl:text-6xl 2xl:text-7xl"
                 >
                     WHAT IF YOU CAN DESIGN CROPS LIKE SOFTWARE?
                 </h1>
@@ -98,17 +98,17 @@ const Section2Part1 = () => {
 
             <div className="flex flex-col w-full items-center justify-center gap-1 sm:gap-2 lg:gap-3">
                 <AnimatedWhiteTextSvg
-                    className="text-xl sm:text-3xl  lg:text-4xl xl:text-5xl font-semibold text-center text-white "
+                    className="text-xl sm:text-2xl  lg:text-3xl xl:text-4xl 2xl:text-6xl  font-semibold text-center text-white "
                     text="Decade-Long Timelines."
                     numWordsToOverlay={1}
                 />
                 <AnimatedWhiteTextSvg
-                    className="text-xl sm:text-3xl  lg:text-4xl xl:text-6xl  font-semibold text-center text-white"
+                    className="text-xl sm:text-2xl  lg:text-3xl xl:text-4xl 2xl:text-6xl   font-semibold text-center text-white"
                     text="Millions in Development Costs."
                     numWordsToOverlay={1}
                 />
                 <AnimatedWhiteTextSvg
-                    className="text-xl sm:text-3xl  lg:text-4xl xl:text-6xl font-semibold text-center text-white"
+                    className="text-xl sm:text-2xl  lg:text-3xl xl:text-4xl 2xl:text-6xl font-semibold text-center text-white"
                     text="Just. One. Trait."
                     numWordsToOverlay={3}
                 />
@@ -121,8 +121,8 @@ const Section2Part1 = () => {
                 <p
                     ref={paraRef}
                    className="text-center text-white font-normal 
-    w-[98%] sm:w-[85%] md:w-[90%] lg:w-[80%] xl:w-[55%] 2xl:w-[50%] 
-    text-xs sm:text-sm md:text-base lg:text-base 2xl:text-3xl leading-relaxed"
+    w-[98%] sm:w-[85%] md:w-[95%] lg:w-[90%] xl:w-[75%] 2xl:w-[50%] 
+    text-xs sm:text-sm md:text-base  2xl:text-3xl leading-relaxed"
                 >
                     Currently, developing new plants means guesswork & a painfully slow and prohibitively
                     expensive process. This inefficiency leaves countless crop improvements undiscovered,
@@ -131,8 +131,8 @@ const Section2Part1 = () => {
                 <p
                     ref={para2Ref}
                className="text-center text-white font-normal 
-    w-[98%] sm:w-[85%] md:w-[90%] lg:w-[80%] xl:w-[55%] 2xl:w-[50%] 
-    text-xs sm:text-sm md:text-base lg:text-base 2xl:text-3xl leading-relaxed"
+      w-[98%] sm:w-[85%] md:w-[95%] lg:w-[90%] xl:w-[75%] 2xl:w-[50%] 
+    text-xs sm:text-sm md:text-base  2xl:text-3xl leading-relaxed"
                 >
                     While agriculture remains fundamental to humanity's survival, it's trapped in outdated
                     breeding methods that miss transformative opportunities.
