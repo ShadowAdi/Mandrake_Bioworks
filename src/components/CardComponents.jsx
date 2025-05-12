@@ -12,7 +12,7 @@ export const CardComponent = ({ category, title, description, cardNumber, toggle
 
   return (
     <div
-      className="flex flex-col justify-between items-center lg:items-start p-4 w-full h-full max-w-full"
+      className="flex flex-col justify-between items-center md:items-start p-4 w-full h-full max-w-full relative flex-1 gap-1 lg:gap-3 2xl:flex-[0.8]"
       style={{
         transition: 'all 0.3s ease',
       }}
@@ -22,8 +22,8 @@ export const CardComponent = ({ category, title, description, cardNumber, toggle
       <div
         className="absolute pointer-events-none"
         style={{
-          width: '100%',
-          height: '100%',
+          width: '90%',
+          height: '90%',
           top: '50%',
           left: '50%',
           transform: 'translate(-50%, -50%)',
@@ -36,26 +36,26 @@ export const CardComponent = ({ category, title, description, cardNumber, toggle
         }}
       />
 
-      <span className="text-para-sm md:text-para-md lg:text-para-lg 2xl:text-2xl text-white font-medium text-center lg:text-left relative z-10 w-full">
+      <span className=" text-xs sm:text-base 2xl:text-2xl text-white font-medium text-center md:text-left relative z-10 w-full">
         {category}
       </span>
 
       <h2
         style={{ fontFamily: "'Afacad Flux', serif" }}
-        className="uppercase font-semibold text-center lg:text-left text-white relative z-10 w-full min-h-[4rem]  text-subheading-sm sm:text-subheading md:text-subheading-md lg:text-subheading-lg xl:text-subheading-xl 2xl:text-subheading-3xl "
+        className="uppercase font-semibold text-center md:text-left text-white relative z-10 w-full  text-base  sm:text-xl lg:text-2xl  2xl:text-6xl"
       >
         {title}
       </h2>
 
-      <p className="text-center  lg:text-left text-white opacity-90 relative z-10   w-full   text-para-sm sm:text-para-sm md:text-para-md lg:text-para-lg xl:text-para-xl 2xl:text-para-2xl" >
+      <p className="text-center  md:text-left text-white opacity-90 relative z-10 2xl:text-3xl   w-full   text-base  md:text-lg  lg:text-lg xl:text-lg" >
         {description}
       </p>
 
-      <div className="w-full flex items-center justify-center lg:justify-start relative z-10 mt-4">
+      <div className="w-full flex items-center justify-center md:justify-start relative z-10 ">
         <button onClick={() => {
           window.location.hash = "contact"
         }} className="px-4 lg:px-7 py-2 lg:py-3 rounded-full bg-white hover:bg-opacity-90 transition-all flex items-center justify-center">
-          <span className="text-xs sm:text-sm lg:text-base xl:text-2xl text-black font-medium">
+          <span className="text-sm sm:text-base 2xl:text-lg text-black font-medium">
             Get In Touch
           </span>
         </button>

@@ -84,7 +84,8 @@ const AnimatedWhiteTextSvg = ({
     }, [text, numWordsToOverlay]);
 
     return (
-        <div ref={textWrapperRef} className="relative overflow-hidden w-full">
+        <div ref={textWrapperRef}  className="relative overflow-hidden 
+                w-full sm:w-[90%] md:w-[85%] lg:w-[80%] xl:w-[75%] mx-auto">
             <h1
                 ref={textRef}
                 style={{ fontFamily: "'Afacad Flux', serif" }}

@@ -21,7 +21,7 @@ const AnimatedWhiteText = ({text,className}) => {
       stagger: 0.1,
       scrollTrigger: {
         trigger: textWrapperRef.current,
-        start: "-20% bottom", 
+        start: "top bottom", 
         scrub:1
       },
     });

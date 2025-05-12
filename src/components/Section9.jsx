@@ -43,36 +43,38 @@ const Section9 = () => {
   return (
     <>
       <section
-      
         ref={sectionRef}
-        className="flex flex-col items-center w-full justify-center relative py-6 md:py-8 min-h-[100dvh]"
-        id='contact'
+        className="flex flex-col items-center w-full justify-center relative   h-[100dvh]"
+        id="contact"
       >
-        <div className="w-[90%] flex flex-col items-center mx-auto gap-8 md:gap-12 lg:gap-16">
-          <div ref={imageWrapperRef} className="w-full max-w-4xl">
+        <div className="w-[95%] sm:w-[90%] h-full flex flex-col items-center mx-auto gap-1 sm:gap-5">
+          <div
+            ref={imageWrapperRef}
+            className="w-full h-[50%] overflow-hidden"
+          >
             <img
               ref={imageRef}
               src="/Gene.jpg"
               alt="Gene"
-              className="w-full h-auto max-h-[40vh] lg:max-h-[80vh] object-cover rounded-md"
+              className="w-full h-full object-contain scale-90 rounded-md"
             />
           </div>
 
-          <div className="flex flex-col items-center text-center w-[90%] lg:px-16 gap-4 md:gap-6 lg:gap-8">
+          <div className="flex flex-col items-center justify-center text-center w-full sm:w-[80%] lg:px-4 gap-2 md:gap-3 lg:gap-2 h-[50%]">
             <AnimatedWhiteText
               text="Building the Plant Design Factory of the Future"
-              className="text-heading-sm md:text-heading-md lg:text-heading-lg xl:text-heading-xl uppercase font-bold text-white"
+              className="text-2xl   sm:text-3xl md:text-4xl 2xl:text-9xl uppercase font-bold text-white"
             />
             <AnimatedWhiteText
               text="Whether you're interested in joining our team, partnering with us, or simply curious to learn more about our work—let's connect."
-              className="text-sm md:text-subheading lg:text-lg xl:text-2xl xl:w-[80%] mx-auto text-white"
+              className="w-[90%] sm:w-[60%] text-sm  sm:text-lg xl:text-xl 2xl:text-4xl  mx-auto text-white"
             />
             <button
               onClick={togglePopup}
               style={{ fontFamily: "'Poppins',sans-serif" }}
-              className="px-6 md:px-10 py-2 md:py-3 mt-4 md:mt-6 rounded-full bg-[#C4E9A2] hover:opacity-90"
+              className="px-6 md:px-10 py-2 md:py-3 mt-2 md:mt-4 rounded-full bg-[#C4E9A2] hover:opacity-90"
             >
-              <span className="text-sm md:text-subheading lg:text-xl text-black font-semibold">
+              <span className="text-xs  sm:text-base 2xl:text-3xl text-black font-semibold">
                 Get In Touch
               </span>
             </button>
@@ -83,6 +85,7 @@ const Section9 = () => {
       {/* Popup */}
       <PopupForm isOpen={isPopupOpen} onClose={togglePopup} />
     </>
+
   );
 };
 

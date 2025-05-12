@@ -13,11 +13,11 @@ const Section5 = () => {
                         muted
                         src="https://res.cloudinary.com/shadowaditya/video/upload/v1746365188/lznhg1airqcreeq1mos6.mp4"
                     />
-                    <div className="absolute translate-x-1/2  bottom-10 w-[80%] md:w-[60%] right-1/2 sm:translate-x-0   z-40  sm:right-4 text-white rounded space-y-2   md:max-w-[600px] lg:max-w-sm  2xl:right-10 2xl:max-w-4xl  ">
-                        <span className="text-xs sm:text-sm lg:text-md xl:text-lg    text-white font-semibold text-left 2xl:text-subheading-2xl ">
+                    <div className="absolute   bottom-10 w-[80%] md:w-[60%] left-1/2 sm:translate-x-0   z-40  sm:left-4 text-white rounded space-y-2     ">
+                        <span className="text-xs sm:text-sm lg:text-md xl:text-lg    text-white font-semibold text-left  ">
                             Resilient from the ground-up
                         </span>
-                        <p style={{lineHeight:1.35}} className="text-[10px] sm:text-xs lg:text-sm xl:text-base 2xl:text-para-xl  opacity-90   text-left">
+                        <p style={{lineHeight:1.35}} className="text-base  opacity-90   text-left">
                             Plants designed to handle pests, disease, drought, extreme temperatures, and unpredictable weather on their own — ensuring resilience even in tough environments without toxic inputs.
                         </p>
                     </div>
@@ -35,7 +35,7 @@ const Section5 = () => {
                         <span className="text-xs sm:text-sm lg:text-md xl:text-lg    text-white font-semibold text-left 2xl:text-subheading-2xl ">
                             Master of All Traits
                         </span>
-                        <p style={{lineHeight:1.35}} className="text-[10px] sm:text-xs lg:text-sm xl:text-base 2xl:text-para-xl  opacity-90 text-left">
+                        <p style={{lineHeight:1.35}} className="text-base  opacity-90 text-left">
                             Efficiently combining multiple beneficial traits—such
                             as enhanced nutrition, better yields, and longer
                             shelf-life—allowing effective innovation even in
@@ -57,7 +57,7 @@ const Section5 = () => {
                     <span className="text-xs sm:text-sm lg:text-md xl:text-lg    text-white font-semibold text-left 2xl:text-subheading-2xl ">
                         Breaking Barriers in Agriculture
                     </span>
-                    <p style={{lineHeight:1.35}} className="text-[10px] sm:text-xs lg:text-sm xl:text-base 2xl:text-para-xl  opacity-90 text-left">
+                    <p style={{lineHeight:1.35}} className="text-base  opacity-90 text-left">
                         We make advanced crop development accessible
                         to everyone. By drastically reducing barriers, farmers
                         worldwide can benefit from better, more productive,

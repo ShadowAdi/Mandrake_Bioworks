@@ -30,14 +30,14 @@ const Section4 = () => {
 
     return (
         <section
-            className="relative flex flex-col items-center w-full min-h-[100dvh]  px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 justify-around  py-3"
+            className="relative flex flex-col items-center w-full min-h-[100dvh] justify-around  py-9 2xl:py-16"
         >
-            <div className="w-full sm:w-11/12 md:w-4/5 lg:w-3/4 xl:w-2/3 flex flex-col items-center justify-between flex-1 mx-auto h-full   ">
+            <div className="w-[95%] md:w-[80%]   flex flex-col items-center justify-between flex-1 mx-auto h-full   ">
                 <AnimatedText
-                     className=" uppercase font-bold text-center text-white  text-heading-sm sm:text-heading-sm md:text-heading-xl lg:text-heading-xl xl:text-heading-xl 2xl:text-heading-2xl "
+                     className=" uppercase font-bold text-center text-white text-4xl  sm:text-4xl md:text-5xl 2xl:text-9xl"
                     text="How are we Different?"
                 />
-                <div className="w-full h-72 sm:h-64 md:h-80  2xl:h-[400px]  flex items-center justify-center">
+                <div className="w-full  h-72 2xl:h-[520px] flex items-center justify-center">
                     <img
                         src="/Arrow.png"
                         className="h-full w-full  object-contain"
@@ -46,11 +46,11 @@ const Section4 = () => {
                 </div>
                 <div
                     ref={paraWrapperRef}
-                    className="flex flex-col space-y-5 items-center w-full justify-center"
+                    className="flex flex-col space-y-5 items-center w-[95%] sm:w-[70%] justify-center mx-auto"
                 >
                     <p
                         ref={paraRef}
-              className="text-center text-white font-normal w-full text-para-sm sm:text-para-sm md:text-para-lg lg:text-para-lg xl:text-para-xl 2xl:text-para-2xl leading-relaxed"
+              className="text-center text-white text-base sm:text-xl md:text-2xl w-full  font-semibold 2xl:text-5xl"
                     >
                         We're unlocking the full potential of crops
                         transforming agriculture from an extractive

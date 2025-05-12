@@ -50,7 +50,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative w-full min-h-[100dvh] flex items-center justify-center overflow-hidden">
+    <section className="relative w-full h-[100dvh] flex items-center justify-center overflow-hidden">
       {/* Background Video */}
       <video
         autoPlay
@@ -64,26 +64,26 @@ const Hero = () => {
       </video>
 
       {/* Content */}
-      <div className="flex flex-col items-center pb-5 w-full py-5 mx-auto min-h-[100dvh] justify-center relative z-10">
+      <div className="flex flex-col items-center pb-5 w-full py-5 mx-auto min-h-[100dvh] justify-center relative items-center z-10">
         <Header />
-        <div className="w-[90%] md:w-4/5 pb-7 flex flex-col justify-between items-start h-full mx-auto flex-1">
+        <div className="w-[95%] sm:w-[78%]  pb-7 flex flex-col justify-between items-start h-full mx-auto flex-1 ">
           <div className="flex-1 h-screen flex flex-col items-center justify-center space-y-4">
-            <div ref={textWrapperRef} className="overflow-hidden sm:w-full w-[95%]">
+            <div ref={textWrapperRef} className="overflow-hidden sm:w-full w-full">
               <h1
                 ref={textRef}
                 style={{ fontFamily: "'Afacad Flux', serif" }}
-                className="text-heading-sm md:text-heading-md lg:text-heading-lg xl:text-heading-xl 2xl:text-heading-3xl  uppercase font-bold text-center text-white"
+                className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl uppercase font-bold text-center text-white"
               >
                 WHAT IF YOU CAN DESIGN CROPS LIKE SOFTWARE?
               </h1>
             </div>
 
-            <div ref={underlineRef} className="h-0.5 bg-white w-3/4 md:w-2/4" />
+            <div ref={underlineRef} className="h-0.5 bg-white w-3/4 md:w-[65%]" />
 
-            <div className="w-[90%] mx-auto overflow-hidden">
+            <div className="md:w-[60%] xl:w-[50%] 2xl:w-[40%] w-[90%] mx-auto overflow-hidden">
               <p
                 ref={paraRef}
-                className="text-para-sm md:text-para-md lg:text-para-lg xl:text-para-xl 2xl:text-para-2xl text-center text-white font-medium whitespace-normal"
+                className="text-sm sm:text-base md:text-md lg:text-lg xl:text-xl  2xl:text-3xl text-center text-white font-medium whitespace-normal"
               >
                 At Mandrake Bioworks, we're changing the way crops are designed.
                 By fusing AI & Omics, we can unlock plants to their full potential —

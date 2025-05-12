@@ -66,8 +66,8 @@ const Section2Part2 = () => {
             ease: "expo.out",
             stagger: 0.1,
             scrollTrigger: {
-                trigger: textWrapperRef2.current,
-                start: "-170% bottom",
+                trigger: textWrapperRef.current,
+                start: "-10% bottom",
                 scrub: 1,
             },
         }, "anim");
@@ -75,25 +75,28 @@ const Section2Part2 = () => {
 
 
     return (
-        <div className="w-full sm:w-11/12 md:w-4/5 lg:w-[90%] xl:w-[90%] min-h-[100dvh] flex flex-col py-4 items-center mx-auto gap-1 sm:gap-2 lg:gap-2 2xl:gap-2 justify-between px-4 sm:px-6">
+        <div className="w-full sm:w-11/12 md:w-4/5 lg:w-[90%] xl:w-[90%] min-h-[100dvh] flex flex-col py-4 items-center mx-auto gap-2 sm:gap-3 lg:gap-4 2xl:gap-5 justify-around px-2 sm:px-6">
             <div ref={textWrapperRef} className="overflow-hidden  w-full ">
                 <h1 ref={textRef} style={{ fontFamily: "'Afacad Flux', serif" }}
-                    className="uppercase font-bold text-center text-white text-heading-sm sm:text-heading-sm md:text-heading-lg lg:text-heading-lg xl:text-heading-xl 2xl:text-heading-2xl">
+                     className="uppercase font-bold text-center text-white 
+    text-xl sm:text-4xl  lg:text-5xl xl:text-6xl 2xl:text-9xl">
                     What If Agriculture Stole a Page from Pharma's Playbook?
                 </h1>
             </div>
-            <div className=' h-[50vh]  w-full'>
-                <img src='/Scientist.png' className='object-contain h-full w-full' />
+            <div className=' h-[25vh]  md:h-[40vh] lg:h-[50vh]  w-full'>
+                <img src='/Scientist.png' className='object-fill h-full w-full' />
             </div>
-            <div ref={paraWrapperRef} className='flex flex-col  items-center w-full md:w-[90%] justify-center'>
-                <p    className="text-center text-white font-normal w-full text-para-sm sm:text-para-sm md:text-para-md lg:text-para-lg xl:text-para-xl 2xl:text-para-2xl leading-relaxed"
+            <div ref={paraWrapperRef} className='flex mx-auto flex-col  items-center w-full sm:w-[70%] md:w-[90%] justify-center'>
+                <p       className="text-center text-white font-normal 
+    w-[98%] sm:w-[85%] md:w-[95%] lg:w-[80%] xl:w-[55%] 2xl:w-[50%]
+    text-xs sm:text-sm md:text-base lg:text-base 2xl:text-3xl leading-relaxed"
                     ref={paraRef}
                 >
                     Industries like pharmaceuticals and materials science have revolutionized their  innovation cycles by integrating AI-driven discovery with automated lab workflows. The result? Dramatically reduced costs, accelerated timelines, and entirely new realms of possibility.
                 </p>
             </div>
             <div ref={textWrapperRef2} className="overflow-hidden w-full    ">
-                <h1 ref={textRef2} style={{ fontFamily: "'Afacad Flux', serif" }} className={"uppercase font-semibold text-center text-white text-subheading-sm sm:text-subheading md:text-subheading-md lg:text-subheading-lg xl:text-subheading-xl 2xl:text-subheading-2xl 3xl:text-subheading-3xl "}>
+                <h1 ref={textRef2} style={{ fontFamily: "'Afacad Flux', serif" }} className={"uppercase font-semibold text-center text-white  text-xl sm:text-2xl  lg:text-3xl xl:text-4xl 2xl:text-9xl "}>
                     We think it's time Agriculture catches up.      </h1>
             </div>
         </div>

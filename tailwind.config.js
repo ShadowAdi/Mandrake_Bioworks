@@ -8,12 +8,11 @@ export default {
     extend: {
       fontSize: {
         // Paragraphs
-        'para-sm': 'clamp(0.75rem, 0.6rem + 0.12vw, 1rem)',    // 14px–16px
-        'para-md': 'clamp(1rem, 0.875rem + 0.25vw, 1.25rem)',    // 16px–20px
-        'para-lg': 'clamp(1.25rem, 1rem + 0.35vw, 1.5rem)',      // 20px–24px
-        'para-xl': 'clamp(1.5rem, 1.2rem + 0.45vw, 2rem)',       // 24px–32px
-        'para-2xl': 'clamp(2rem, 1.65rem + 0.6vw, 2.75rem)',      // 32px–44px
-
+        'para-sm': 'clamp(0.875rem, 1rem - 0.12vw, 0.75rem)',     // ~14px–12px
+        'para-md': 'clamp(1.125rem, 1.25rem - 0.25vw, 1rem)',     // ~18px–16px
+        'para-lg': 'clamp(1.375rem, 1.5rem - 0.35vw, 1.25rem)',   // ~22px–20px
+        'para-xl': 'clamp(1.75rem, 2rem - 0.45vw, 1.5rem)',       // ~28px–24px
+        'para-2xl': 'clamp(2.25rem, 2.75rem - 0.6vw, 2rem)',      // ~36px–32px
         // Subheadings
         'subheading-sm': 'clamp(1.25rem, 1.1rem + 0.25vw, 1.5rem)',       // ~20px–24px
         'subheading': 'clamp(1.375rem, 1.2rem + 0.35vw, 1.75rem)',        // ~22px–28px
