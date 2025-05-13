@@ -30,14 +30,14 @@ const Section4 = () => {
 
     return (
         <section
-            className="relative flex flex-col items-center w-full min-h-[100dvh] justify-around   py-4 sm:py-6 2xl:py-16"
+            className="relative flex flex-col items-center w-full  min-h-[100dvh] justify-around   py-4 sm:py-6 2xl:py-16"
         >
             <div className="w-[98%] md:w-[80%]   flex flex-col items-center justify-between flex-1 mx-auto h-full   ">
                 <AnimatedText
-                     className=" uppercase font-bold text-center text-white text-xl  sm:text-2xl md:text-3xl lg:text-4xl 2xl:text-9xl"
+                     className=" uppercase font-bold text-center text-white text-2xl  sm:text-2xl md:text-3xl lg:text-4xl 2xl:text-9xl"
                     text="How are we Different?"
                 />
-                <div className="w-full  h-52 2xl:h-[520px] flex items-center justify-center">
+                <div className="w-full  h-64 2xl:h-[520px] flex items-center justify-center">
                     <img
                         src="/Arrow.png"
                         className="h-full w-full  object-contain"
@@ -50,7 +50,7 @@ const Section4 = () => {
                 >
                     <p
                         ref={paraRef}
-              className="text-center text-white text-xs sm:text-sm md:text-base lg:text-lg xl:text-2xl  w-full  font-semibold 2xl:text-5xl"
+              className="text-center text-white text-sm sm:text-sm md:text-base lg:text-lg xl:text-2xl  w-full  font-semibold 2xl:text-5xl"
                     >
                         We're unlocking the full potential of crops
                         transforming agriculture from an extractive

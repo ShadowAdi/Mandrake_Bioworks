@@ -89,7 +89,7 @@ const Section3Part1 = () => {
             {steps[0].desc}
           </p>
         </div>
-        <div className="flex  justify-end  md:flex-[0.6]   h-48 sm:h-72 lg:h-80 xl:h-96 2xl:h-[36rem]">
+        <div className="flex  justify-end  md:flex-[0.6]   h-60 sm:h-72 lg:h-80 xl:h-96 2xl:h-[36rem]">
           <img
             ref={imageRef}
             className="h-full w-full max-w-md object-contain transition-transform transition-opacity duration-500"
