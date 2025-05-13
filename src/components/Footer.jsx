@@ -19,7 +19,7 @@ const Footer = () => {
               <div className="bg-white h-4 w-4 sm:h-5 sm:w-5 p-1 flex items-center justify-center rounded-full">
                 <FaLocationDot className="h-3 w-3 sm:h-4 sm:w-4 fill-black" />
               </div>
-              <p className="text-xs sm:text-sm lg:text-base 2xl:text-xl text-left text-white">
+              <p className="text-[10px] sm:text-sm lg:text-base 2xl:text-xl text-left text-white">
                 Xodia Industrial Estate, Brik Rd, Hatijugar, India
               </p>
             </div>
@@ -101,7 +101,7 @@ const Footer = () => {
             />
           </div>
         </div>
-        <p className="text-xs sm:text-sm lg:text-base 2xl:text-xl text-center text-white opacity-90">
+        <p className="text-[10px] sm:text-sm lg:text-base 2xl:text-xl text-center text-white opacity-90">
           © Copyright 2025, Mandrake Bioworks All Rights Reserved
         </p>
       </div>
