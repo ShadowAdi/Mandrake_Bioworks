@@ -18,7 +18,7 @@ const Section5 = () => {
             </span>
             <p
               style={{ lineHeight: 1.35 }}
-              className="text-xs sm:text-xs md:text-sm lg:text-base 2xl:text-3xl opacity-90 text-left"
+              className="text-[10px] sm:text-xs md:text-sm lg:text-base 2xl:text-3xl opacity-90 text-left"
             >
               Plants designed to handle pests, disease, drought, extreme temperatures, and unpredictable weather on their own — ensuring resilience even in tough environments without toxic inputs.
             </p>
@@ -39,7 +39,7 @@ const Section5 = () => {
             </span>
             <p
               style={{ lineHeight: 1.35 }}
-              className="text-xs md:text-sm lg:text-base 2xl:text-3xl opacity-90 text-left"
+              className="text-[10px] md:text-sm lg:text-base 2xl:text-3xl opacity-90 text-left"
             >
               Efficiently combining multiple beneficial traits—such as enhanced nutrition, better yields, and longer shelf-life—allowing effective innovation even in traditionally overlooked crops.
             </p>
@@ -61,7 +61,7 @@ const Section5 = () => {
           </span>
           <p
             style={{ lineHeight: 1.35 }}
-            className="text-xs md:text-sm lg:text-base 2xl:text-3xl opacity-90 text-left"
+            className="text-[10px] md:text-sm lg:text-base 2xl:text-3xl opacity-90 text-left"
           >
             We make advanced crop development accessible to everyone. By drastically reducing barriers, farmers worldwide can benefit from better, more productive, and more resilient plants.
           </p>

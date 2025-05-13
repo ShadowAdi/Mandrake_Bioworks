@@ -47,7 +47,7 @@ export const CardComponent = ({ category, title, description, cardNumber, toggle
         {title}
       </h2>
 
-      <p className="text-center  md:text-left text-white opacity-90 relative z-10 2xl:text-3xl   w-full   text-base  md:text-lg  lg:text-lg xl:text-lg" >
+      <p className="text-center  md:text-left text-white opacity-90 relative z-10 2xl:text-3xl   w-full  text-xs sm:text-base  md:text-lg  lg:text-lg xl:text-lg" >
         {description}
       </p>
 
@@ -55,7 +55,7 @@ export const CardComponent = ({ category, title, description, cardNumber, toggle
         <button onClick={() => {
           window.location.hash = "contact"
         }} className="px-4 lg:px-7 py-2 lg:py-3 rounded-full bg-white hover:bg-opacity-90 transition-all flex items-center justify-center">
-          <span className="text-sm sm:text-base 2xl:text-lg text-black font-medium">
+          <span className="text-xs sm:text-base 2xl:text-lg text-black font-medium">
             Get In Touch
           </span>
         </button>
