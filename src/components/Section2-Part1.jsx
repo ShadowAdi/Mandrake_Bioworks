@@ -122,7 +122,7 @@ const Section2Part1 = () => {
                     ref={paraRef}
                     className="text-center text-white font-normal 
     w-[98%] sm:w-[95%] md:w-[95%] lg:w-[90%] xl:w-[75%] 2xl:w-[50%] 
-    text-sm sm:text-base md:text-base lg:text-lg xl:text-xl  2xl:text-3xl leading-relaxed"
+    text-xs sm:text-base md:text-base lg:text-lg xl:text-xl  2xl:text-3xl leading-relaxed"
                 >
                     Currently, developing new plants means guesswork & a painfully slow and prohibitively
                     expensive process. This inefficiency leaves countless crop improvements undiscovered,
@@ -132,7 +132,7 @@ const Section2Part1 = () => {
                     ref={para2Ref}
                  className="text-center text-white font-normal 
     w-[98%] sm:w-[95%] md:w-[95%] lg:w-[90%] xl:w-[75%] 2xl:w-[50%] 
-    text-sm sm:text-base md:text-base lg:text-lg xl:text-xl  2xl:text-3xl leading-relaxed"
+    text-xs sm:text-base md:text-base lg:text-lg xl:text-xl  2xl:text-3xl leading-relaxed"
                 >
                     While agriculture remains fundamental to humanity's survival, it's trapped in outdated
                     breeding methods that miss transformative opportunities.
