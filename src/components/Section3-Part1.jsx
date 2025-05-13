@@ -66,30 +66,30 @@ const Section3Part1 = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative  min-h-[100vh] flex items-center  justify-between py-14 bg-cover  bg-center  bg-no-repeat w-full"
+      className="relative  min-h-[100vh] flex items-center py-5 justify-between md:py-14 bg-cover  bg-center  bg-no-repeat w-full"
       style={{
         backgroundImage: `url(${bgImage})`,
       }}
     >
-      <div className='flex flex-col  items-center w-full 2xl:w-[90%]    mx-auto justify-between h-full gap-10 '>
+      <div className='flex flex-col  items-center w-full 2xl:w-[90%]    mx-auto justify-between h-full gap-4 md:gap-10 '>
       <AnimatedText
         divClassName="w-full "
-        className="uppercase font-bold text-center text-white text-xl sm:text-3xl  lg:text-4xl xl:text-6xl 2xl:text-7xl "
+        className="uppercase font-bold text-center text-white text-xl  sm:text-3xl md:text-3xl 2xl:text-7xl "
         text="At Mandrake, we’re re-inventing crop development from the ground up "
       />
-      <div className="flex flex-col flex-[0.6] md:flex-1 md:flex-row  justify-between items-center  w-full xl:w-[80%] mx-auto ">
+      <div className="flex  flex-col flex-[0.6] md:flex-1 md:flex-row  justify-between md:justify-around px-6 items-center  w-full xl:w-[80%] mx-auto ">
         <div
           ref={textRef}
-          className="flex  flex-col md:items-start md:justify-start items-center justify-center gap-2 transition-opacity md:flex-1  px-4 sm:px-0 2xl:gap-5"
+          className="flex flex-1  flex-col md:items-start md:justify-start items-center justify-center gap-2 transition-opacity md:flex-1  px-4 sm:px-0 2xl:gap-5"
         >
-          <h3 className="text-base sm:text-lg md:text-2xl lg:text-3xl xl:text-5xl 2xl:text-6xl md:text-left text-center  text-white font-semibold">
+          <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-5xl md:text-left text-center  text-white font-semibold">
             {steps[0].title}
           </h3>
-          <p  className="md:text-left text-center text-xs sm:text-base lg:text-lg 2xl:text-3xl  text-white font-normal w-full sm:w-[90%]  leading-relaxed">
+          <p  className="md:text-left text-center text-xs sm:text-base lg:text-lg xl:text-xl 2xl:text-4xl  text-white font-normal w-full sm:w-[90%]  leading-normal 2xl:leading-relaxed">
             {steps[0].desc}
           </p>
         </div>
-        <div className="flex  justify-end  md:flex-1   h-72 lg:h-80 xl:h-96">
+        <div className="flex  justify-end  md:flex-[0.6]   h-48 sm:h-72 lg:h-80 xl:h-96 2xl:h-[36rem]">
           <img
             ref={imageRef}
             className="h-full w-full max-w-md object-contain transition-transform transition-opacity duration-500"

@@ -21,7 +21,7 @@ const Section2Part2 = () => {
             types: "lines,words",
             lineClass: "line-wrapper"
         });
-        const paraTextSplit = new SplitType(paraRef.current, { types: "chars" })
+        const paraTextSplit = new SplitType(paraRef.current, { types: "words" })
         const textRefSplit2 = new SplitType(textRef2.current, {
             types: "lines,words",
             lineClass: "line-wrapper"
@@ -78,25 +78,26 @@ const Section2Part2 = () => {
         <div className="w-full sm:w-11/12 md:w-4/5 lg:w-[90%] xl:w-[90%] min-h-[100dvh] flex flex-col py-4 items-center mx-auto gap-2 sm:gap-3 lg:gap-4 2xl:gap-5 justify-around px-2 sm:px-6">
             <div ref={textWrapperRef} className="overflow-hidden  w-full ">
                 <h1 ref={textRef} style={{ fontFamily: "'Afacad Flux', serif" }}
-                     className="uppercase font-bold text-center text-white 
-    text-xl sm:text-4xl  lg:text-5xl xl:text-6xl 2xl:text-7xl">
+                    className="uppercase font-bold text-center text-white 
+    text-2xl sm:text-3xl  lg:text-4xl xl:text-5xl 2xl:text-7xl">
                     What If Agriculture Stole a Page from Pharma's Playbook?
                 </h1>
             </div>
             <div className=' h-[25vh]  md:h-[40vh] lg:h-[50vh]  w-full'>
                 <img src='/Scientist.png' className='object-fill h-full w-full' />
             </div>
-            <div ref={paraWrapperRef} className='flex mx-auto flex-col  items-center w-full sm:w-[70%] md:w-[90%] justify-center'>
-                <p       className="text-center text-white font-normal 
-    w-[98%] sm:w-[85%] md:w-[95%] lg:w-[80%] xl:w-[55%] 2xl:w-[50%]
-    text-xs sm:text-sm md:text-base lg:text-base 2xl:text-3xl leading-relaxed"
+            <div ref={paraWrapperRef} className='flex mx-auto flex-col  items-center w-full
+             sm:w-[80%] md:w-[96%] justify-center'>
+                <p className="text-center text-white font-normal 
+    w-[98%] sm:w-[95%] md:w-[95%] lg:w-[90%] xl:w-[75%] 2xl:w-[70%] 
+    text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg  2xl:text-3xl leading-relaxed"
                     ref={paraRef}
                 >
                     Industries like pharmaceuticals and materials science have revolutionized their  innovation cycles by integrating AI-driven discovery with automated lab workflows. The result? Dramatically reduced costs, accelerated timelines, and entirely new realms of possibility.
                 </p>
             </div>
             <div ref={textWrapperRef2} className="overflow-hidden w-full    ">
-                <h1 ref={textRef2} style={{ fontFamily: "'Afacad Flux', serif" }} className={"uppercase font-semibold text-center text-white  text-xl sm:text-2xl  lg:text-3xl xl:text-4xl 2xl:text-7xl "}>
+                <h1 ref={textRef2} style={{ fontFamily: "'Afacad Flux', serif" }} className={"uppercase font-semibold text-center text-white  text-base sm:text-lg  lg:text-xl xl:text-2xl 2xl:text-6xl "}>
                     We think it's time Agriculture catches up.      </h1>
             </div>
         </div>

@@ -83,14 +83,14 @@ const Section2Part1 = () => {
     return (
         <div
             ref={sectionRef}
-            className="w-full sm:w-11/12 md:w-4/5 lg:w-[90%] xl:w-[90%] min-h-[100dvh] flex flex-col py-4 items-center mx-auto gap-4 sm:gap-6 lg:gap-10 2xl:gap-12 justify-around px-4 sm:px-6"
+            className="w-full sm:w-11/12 md:w-4/5 lg:w-[90%] xl:w-[90%] min-h-[100dvh] flex flex-col py-4 items-center mx-auto gap-4 sm:gap-6 lg:gap-10 2xl:gap-12 justify-around px-2 sm:px-6"
         >
-            <div ref={textWrapperRef} className="overflow-hidden w-full ">
+            <div ref={textWrapperRef} className="overflow-hidden w-full lg:w-[90%] ">
                 <h1
                     ref={textRef}
                     style={{ fontFamily: "'Afacad Flux', serif" }}
                     className="uppercase font-bold text-center text-white 
-    text-3xl sm:text-5xl  lg:text-5xl xl:text-6xl 2xl:text-7xl"
+    text-2xl sm:text-3xl  lg:text-4xl xl:text-5xl 2xl:text-7xl"
                 >
                     WHAT IF YOU CAN DESIGN CROPS LIKE SOFTWARE?
                 </h1>
@@ -98,17 +98,17 @@ const Section2Part1 = () => {
 
             <div className="flex flex-col w-full items-center justify-center gap-1 sm:gap-2 lg:gap-3">
                 <AnimatedWhiteTextSvg
-                    className="text-xl sm:text-2xl  lg:text-3xl xl:text-4xl 2xl:text-6xl  font-semibold text-center text-white "
+                    className="text-lg sm:text-2xl  lg:text-3xl 2xl:text-6xl  font-semibold text-center text-white "
                     text="Decade-Long Timelines."
                     numWordsToOverlay={1}
                 />
                 <AnimatedWhiteTextSvg
-                    className="text-xl sm:text-2xl  lg:text-3xl xl:text-4xl 2xl:text-6xl   font-semibold text-center text-white"
+                    className="text-lg sm:text-2xl  lg:text-3xl 2xl:text-6xl  font-semibold text-center text-white "
                     text="Millions in Development Costs."
                     numWordsToOverlay={1}
                 />
                 <AnimatedWhiteTextSvg
-                    className="text-xl sm:text-2xl  lg:text-3xl xl:text-4xl 2xl:text-6xl font-semibold text-center text-white"
+                    className="text-lg sm:text-2xl  lg:text-3xl  2xl:text-6xl  font-semibold text-center text-white "
                     text="Just. One. Trait."
                     numWordsToOverlay={3}
                 />
@@ -120,9 +120,9 @@ const Section2Part1 = () => {
             >
                 <p
                     ref={paraRef}
-                   className="text-center text-white font-normal 
-    w-[98%] sm:w-[85%] md:w-[95%] lg:w-[90%] xl:w-[75%] 2xl:w-[50%] 
-    text-xs sm:text-sm md:text-base  2xl:text-3xl leading-relaxed"
+                    className="text-center text-white font-normal 
+    w-[98%] sm:w-[95%] md:w-[95%] lg:w-[90%] xl:w-[75%] 2xl:w-[50%] 
+    text-xs sm:text-base md:text-base lg:text-lg xl:text-xl  2xl:text-3xl leading-relaxed"
                 >
                     Currently, developing new plants means guesswork & a painfully slow and prohibitively
                     expensive process. This inefficiency leaves countless crop improvements undiscovered,
@@ -130,9 +130,9 @@ const Section2Part1 = () => {
                 </p>
                 <p
                     ref={para2Ref}
-               className="text-center text-white font-normal 
-      w-[98%] sm:w-[85%] md:w-[95%] lg:w-[90%] xl:w-[75%] 2xl:w-[50%] 
-    text-xs sm:text-sm md:text-base  2xl:text-3xl leading-relaxed"
+                 className="text-center text-white font-normal 
+    w-[98%] sm:w-[95%] md:w-[95%] lg:w-[90%] xl:w-[75%] 2xl:w-[50%] 
+    text-xs sm:text-base md:text-base lg:text-lg xl:text-xl  2xl:text-3xl leading-relaxed"
                 >
                     While agriculture remains fundamental to humanity's survival, it's trapped in outdated
                     breeding methods that miss transformative opportunities.
