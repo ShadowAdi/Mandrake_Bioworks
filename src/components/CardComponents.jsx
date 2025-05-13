@@ -47,7 +47,7 @@ export const CardComponent = ({ category, title, description, cardNumber, toggle
         {title}
       </h2>
 
-      <p className="text-center  md:text-left text-white opacity-90 relative z-10 2xl:text-3xl   w-full  text-xs sm:text-base  md:text-lg  lg:text-lg xl:text-lg" >
+      <p className="text-center  md:text-left text-white opacity-90 relative z-10 2xl:text-3xl   w-full  text-xs sm:text-sm  md:text-sm  lg:text-sm xl:text-lg" >
         {description}
       </p>
 
