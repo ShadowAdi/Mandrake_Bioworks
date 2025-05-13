@@ -72,11 +72,14 @@ const Section3Part1 = () => {
       }}
     >
       <div className='flex flex-col  items-center w-full 2xl:w-[90%]    mx-auto justify-between h-full gap-4 md:gap-10 '>
+        <div className='w-[90%]'>
+
       <AnimatedText
-        divClassName="w-full "
-        className="uppercase font-bold text-center text-white text-xl  sm:text-3xl md:text-3xl 2xl:text-7xl "
+        divClassName="w-[90%] "
+        className="uppercase font-bold text-center text-white text-xl  sm:text-3xl md:text-3xl 2xl:text-8xl "
         text="At Mandrake, we’re re-inventing crop development from the ground up "
       />
+        </div>
       <div className="flex  flex-col flex-[0.6] md:flex-1 md:flex-row  justify-between md:justify-around px-6 items-center  w-full xl:w-[80%] mx-auto ">
         <div
           ref={textRef}

@@ -79,7 +79,7 @@ const Section2Part2 = () => {
             <div ref={textWrapperRef} className="overflow-hidden  w-full ">
                 <h1 ref={textRef} style={{ fontFamily: "'Afacad Flux', serif" }}
                     className="uppercase font-bold text-center text-white 
-    text-xl sm:text-3xl  lg:text-4xl xl:text-5xl 2xl:text-6xl">
+    text-xl sm:text-3xl  lg:text-4xl xl:text-5xl 2xl:text-9xl">
                     What If Agriculture Stole a Page from Pharma's Playbook?
                 </h1>
             </div>
