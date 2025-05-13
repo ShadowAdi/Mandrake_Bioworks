@@ -3,13 +3,13 @@ import AnimatedText from './AnimatedText'
 
 const AdvisorCard = ({ name, position, username, imageUrl }) => {
   return (
-<div className='flex flex-col items-center justify-center gap-y-2 md:gap-y-2'>
+    <div className='flex flex-col items-center justify-center gap-y-2 md:gap-y-2'>
       <img
         src={imageUrl || 'https://avatar.iran.liara.run/public'}
-  className='h-28 w-28 md:h-40 md:w-40 lg:h-48 lg:w-48 2xl:h-80 2xl:w-80 object-cover rounded-full transition-all duration-300'
+        className='h-28 w-28 md:h-40 md:w-40 lg:h-48 lg:w-48 2xl:h-80 2xl:w-80 object-cover rounded-full transition-all duration-300'
         alt={`${name} - ${position}`}
       />
-     <div className='flex items-center justify-center flex-col space-y-0 md:space-y-0 2xl:space-y-4'>
+      <div className='flex items-center justify-center flex-col space-y-0 md:space-y-0 2xl:space-y-4'>
         <span className='text-base md:text-2xl  2xl:text-4xl  font-semibold text-white text-center'>
           {name}
         </span>
@@ -56,20 +56,20 @@ const Section8 = () => {
 
   return (
     <section
-      className="flex flex-col items-center w-full mx-auto justify-center relative py-8 md:py-12 lg:py-16 min-h-[100dvh]"
+      className="flex flex-col items-center w-full mx-auto justify-between relative py-8  min-h-[100dvh] "
     >
-      <div className='w-[95%] md:w-[90%] max-w-8xl flex flex-col h-full items-center mx-auto space-y-10 md:space-y-14 lg:space-y-16 justify-between'>
-        <div className='flex flex-col w-[90%] md:w-[80%] lg:w-[70%] space-y-0 mx-auto items-center justify-center flex-1 '>
+      <div className='max-w-[1640px]   flex flex-col h-full items-center mx-auto space-y-10 md:space-y-14 lg:space-y-16 justify-between flex-1'>
+        <div className='flex flex-col w-full space-y-2 mx-auto items-center justify-center flex-1 '>
           <AnimatedText
-              className="text-3xl   sm:text-4xl md:text-5xl 2xl:text-9xl uppercase font-bold text-center text-white"
+            className="text-3xl   sm:text-4xl md:text-5xl 2xl:text-9xl uppercase font-bold text-center text-white"
             text="OUR ADVISORS"
           />
-          <h4 className='text-xs sm:text-sm md:text-base lg:text-md xl:text-xl 2xl:text-2xl text-center text-white font-normal  md:w-full'>
+          <h4 className=' text-xs sm:text-sm md:text-base lg:text-md xl:text-xl 2xl:text-4xl text-center text-white font-normal  2xl:w-[70%]'>
             We're guided by Mentors who have spent decades in the Plant Breeding Industry
           </h4>
         </div>
 
-        <div className='w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-x-6 lg:gap-x-8 xl:gap-x-12'>
+        <div className='w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-x-6 lg:gap-x-8 xl:gap-x-12'>
           {advisors.map((advisor, index) => (
             <AdvisorCard
               key={index}

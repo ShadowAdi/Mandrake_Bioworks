@@ -30,9 +30,9 @@ const Section4 = () => {
 
     return (
         <section
-            className="relative flex flex-col items-center w-full  min-h-[100dvh] justify-around   py-4 sm:py-6 2xl:py-16"
+            className="relative flex flex-col items-center w-full  min-h-[100dvh] justify-around   py-4 sm:py-6 2xl:py-16 "
         >
-            <div className="w-[98%] md:w-[80%]   flex flex-col items-center justify-between flex-1 mx-auto h-full   ">
+            <div className=" max-w-[1640px] flex flex-col items-center justify-between flex-1 mx-auto h-full   ">
                 <AnimatedText
                      className=" uppercase font-bold text-center text-white text-2xl  sm:text-2xl md:text-3xl lg:text-4xl 2xl:text-9xl"
                     text="How are we Different?"

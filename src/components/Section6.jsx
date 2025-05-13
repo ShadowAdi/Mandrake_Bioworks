@@ -4,9 +4,9 @@ const Section6 = () => {
 
     return (
         <section
-            className="flex flex-col items-center w-full mx-auto justify-around relative py-2 md:py-4 space-y-8 min-h-[100dvh]"
+            className="flex flex-col items-center w-full mx-auto justify-around relative py-2 md:py-4 space-y-8 min-h-[100dvh] "
         >
-            <div className='w-[90%]  flex pt-4 md:pt-6 pb-6 flex-col items-center mx-auto  space-y-4 sm:space-y-12 justify-around flex-1'>
+            <div className='w-[90%]    flex pt-4 md:pt-6 pb-6 flex-col items-center mx-auto  space-y-4 sm:space-y-12 justify-around flex-1'>
                 <AnimatedText
                     className=" text-3xl   sm:text-4xl md:text-5xl 2xl:text-9xl  uppercase font-extrabold text-center text-white"
                     text="Let's unlock Nature's Potential"

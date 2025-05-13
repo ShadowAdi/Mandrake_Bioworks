@@ -83,9 +83,9 @@ const Section2Part1 = () => {
     return (
         <div
             ref={sectionRef}
-            className="w-full sm:w-11/12 md:w-4/5 lg:w-[90%] xl:w-[90%] min-h-[100dvh] flex flex-col py-4 items-center mx-auto gap-4 sm:gap-6 lg:gap-10 2xl:gap-12 justify-around px-2 sm:px-6"
+            className="w-full  min-h-[100dvh] flex flex-col py-4 items-center mx-auto gap-4 sm:gap-6 lg:gap-10 2xl:gap-12 justify-around px-2 sm:px-6  max-w-[1640px]"
         >
-            <div ref={textWrapperRef} className="overflow-hidden w-full lg:w-[90%] ">
+            <div ref={textWrapperRef} className="overflow-hidden w-full ">
                 <h1
                     ref={textRef}
                     style={{ fontFamily: "'Afacad Flux', serif" }}
@@ -121,7 +121,7 @@ const Section2Part1 = () => {
                 <p
                     ref={paraRef}
                     className="text-center text-white font-normal 
-     w-[98%] sm:w-[95%] md:w-[95%] lg:w-[90%] xl:w-[75%] 2xl:w-[50%] 
+     w-[98%] sm:w-[95%] md:w-[95%] lg:w-[90%] xl:w-[75%] 2xl:w-[80%] 
     text-xs sm:text-base md:text-sm lg:text-sm xl:text-base  2xl:text-3xl leading-relaxed"
                 >
                     Currently, developing new plants means guesswork & a painfully slow and prohibitively
@@ -131,7 +131,7 @@ const Section2Part1 = () => {
                 <p
                     ref={para2Ref}
                  className="text-center text-white font-normal 
-   w-[98%] sm:w-[95%] md:w-[95%] lg:w-[90%] xl:w-[75%] 2xl:w-[50%] 
+   w-[98%] sm:w-[95%] md:w-[95%] lg:w-[90%] xl:w-[75%] 2xl:w-[80%] 
     text-xs sm:text-base md:text-sm lg:text-sm xl:text-base  2xl:text-3xl leading-relaxed"
                 >
                     While agriculture remains fundamental to humanity's survival, it's trapped in outdated

@@ -37,7 +37,7 @@ const AnimatedText = ({ text,className,divClassName }) => {
     }, []);
 
     return (
-        <div ref={textWrapperRef} className={`overflow-hidden sm:w-[90%] w-full mx-auto  `}>
+        <div ref={textWrapperRef} className={`overflow-hidden  w-full mx-auto  `}>
             <h1 ref={textRef} style={{ fontFamily: "'Afacad Flux', serif" }}
              className={className+" text-center"}>
                 {text}

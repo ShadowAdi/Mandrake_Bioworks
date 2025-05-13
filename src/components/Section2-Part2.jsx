@@ -75,22 +75,22 @@ const Section2Part2 = () => {
 
 
     return (
-        <div className="w-full sm:w-11/12 md:w-4/5 lg:w-[90%] xl:w-[90%] min-h-[100dvh] flex flex-col py-4 items-center mx-auto gap-2 sm:gap-3 lg:gap-4 2xl:gap-5 justify-around px-2 sm:px-6">
+        <div className="w-full min-h-[100dvh] flex flex-col py-4 items-center mx-auto gap-2 sm:gap-3 lg:gap-4 2xl:gap-5 justify-around px-2 sm:px-6  max-w-[1640px]" >
             <div ref={textWrapperRef} className="overflow-hidden  w-full ">
                 <h1 ref={textRef} style={{ fontFamily: "'Afacad Flux', serif" }}
                     className="uppercase font-bold text-center text-white 
-    text-xl sm:text-3xl  lg:text-4xl xl:text-5xl 2xl:text-9xl">
+    text-xl sm:text-3xl  lg:text-4xl xl:text-5xl 2xl:text-8xl">
                     What If Agriculture Stole a Page from Pharma's Playbook?
                 </h1>
             </div>
-            <div className=' h-[33vh]  md:h-[40vh] lg:h-[45vh]  w-[60%]'>
+            <div className=' h-[33vh]  md:h-[40vh] lg:h-[45vh]  w-[80%]'>
                 <img src='/Scientist.png' className='object-fill h-full w-full' />
             </div>
             <div ref={paraWrapperRef} className='flex mx-auto flex-col  items-center w-full
              sm:w-[80%] md:w-[96%] justify-center'>
                 <p className="text-center text-white font-normal 
-    w-[98%] sm:w-[95%] md:w-[95%] lg:w-[90%] xl:w-[75%] 2xl:w-[70%] 
-    text-xs sm:text-sm md:text-sm lg:text-sm xl:text-base  2xl:text-3xl leading-relaxed"
+                w-[98%] sm:w-[95%] md:w-[95%] lg:w-[90%] xl:w-[75%] 2xl:w-[70%] 
+                text-xs sm:text-sm md:text-sm lg:text-sm xl:text-base  2xl:text-3xl leading-relaxed"
                     ref={paraRef}
                 >
                     Industries like pharmaceuticals and materials science have revolutionized their  innovation cycles by integrating AI-driven discovery with automated lab workflows. The result? Dramatically reduced costs, accelerated timelines, and entirely new realms of possibility.

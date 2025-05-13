@@ -71,37 +71,36 @@ const Section3Part1 = () => {
         backgroundImage: `url(${bgImage})`,
       }}
     >
-      <div className='flex flex-col  items-center w-full 2xl:w-[90%]    mx-auto justify-between h-full gap-4 md:gap-10 '>
-        <div className='w-[90%]'>
+      <div className='flex flex-col  items-center w-full 2xl:w-full    mx-auto justify-between h-full gap-4 md:gap-10  max-w-[1640px]'>
+        <div className='w-full'>
 
-      <AnimatedText
-        divClassName="w-[90%] "
-        className="uppercase font-bold text-center text-white text-xl  sm:text-3xl md:text-3xl 2xl:text-8xl "
-        text="At Mandrake, we’re re-inventing crop development from the ground up "
-      />
-        </div>
-      <div className="flex  flex-col flex-[0.6] md:flex-1 md:flex-row  justify-between md:justify-around px-6 items-center  w-full xl:w-[80%] mx-auto ">
-        <div
-          ref={textRef}
-          className="flex flex-1  flex-col md:items-start md:justify-start items-center justify-center gap-2 transition-opacity md:flex-1  px-4 sm:px-0 2xl:gap-5"
-        >
-          <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-5xl md:text-left text-center  text-white font-semibold">
-            {steps[0].title}
-          </h3>
-          <p  className="md:text-left text-center text-[10px] sm:text-base lg:text-lg xl:text-xl 2xl:text-4xl  text-white font-normal w-full sm:w-[90%]  leading-normal 2xl:leading-relaxed">
-            {steps[0].desc}
-          </p>
-        </div>
-        <div className="flex  justify-end  md:flex-[0.6]   h-60 sm:h-72 lg:h-80 xl:h-96 2xl:h-[36rem]">
-          <img
-            ref={imageRef}
-            className="h-full w-full max-w-md object-contain transition-transform transition-opacity duration-500"
-            alt="AI Genetic Prospecting Visualization"
-            src={steps[0].img}
+          <AnimatedText
+            divClassName=" bg-red-600"
+            className="uppercase font-bold text-center text-white text-2xl  sm:text-3xl md:text-4xl 2xl:text-7xl lg:text-5xl"
+            text="At Mandrake, we’re re-inventing crop development from the ground up "
           />
         </div>
-      </div>
-
+        <div className="flex  flex-col flex-[0.6] md:flex-1 md:flex-row  justify-between md:justify-around px-6 items-center  w-full  mx-auto ">
+          <div
+            ref={textRef}
+            className="flex flex-1  flex-col md:items-start md:justify-start items-center justify-center gap-2 transition-opacity md:flex-1  px-4 sm:px-0 2xl:gap-5"
+          >
+            <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-5xl md:text-left text-center  text-white font-semibold">
+              {steps[0].title}
+            </h3>
+            <p className="md:text-left text-center text-[10px] sm:text-base lg:text-lg xl:text-xl 2xl:text-4xl  text-white font-normal w-full sm:w-[90%]  leading-normal 2xl:leading-relaxed">
+              {steps[0].desc}
+            </p>
+          </div>
+          <div className="flex  justify-end  md:flex-[0.6]   h-60 sm:h-72 lg:h-80 xl:h-96 2xl:h-[36rem]">
+            <img
+              ref={imageRef}
+              className="h-full w-full max-w-md object-contain transition-transform transition-opacity duration-500"
+              alt="AI Genetic Prospecting Visualization"
+              src={steps[0].img}
+            />
+          </div>
+        </div>
       </div>
     </section>
   );
