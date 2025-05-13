@@ -79,7 +79,7 @@ const Section2Part2 = () => {
             <div ref={textWrapperRef} className="overflow-hidden  w-full ">
                 <h1 ref={textRef} style={{ fontFamily: "'Afacad Flux', serif" }}
                     className="uppercase font-bold text-center text-white 
-    text-2xl sm:text-3xl  lg:text-4xl xl:text-5xl 2xl:text-7xl">
+    text-xl sm:text-3xl  lg:text-4xl xl:text-5xl 2xl:text-7xl">
                     What If Agriculture Stole a Page from Pharma's Playbook?
                 </h1>
             </div>
@@ -90,7 +90,7 @@ const Section2Part2 = () => {
              sm:w-[80%] md:w-[96%] justify-center'>
                 <p className="text-center text-white font-normal 
     w-[98%] sm:w-[95%] md:w-[95%] lg:w-[90%] xl:w-[75%] 2xl:w-[70%] 
-    text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg  2xl:text-3xl leading-relaxed"
+    text-[10px] sm:text-sm md:text-sm lg:text-base xl:text-lg  2xl:text-3xl leading-relaxed"
                     ref={paraRef}
                 >
                     Industries like pharmaceuticals and materials science have revolutionized their  innovation cycles by integrating AI-driven discovery with automated lab workflows. The result? Dramatically reduced costs, accelerated timelines, and entirely new realms of possibility.
