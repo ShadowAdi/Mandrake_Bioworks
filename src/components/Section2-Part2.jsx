@@ -90,7 +90,7 @@ const Section2Part2 = () => {
              sm:w-[80%] md:w-[96%] justify-center'>
                 <p className="text-center text-white font-normal 
     w-[98%] sm:w-[95%] md:w-[95%] lg:w-[90%] xl:w-[75%] 2xl:w-[70%] 
-    text-sm sm:text-sm md:text-sm lg:text-base xl:text-lg  2xl:text-3xl leading-relaxed"
+    text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg  2xl:text-3xl leading-relaxed"
                     ref={paraRef}
                 >
                     Industries like pharmaceuticals and materials science have revolutionized their  innovation cycles by integrating AI-driven discovery with automated lab workflows. The result? Dramatically reduced costs, accelerated timelines, and entirely new realms of possibility.
