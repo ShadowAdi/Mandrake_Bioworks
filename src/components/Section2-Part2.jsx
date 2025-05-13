@@ -83,7 +83,7 @@ const Section2Part2 = () => {
                     What If Agriculture Stole a Page from Pharma's Playbook?
                 </h1>
             </div>
-            <div className=' h-[25vh]  md:h-[40vh] lg:h-[50vh]  w-full'>
+            <div className=' h-[35vh]  md:h-[40vh] lg:h-[50vh]  w-full'>
                 <img src='/Scientist.png' className='object-fill h-full w-full' />
             </div>
             <div ref={paraWrapperRef} className='flex mx-auto flex-col  items-center w-full
