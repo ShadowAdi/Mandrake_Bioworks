@@ -12,7 +12,7 @@ export const CardComponent = ({ category, title, description, cardNumber, toggle
 
   return (
     <div
-      className="flex flex-col justify-between items-center md:items-start p-4 w-full h-full max-w-full relative flex-1 gap-1 lg:gap-3 2xl:flex-[0.8]"
+      className="flex flex-col justify-between items-center md:items-start p-4 w-full h-full max-w-full relative flex-1 gap-3 lg:gap-5 2xl:flex-[0.8] "
       style={{
         transition: 'all 0.3s ease',
       }}
