@@ -56,7 +56,7 @@ const Section9 = () => {
           />
 
           <div className="flex flex-col items-center 
-          justify-center text-center w-full sm:w-[80%] lg:px-4 gap-3  h-[30%]">
+          justify-center text-center w-full sm:w-[80%] md:w-[90%] lg:px-4 gap-3  h-[30%]">
             <AnimatedWhiteText
               text="Building the Plant Design Factory of the Future"
               className="text-2xl   sm:text-3xl md:text-4xl 2xl:text-7xl uppercase font-bold text-white"
