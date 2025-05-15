@@ -5,7 +5,7 @@ import { MdEmail } from 'react-icons/md';
 const Footer = () => {
   return (
     <section className="flex flex-col items-center w-full py-6 pb-4 md:py-10 lg:py-12 ">
-      <div className="w-[90%] max-w-[1640px] flex flex-col py-6 md:py-8 space-y-6 md:space-y-0 mx-auto  rounded-lg">
+      <div className="w-[90%] container flex flex-col py-6 md:py-8 space-y-6 md:space-y-0 mx-auto  rounded-lg">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 lg:gap-12 w-full px-4 md:px-0">
           <div className="flex flex-col gap-4 items-center md:items-start justify-center">
             <div className="w-20 sm:w-24 lg:w-32 2xl:w-48 h-auto overflow-hidden flex items-start justify-start">

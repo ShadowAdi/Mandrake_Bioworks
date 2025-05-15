@@ -47,7 +47,7 @@ const Section9 = () => {
         className="flex flex-col items-center py-8 w-full justify-center relative   min-h-[100dvh]"
         id="contact "
       >
-        <div className="w-[95%] max-w-[1640px]  h-full flex flex-col items-center mx-auto gap-1 sm:gap-5">
+        <div className="w-[95%] container  h-full flex flex-col items-center mx-auto gap-1 sm:gap-5">
 
           <img
             src="/Gene.jpg"

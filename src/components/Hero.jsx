@@ -66,13 +66,13 @@ const Hero = () => {
       {/* Content */}
       <div className="flex flex-col items-center pb-5 w-full py-5 mx-auto min-h-[100dvh] justify-center relative items-center z-10 ">
         <Header />
-        <div className="w-full pb-7 flex max-w-[1640px] flex-col justify-between items-start h-full mx-auto flex-1 ">
+        <div className="w-full pb-7 flex container flex-col justify-between items-start h-full mx-auto flex-1 ">
           <div className="flex-1 h-screen flex flex-col items-center justify-center space-y-4">
-            <div ref={textWrapperRef} className="overflow-hidden sm:w-full w-full">
+            <div ref={textWrapperRef} className="overflow-hidden sm:w-[80%] w-full">
               <h1
                 ref={textRef}
                 style={{ fontFamily: "'Afacad Flux', serif" }}
-                className="text-3xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-9xl uppercase font-bold text-center text-white"
+                className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl 2xl:text-9xl uppercase font-bold text-center text-white"
               >
                 WHAT IF YOU CAN DESIGN CROPS LIKE SOFTWARE?
               </h1>
@@ -80,7 +80,7 @@ const Hero = () => {
 
             <div ref={underlineRef} className="h-0.5 bg-white w-2/3 md:w-[75%]" />
 
-            <div className="w-[70%] mx-auto overflow-hidden">
+            <div className="w-full sm:w-[60%] mx-auto overflow-hidden">
               <p
                 ref={paraRef}
                 className="text-xs sm:text-base md:text-md lg:text-lg xl:text-lg  2xl:text-4xl text-center text-white font-medium whitespace-normal"

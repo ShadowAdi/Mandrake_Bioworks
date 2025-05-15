@@ -83,7 +83,7 @@ const Section2Part1 = () => {
     return (
         <div
             ref={sectionRef}
-            className="w-full  min-h-[100dvh] flex flex-col py-4 items-center mx-auto gap-4 sm:gap-6 lg:gap-10 2xl:gap-12 justify-around px-2 sm:px-6  max-w-[1640px]"
+            className="w-full  min-h-[100dvh] flex flex-col py-4 items-center mx-auto gap-4 sm:gap-6 lg:gap-10 2xl:gap-12 justify-around px-2 sm:px-6  container"
         >
             <div ref={textWrapperRef} className="overflow-hidden w-full ">
                 <h1
@@ -121,8 +121,8 @@ const Section2Part1 = () => {
                 <p
                     ref={paraRef}
                     className="text-center text-white font-normal 
-     w-[98%] sm:w-[95%] md:w-[95%] lg:w-[90%] xl:w-[75%] 2xl:w-[80%] 
-    text-xs sm:text-base md:text-sm lg:text-sm xl:text-base  2xl:text-3xl leading-relaxed"
+     w-[98%] sm:w-[95%] md:w-[95%] lg:w-[90%] xl:w-[75%] 2xl:w-full
+    text-xs sm:text-base md:text-sm lg:text-lg  2xl:text-5xl leading-relaxed"
                 >
                     Currently, developing new plants means guesswork & a painfully slow and prohibitively
                     expensive process. This inefficiency leaves countless crop improvements undiscovered,
@@ -130,9 +130,9 @@ const Section2Part1 = () => {
                 </p>
                 <p
                     ref={para2Ref}
-                 className="text-center text-white font-normal 
-   w-[98%] sm:w-[95%] md:w-[95%] lg:w-[90%] xl:w-[75%] 2xl:w-[80%] 
-    text-xs sm:text-base md:text-sm lg:text-sm xl:text-base  2xl:text-3xl leading-relaxed"
+                    className="text-center text-white font-normal 
+   w-[98%] sm:w-[95%] md:w-[95%] lg:w-[90%] xl:w-[75%] 2xl:w-full 
+    text-xs sm:text-base md:text-sm lg:text-sm xl:text-base  2xl:text-5xl leading-relaxed"
                 >
                     While agriculture remains fundamental to humanity's survival, it's trapped in outdated
                     breeding methods that miss transformative opportunities.

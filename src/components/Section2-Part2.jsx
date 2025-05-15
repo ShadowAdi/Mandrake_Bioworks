@@ -75,29 +75,29 @@ const Section2Part2 = () => {
 
 
     return (
-        <div className="w-full min-h-[100dvh] flex flex-col py-4 items-center mx-auto gap-2 sm:gap-3 lg:gap-4 2xl:gap-5 justify-around px-2 sm:px-6  max-w-[1640px]" >
-            <div ref={textWrapperRef} className="overflow-hidden  w-full ">
+        <div className="w-full min-h-[100dvh] flex flex-col py-4 items-center mx-auto gap-2 sm:gap-3 lg:gap-4 2xl:gap-5 justify-around   container" >
+            <div ref={textWrapperRef} className="overflow-hidden  w-[80%] ">
                 <h1 ref={textRef} style={{ fontFamily: "'Afacad Flux', serif" }}
                     className="uppercase font-bold text-center text-white 
-    text-xl sm:text-3xl  lg:text-4xl xl:text-5xl 2xl:text-8xl">
+    text-xl sm:text-3xl  lg:text-5xl  2xl:text-8xl">
                     What If Agriculture Stole a Page from Pharma's Playbook?
                 </h1>
             </div>
-            <div className=' h-[33vh]  md:h-[40vh] lg:h-[45vh]  w-[80%]'>
+            <div className=' h-[33vh]  md:h-[40vh] lg:h-[40vh]  w-[80%] 2xl:w-full'>
                 <img src='/Scientist.png' className='object-fill h-full w-full' />
             </div>
             <div ref={paraWrapperRef} className='flex mx-auto flex-col  items-center w-full
              sm:w-[80%] md:w-[96%] justify-center'>
                 <p className="text-center text-white font-normal 
-                w-[98%] sm:w-[95%] md:w-[95%] lg:w-[90%] xl:w-[75%] 2xl:w-[70%] 
-                text-xs sm:text-sm md:text-sm lg:text-sm xl:text-base  2xl:text-3xl leading-relaxed"
+                w-[98%] sm:w-[95%] md:w-[95%] lg:w-[90%] xl:w-[75%] 2xl:w-[90%] 
+                text-xs sm:text-sm md:text-sm lg:text-sm xl:text-sm  2xl:text-4xl leading-relaxed"
                     ref={paraRef}
                 >
                     Industries like pharmaceuticals and materials science have revolutionized their  innovation cycles by integrating AI-driven discovery with automated lab workflows. The result? Dramatically reduced costs, accelerated timelines, and entirely new realms of possibility.
                 </p>
             </div>
             <div ref={textWrapperRef2} className="overflow-hidden w-full    ">
-                <h1 ref={textRef2} style={{ fontFamily: "'Afacad Flux', serif" }} className={"uppercase font-semibold text-center text-white  text-base sm:text-lg  lg:text-5xl 2xl:text-7xl xl:text-5xl  "}>
+                <h1 ref={textRef2} style={{ fontFamily: "'Afacad Flux', serif" }} className={"uppercase font-semibold text-center text-white  text-base sm:text-lg  lg:text-3xl 2xl:text-6xl  "}>
                     We think it's time Agriculture catches up.      </h1>
             </div>
         </div>

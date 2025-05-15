@@ -71,12 +71,11 @@ const Section3Part1 = () => {
         backgroundImage: `url(${bgImage})`,
       }}
     >
-      <div className='flex flex-col  items-center w-full 2xl:w-full    mx-auto justify-between h-full gap-4 md:gap-10  max-w-[1640px]'>
+      <div className='flex flex-col  items-center w-full 2xl:w-full    mx-auto justify-between h-full gap-4 md:gap-10   container'>
         <div className='w-full'>
-
           <AnimatedText
             divClassName=" bg-red-600"
-            className="uppercase font-bold text-center text-white text-2xl  sm:text-3xl md:text-4xl 2xl:text-7xl lg:text-5xl"
+            className="uppercase font-bold text-center text-white text-2xl  sm:text-3xl md:text-4xl  lg:text-7xl"
             text="At Mandrake, we’re re-inventing crop development from the ground up "
           />
         </div>
@@ -88,7 +87,7 @@ const Section3Part1 = () => {
             <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-5xl md:text-left text-center  text-white font-semibold">
               {steps[0].title}
             </h3>
-            <p className="md:text-left text-center text-[10px] sm:text-base lg:text-lg xl:text-xl 2xl:text-4xl  text-white font-normal w-full sm:w-[90%]  leading-normal 2xl:leading-relaxed">
+            <p className="md:text-left text-center text-[10px] sm:text-base lg:text-lg xl:text-2xl 2xl:text-4xl  text-white font-normal w-full sm:w-[90%]  leading-normal 2xl:leading-relaxed">
               {steps[0].desc}
             </p>
           </div>

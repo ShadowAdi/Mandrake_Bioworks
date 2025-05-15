@@ -58,7 +58,7 @@ const Section8 = () => {
     <section
       className="flex flex-col items-center w-full mx-auto justify-between relative py-8  min-h-[100dvh] "
     >
-      <div className='max-w-[1640px]   flex flex-col h-full items-center mx-auto space-y-10 md:space-y-14 lg:space-y-16 justify-between flex-1'>
+      <div className='container   flex flex-col h-full items-center mx-auto space-y-10 md:space-y-14 lg:space-y-16 justify-between flex-1'>
         <div className='flex flex-col w-full space-y-2 mx-auto items-center justify-center flex-1 '>
           <AnimatedText
             className="text-3xl   sm:text-4xl md:text-5xl 2xl:text-9xl uppercase font-bold text-center text-white"
