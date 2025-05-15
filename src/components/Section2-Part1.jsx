@@ -98,17 +98,17 @@ const Section2Part1 = () => {
 
             <div className="flex flex-col w-full items-center justify-center gap-1 sm:gap-2 lg:gap-3">
                 <AnimatedWhiteTextSvg
-                    className="text-lg sm:text-2xl  lg:text-5xl 2xl:text-7xl  font-semibold text-center text-white "
+                    className="text-lg sm:text-2xl  lg:text-4xl 2xl:text-7xl  font-semibold text-center text-white "
                     text="Decade-Long Timelines."
                     numWordsToOverlay={1}
                 />
                 <AnimatedWhiteTextSvg
-                    className="text-lg sm:text-2xl  lg:text-5xl 2xl:text-7xl  font-semibold text-center text-white "
+                    className="text-lg sm:text-2xl  lg:text-4xl 2xl:text-7xl  font-semibold text-center text-white "
                     text="Millions in Development Costs."
                     numWordsToOverlay={1}
                 />
                 <AnimatedWhiteTextSvg
-                    className="text-lg sm:text-2xl  lg:text-5xl  2xl:text-7xl  font-semibold text-center text-white "
+                    className="text-lg sm:text-2xl  lg:text-4xl  2xl:text-7xl  font-semibold text-center text-white "
                     text="Just. One. Trait."
                     numWordsToOverlay={3}
                 />
@@ -120,9 +120,9 @@ const Section2Part1 = () => {
             >
                 <p
                     ref={paraRef}
-                    className="text-center text-white font-normal 
-     w-[98%] sm:w-[95%] md:w-[95%] lg:w-[90%] xl:w-[75%] 2xl:w-full
-    text-xs sm:text-base md:text-sm lg:text-lg  2xl:text-5xl leading-relaxed"
+                  className="text-center text-white font-normal 
+                w-[98%] sm:w-[95%] md:w-[95%] lg:w-[90%] xl:w-[75%] 2xl:w-[90%] 
+                text-xs sm:text-sm md:text-sm lg:text-sm xl:text-sm  2xl:text-4xl leading-relaxed"
                 >
                     Currently, developing new plants means guesswork & a painfully slow and prohibitively
                     expensive process. This inefficiency leaves countless crop improvements undiscovered,
@@ -130,9 +130,9 @@ const Section2Part1 = () => {
                 </p>
                 <p
                     ref={para2Ref}
-                    className="text-center text-white font-normal 
-   w-[98%] sm:w-[95%] md:w-[95%] lg:w-[90%] xl:w-[75%] 2xl:w-full 
-    text-xs sm:text-base md:text-sm lg:text-sm xl:text-base  2xl:text-5xl leading-relaxed"
+                   className="text-center text-white font-normal 
+                w-[98%] sm:w-[95%] md:w-[95%] lg:w-[90%] xl:w-[75%] 2xl:w-[90%] 
+                text-xs sm:text-sm md:text-sm lg:text-sm xl:text-sm  2xl:text-4xl leading-relaxed"
                 >
                     While agriculture remains fundamental to humanity's survival, it's trapped in outdated
                     breeding methods that miss transformative opportunities.
