@@ -98,17 +98,17 @@ const Section2Part1 = () => {
 
             <div className="flex flex-col w-full items-center justify-center gap-1 sm:gap-2 lg:gap-3">
                 <AnimatedWhiteTextSvg
-                    className="text-lg sm:text-2xl  lg:text-4xl 2xl:text-7xl  font-semibold text-center text-white "
+                    className="text-lg sm:text-2xl  lg:text-5xl 2xl:text-7xl  font-semibold text-center text-white "
                     text="Decade-Long Timelines."
                     numWordsToOverlay={1}
                 />
                 <AnimatedWhiteTextSvg
-                    className="text-lg sm:text-2xl  lg:text-4xl 2xl:text-7xl  font-semibold text-center text-white "
+                    className="text-lg sm:text-2xl  lg:text-5xl 2xl:text-7xl  font-semibold text-center text-white "
                     text="Millions in Development Costs."
                     numWordsToOverlay={1}
                 />
                 <AnimatedWhiteTextSvg
-                    className="text-lg sm:text-2xl  lg:text-4xl  2xl:text-7xl  font-semibold text-center text-white "
+                    className="text-lg sm:text-2xl  lg:text-5xl  2xl:text-7xl  font-semibold text-center text-white "
                     text="Just. One. Trait."
                     numWordsToOverlay={3}
                 />
