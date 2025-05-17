@@ -72,7 +72,7 @@ const Section3Part1 = () => {
       }}
     >
       <div className='flex flex-col  items-center w-full 2xl:w-full    mx-auto justify-between h-full gap-4 md:gap-10   container'>
-        <div className='w-[90%] sm:w-full md:w-3/4 2xl:w-full '>
+        <div className='w-[90%] sm:w-full md:w-[85%] 2xl:w-full '>
           <AnimatedText
             divClassName=" bg-red-600"
             className="uppercase font-bold text-center text-white text-lg sm:text-3xl md:text-4xl  lg:text-5xl xl:text-5xl  2xl:text-7xl"
