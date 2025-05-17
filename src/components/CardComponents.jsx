@@ -41,18 +41,24 @@ export const CardComponent = ({ category, title, description, cardNumber, handle
       </span>
 
       <h2
-        style={{ fontFamily: "'Afacad Flux', serif" }}
-        className="uppercase font-semibold text-center md:text-left text-white relative z-10 w-full  text-base  sm:text-xl lg:text-3xl  2xl:text-6xl"
+        style={{
+          fontFamily: "'Afacad Flux', serif",
+          color: isHovered ? '#CBF5E7' : 'white',
+          transition: 'color 0.3s ease'
+        }}
+        className="uppercase font-semibold text-center md:text-left relative z-10 w-full text-base sm:text-xl lg:text-3xl 2xl:text-6xl"
       >
         {title}
       </h2>
-
       <p className="text-center  md:text-left text-white opacity-90 relative z-10  w-full      text-[10px] sm:text-sm md:text-sm lg:text-sm xl:text-sm  2xl:text-2xl " >
         {description}
       </p>
 
       <div className="w-full flex items-center justify-center md:justify-start relative z-10 ">
-        <button onClick={handleButtonClick} className="px-4 lg:px-7 py-2 lg:py-3 rounded-full bg-white hover:bg-opacity-90 transition-all flex items-center justify-center">
+        <button onClick={handleButtonClick} style={{
+          backgroundColor: isHovered ? '#749F8B' : 'white',
+          transition: 'background-color 0.3s ease'
+        }} className="px-4 lg:px-7 py-2 lg:py-3 rounded-full  transition-all flex items-center justify-center">
           <span className="    text-[10px] sm:text-sm md:text-sm lg:text-sm xl:text-sm  2xl:text-4xl  text-black font-medium">
             Get In Touch
           </span>

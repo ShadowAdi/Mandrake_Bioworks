@@ -63,7 +63,7 @@ const Section9 = () => {
               className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl uppercase font-bold text-center text-white"
             />
             
-              <h1 style={{ fontFamily: "'Afacad Flux', serif" }} className={"w-[90%] sm:w-[60%] 2xl:w-[50%]  text-xs sm:text-lg xl:text-3xl 2xl:text-3xl mx-auto text-white"}>
+              <h1 style={{ fontFamily: "'Afacad Flux', serif" }} className={"w-[90%] sm:w-[60%] 2xl:w-[50%]       text-[10px] sm:text-sm md:text-sm lg:text-sm xl:text-sm  2xl:text-2xl mx-auto text-white"}>
         Whether you're interested in joining our team, partnering with us, or simply curious to learn more about our work—let's connect.
       </h1>
             <button

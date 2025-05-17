@@ -80,11 +80,11 @@ const Section2Part2 = () => {
                 <h1 ref={textRef} style={{ fontFamily: "'Afacad Flux', serif" }}
                     className="uppercase font-bold text-center text-white 
     text-xl sm:text-3xl  lg:text-5xl  2xl:text-8xl">
-What If Agriculture Stole a Page
-from Pharma's Playbook?
+                    What If Agriculture Stole a Page
+                    from Pharma's Playbook?
                 </h1>
             </div>
-            <div className=' h-[25vh] sm:h-[40vh]   lg:h-[50vh]  w-[65%] 2xl:w-full'>
+            <div className=' h-[25vh] sm:h-[40vh]   lg:h-[50vh]  w-[55%] 2xl:w-full'>
                 <img src='/Scientist.png' className='object-fill h-full w-full' />
             </div>
             <div ref={paraWrapperRef} className='flex mx-auto flex-col  items-center w-full
@@ -99,7 +99,7 @@ from Pharma's Playbook?
                 </p>
             </div>
             <div ref={textWrapperRef2} className="overflow-hidden w-full    ">
-                <h1 ref={textRef2} style={{ fontFamily: "'Afacad Flux', serif" }} className={"uppercase font-semibold text-center text-white  text-sm sm:text-lg  lg:text-3xl 2xl:text-6xl  "}>
+                <h1 ref={textRef2} className={"uppercase font-semibold text-center text-white  text-sm sm:text-xl  lg:text-4xl 2xl:text-6xl  "}>
                     We think it's time Agriculture catches up.      </h1>
             </div>
         </div>

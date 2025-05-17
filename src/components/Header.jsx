@@ -58,7 +58,7 @@ const Header = ({ handleButtonClick }) => {
     return (
         <header
             ref={headerRef}
-            className='header flex  z-[100] w-[90%] justify-between items-start'
+            className='header flex  z-[100] w-full sm:w-[80%] justify-between items-start'
         >
             <div className="flex flex-col items-start space-y-0.5">
                 <div className="h-12 w-24 lg:h-32 lg:w-32 2xl:h-80 2xl:w-80 overflow-hidden flex items-start justify-start ">
