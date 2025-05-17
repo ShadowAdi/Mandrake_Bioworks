@@ -27,7 +27,7 @@ const AnimatedWhiteTextSvg = ({
 
             let count = 0;
             const wrapper = document.createElement("div");
-            wrapper.className = "relative w-fit inline-block";
+            wrapper.className = "relative w-fit inline-block isolate"; // isolate helps manage stacking context
 
             line.insertBefore(wrapper, allWords[0]);
 
@@ -35,6 +35,7 @@ const AnimatedWhiteTextSvg = ({
                 const word = allWords[i];
 
                 if (word.nodeType === 1 && word.classList.contains("word")) {
+                    word.classList.add("relative", "z-10"); // ← ensure word is above overlay
                     wrapper.appendChild(word);
                     wordsToAnimate.push(word);
                     count++;
@@ -51,6 +52,7 @@ const AnimatedWhiteTextSvg = ({
             overlay.style.transformOrigin = "left";
             overlay.style.transform = "scaleX(0)";
             overlay.style.width = "100%";
+            overlay.style.zIndex = "0"; // ← ensures it's behind
             wrapper.appendChild(overlay);
             overlays.push(overlay);
         });
@@ -84,12 +86,12 @@ const AnimatedWhiteTextSvg = ({
     }, [text, numWordsToOverlay]);
 
     return (
-        <div ref={textWrapperRef}  className="relative overflow-hidden 
+        <div ref={textWrapperRef} className="relative overflow-hidden 
                 w-full sm:w-[90%] md:w-[85%] lg:w-[80%] xl:w-[75%] mx-auto">
             <h1
                 ref={textRef}
                 style={{ fontFamily: "'Afacad Flux', serif" }}
-                className={`${className} whitespace-pre-wrap`}
+                className={`${className} whitespace-pre-wrap z-[70]`}
             >
                 {text}
             </h1>

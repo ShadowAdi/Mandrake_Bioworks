@@ -56,15 +56,15 @@ const Section7 = () => {
 
   return (
     <section
-      className="flex flex-col items-center w-full mx-auto justify-between relative py-8  min-h-[100dvh] "
+      className="flex flex-col items-center w-full mx-auto justify-center relative py-8  min-h-[100dvh] "
     >
-      <div className='container   flex flex-col h-full items-center mx-auto space-y-10 md:space-y-14 lg:space-y-16 justify-between flex-1 '>
+      <div className='container   flex flex-col h-full items-center mx-auto space-y-10 md:space-y-14 lg:space-y-16 justify-center flex-1 '>
         <div className='flex flex-col w-full space-y-2 mx-auto items-center justify-center flex-1 '>
           <AnimatedText
             className=" text-3xl   sm:text-4xl md:text-5xl 2xl:text-9xl  uppercase font-bold text-center text-white"
             text="OUR TEAM"
           />
-          <h4 className='text-[10px] sm:text-sm md:text-sm lg:text-sm xl:text-sm  2xl:text-4xl text-center text-white font-normal  w-[80%] 2xl:w-[70%] md:w-[40%]'>
+         <h4 className='text-[10px] sm:text-sm md:text-md lg:text-md xl:text-lg  2xl:text-4xl text-center text-white font-normal  w-[80%] 2xl:w-[70%] md:w-[50%]'>
             Our diverse team brings in hands-on experience across Agri-tech,
             Bioscience, Genomics & Computational Biology
           </h4>
