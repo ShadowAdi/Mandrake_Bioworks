@@ -34,10 +34,10 @@ const Section4 = () => {
         >
             <div className=" container flex flex-col items-center justify-between flex-1 mx-auto h-full   ">
                 <AnimatedText
-                     className=" uppercase font-bold text-center text-white text-2xl  sm:text-2xl md:text-3xl lg:text-4xl 2xl:text-9xl"
+                    className="uppercase font-bold text-center text-white text-2xl  sm:text-3xl md:text-4xl  lg:text-5xl xl:text-5xl 2xl:text-8xl"
                     text="How are we Different?"
                 />
-                <div className="w-full  h-64 2xl:flex-[0.4] flex items-center justify-center">
+                <div className="w-[80%]  md:w-full  h-64 md:h-80 2xl:h-[490px] flex items-center justify-center">
                     <img
                         src="/Arrow.png"
                         className="h-full w-full  object-contain"
@@ -46,11 +46,11 @@ const Section4 = () => {
                 </div>
                 <div
                     ref={paraWrapperRef}
-                    className="flex flex-col space-y-5 items-center w-[95%] sm:w-[90%] justify-center mx-auto"
+                    className="flex flex-col space-y-5 items-center w-[90%] sm:w-[90%] justify-center mx-auto md:w-[65%] 2xl:w-[80%]"
                 >
                     <p
                         ref={paraRef}
-              className="text-center text-white text-sm sm:text-sm md:text-base lg:text-lg xl:text-2xl  w-full  font-semibold 2xl:text-6xl"
+              className="text-center text-white text-xs sm:text-sm md:text-base lg:text-lg xl:text-2xl  w-full  font-semibold 2xl:text-4xl"
                     >
                         We're unlocking the full potential of crops
                         transforming agriculture from an extractive

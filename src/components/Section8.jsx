@@ -3,13 +3,13 @@ import AnimatedText from './AnimatedText'
 
 const AdvisorCard = ({ name, position, username, imageUrl }) => {
   return (
-    <div className='flex flex-col items-center justify-center gap-y-2 md:gap-y-2'>
+    <div className='flex flex-col items-center justify-center gap-y-3 md:gap-y-2'>
       <img
         src={imageUrl || 'https://avatar.iran.liara.run/public'}
         className='h-28 w-28 md:h-40 md:w-40 lg:h-48 lg:w-48 2xl:h-80 2xl:w-80 object-cover rounded-full transition-all duration-300'
         alt={`${name} - ${position}`}
       />
-      <div className='flex items-center justify-center flex-col space-y-0 md:space-y-0 2xl:space-y-4'>
+      <div className='flex items-center justify-center flex-col space-y-1 md:space-y-0 2xl:space-y-4'>
         <span className='text-base md:text-2xl  2xl:text-4xl  font-semibold text-white text-center'>
           {name}
         </span>
@@ -61,10 +61,10 @@ const Section8 = () => {
       <div className='container   flex flex-col h-full items-center mx-auto space-y-10 md:space-y-14 lg:space-y-16 justify-between flex-1'>
         <div className='flex flex-col w-full space-y-2 mx-auto items-center justify-center flex-1 '>
           <AnimatedText
-            className="text-3xl   sm:text-4xl md:text-5xl 2xl:text-9xl uppercase font-bold text-center text-white"
+            className=" text-3xl   sm:text-4xl md:text-5xl 2xl:text-9xl  uppercase font-bold text-center text-white"
             text="OUR ADVISORS"
           />
-          <h4 className=' text-xs sm:text-sm md:text-base lg:text-md xl:text-xl 2xl:text-4xl text-center text-white font-normal  2xl:w-[70%]'>
+          <h4 className='text-[10px] sm:text-sm md:text-sm lg:text-sm xl:text-sm  2xl:text-4xl text-center text-white font-normal  w-[80%] 2xl:w-[70%] md:w-[40%]'>
             We're guided by Mentors who have spent decades in the Plant Breeding Industry
           </h4>
         </div>

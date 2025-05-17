@@ -25,7 +25,7 @@ const Section5 = () => {
           </div>
           <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-50"></div>
         </div>
-        <div className="relative w-full sm:w-1/2 h-[33.33vh] sm:h-full">
+      <div className="relative w-full sm:w-1/2 h-[33.33vh] sm:h-full">
           <video
             className="w-full h-full object-cover"
             autoPlay

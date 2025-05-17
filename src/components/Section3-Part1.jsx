@@ -72,26 +72,26 @@ const Section3Part1 = () => {
       }}
     >
       <div className='flex flex-col  items-center w-full 2xl:w-full    mx-auto justify-between h-full gap-4 md:gap-10   container'>
-        <div className='w-full md:w-2/3'>
+        <div className='w-[90%] sm:w-full md:w-3/4 2xl:w-full '>
           <AnimatedText
             divClassName=" bg-red-600"
-            className="uppercase font-bold text-center text-white text-2xl  sm:text-3xl md:text-4xl  lg:text-5xl xl:text-5xl"
+            className="uppercase font-bold text-center text-white text-lg sm:text-3xl md:text-4xl  lg:text-5xl xl:text-5xl  2xl:text-7xl"
             text="At Mandrake, we’re re-inventing crop development from the ground up "
           />
         </div>
-        <div className="flex  flex-col flex-[0.6] md:flex-1 md:flex-row  justify-between md:justify-around px-6 items-center   w-full md:w-[90%]  mx-auto ">
+        <div className="flex  flex-col flex-[0.6] md:flex-1 md:flex-row  justify-between md:justify-around px-6 items-center   w-full md:w-[90%] 2xl:w-full  mx-auto ">
           <div
             ref={textRef}
             className="flex flex-1  flex-col md:items-start md:justify-start items-center justify-center gap-2 transition-opacity md:flex-1  px-4 sm:px-0 2xl:gap-5"
           >
-            <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-5xl md:text-left text-center  text-white font-semibold">
+            <h3 className="text-sm sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-5xl md:text-left text-center  text-white font-semibold">
               {steps[0].title}
             </h3>
-            <p className="md:text-left text-center text-[10px] sm:text-base lg:text-lg xl:text-2xl 2xl:text-4xl  text-white font-normal w-full sm:w-[90%]  leading-normal 2xl:leading-relaxed">
+            <p className="md:text-left text-center text-[10px] sm:text-base lg:text-lg xl:text-2xl 2xl:text-3xl  text-white font-normal w-full sm:w-[90%]  leading-normal 2xl:leading-relaxed">
               {steps[0].desc}
             </p>
           </div>
-          <div className="flex  justify-end  md:flex-[0.6]   h-60 sm:h-72 lg:h-80 xl:h-96 2xl:h-[36rem]">
+          <div className="flex  justify-end  md:flex-[0.6]   h-52 sm:h-72 lg:h-80 xl:h-96 2xl:h-[40rem]">
             <img
               ref={imageRef}
               className="h-full w-full max-w-md object-contain transition-transform transition-opacity duration-500"

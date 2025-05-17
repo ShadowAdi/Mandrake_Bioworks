@@ -19,7 +19,7 @@ const Footer = () => {
               <div className="bg-white h-4 w-4 sm:h-5 sm:w-5 p-1 flex items-center justify-center rounded-full">
                 <FaLocationDot className="h-3 w-3 sm:h-4 sm:w-4 fill-black" />
               </div>
-              <p className="text-[10px] sm:text-sm lg:text-base 2xl:text-xl text-left text-white">
+              <p className="text-[10px] sm:text-sm lg:text-sm 2xl:text-xl text-left text-white">
                 Xodia Industrial Estate, Brik Rd, Hatijugar, India
               </p>
             </div>
@@ -27,7 +27,7 @@ const Footer = () => {
               <div className="bg-white h-4 w-4 sm:h-5 sm:w-5 p-1 flex items-center justify-center rounded-full">
                 <BiPhoneCall className="h-3 w-3 sm:h-4 sm:w-4 fill-black" />
               </div>
-              <p className="text-xs sm:text-sm lg:text-base 2xl:text-xl text-left text-white">
+              <p className="text-xs sm:text-sm lg:text-sm 2xl:text-xl text-left text-white">
                 +91 98543 12345
               </p>
             </div>
@@ -35,7 +35,7 @@ const Footer = () => {
               <div className="bg-white h-4 w-4 sm:h-5 sm:w-5 p-1 flex items-center justify-center rounded-full">
                 <MdEmail className="h-3 w-3 sm:h-4 sm:w-4 fill-black" />
               </div>
-              <p className="text-xs sm:text-sm lg:text-base 2xl:text-xl text-left text-white">
+              <p className="text-xs sm:text-sm lg:text-sm 2xl:text-xl text-left text-white">
                 contact@mandrakebioworks.com
               </p>
             </div>
@@ -44,13 +44,13 @@ const Footer = () => {
             <span className="text-sm sm:text-base md:text-lg lg:text-xl 2xl:text-2xl text-white font-semibold text-left">
               Services
             </span>
-            <p className="text-xs sm:text-sm lg:text-base 2xl:text-xl text-left text-white/80">
+            <p className="text-xs sm:text-sm lg:text-sm 2xl:text-xl text-left text-white/80">
               Structure
             </p>
-            <p className="text-xs sm:text-sm lg:text-base 2xl:text-xl text-left text-white/80">
+            <p className="text-xs sm:text-sm lg:text-sm 2xl:text-xl text-left text-white/80">
               Development
             </p>
-            <p className="text-xs sm:text-sm lg:text-base 2xl:text-xl text-left text-white/80">
+            <p className="text-xs sm:text-sm lg:text-sm 2xl:text-xl text-left text-white/80">
               Sustainability
             </p>
           </div>
@@ -58,13 +58,13 @@ const Footer = () => {
             <span className="text-sm sm:text-base md:text-lg lg:text-xl 2xl:text-2xl text-white font-semibold text-left">
               About Us
             </span>
-            <p className="text-xs sm:text-sm lg:text-base 2xl:text-xl text-left text-white/80">
+            <p className="text-xs sm:text-sm lg:text-sm 2xl:text-xl text-left text-white/80">
               About
             </p>
-            <p className="text-xs sm:text-sm lg:text-base 2xl:text-xl text-left text-white/80">
+            <p className="text-xs sm:text-sm lg:text-sm 2xl:text-xl text-left text-white/80">
               Portfolio
             </p>
-            <p className="text-xs sm:text-sm lg:text-base 2xl:text-xl text-left text-white/80">
+            <p className="text-xs sm:text-sm lg:text-sm 2xl:text-xl text-left text-white/80">
               Team
             </p>
           </div>
@@ -72,13 +72,13 @@ const Footer = () => {
             <span className="text-sm sm:text-base md:text-lg lg:text-xl 2xl:text-2xl text-white font-semibold text-left">
               Support
             </span>
-            <p className="text-xs sm:text-sm lg:text-base 2xl:text-xl text-left text-white/80">
+            <p className="text-xs sm:text-sm lg:text-sm 2xl:text-xl text-left text-white/80">
               FAQ
             </p>
-            <p className="text-xs sm:text-sm lg:text-base 2xl:text-xl text-left text-white/80">
+            <p className="text-xs sm:text-sm lg:text-sm 2xl:text-xl text-left text-white/80">
               How It Works
             </p>
-            <p className="text-xs sm:text-sm lg:text-base 2xl:text-xl text-left text-white/80">
+            <p className="text-xs sm:text-sm lg:text-sm 2xl:text-xl text-left text-white/80">
               Privacy
             </p>
           </div>
@@ -101,7 +101,7 @@ const Footer = () => {
             />
           </div>
         </div>
-        <p className="text-[10px] sm:text-sm lg:text-base 2xl:text-xl text-center text-white opacity-90">
+        <p className="text-[10px] sm:text-sm lg:text-sm 2xl:text-xl text-center text-white opacity-90">
           © Copyright 2025, Mandrake Bioworks All Rights Reserved
         </p>
       </div>
