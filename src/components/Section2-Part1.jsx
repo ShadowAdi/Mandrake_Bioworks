@@ -90,7 +90,7 @@ const Section2Part1 = () => {
                     ref={textRef}
                     style={{ fontFamily: "'Afacad Flux', serif" }}
                     className="uppercase font-bold text-center text-white 
-    text-2xl sm:text-3xl  lg:text-4xl xl:text-5xl 2xl:text-9xl"
+    text-2xl sm:text-3xl  lg:text-4xl xl:text-5xl 2xl:text-8xl"
                 >
                     WHAT IF YOU CAN DESIGN CROPS LIKE SOFTWARE?
                 </h1>
