@@ -87,7 +87,7 @@ const Section3Part1 = () => {
             <h3 className="text-sm sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-5xl md:text-left text-center  text-white font-semibold">
               {steps[0].title}
             </h3>
-            <p className="md:text-left text-center text-[10px] sm:text-base lg:text-lg xl:text-2xl 2xl:text-3xl  text-white font-normal w-full sm:w-[90%]  leading-normal 2xl:leading-relaxed">
+            <p className="md:text-left text-center  text-white font-normal w-full sm:w-[90%]                   text-xs sm:text-sm md:text-md lg:text-lg xl:text-xl  2xl:text-4xl leading-relaxed">
               {steps[0].desc}
             </p>
           </div>
