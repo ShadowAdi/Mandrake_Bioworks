@@ -80,7 +80,8 @@ const Section2Part2 = () => {
                 <h1 ref={textRef} style={{ fontFamily: "'Afacad Flux', serif" }}
                     className="uppercase font-bold text-center text-white 
     text-xl sm:text-3xl  lg:text-5xl  2xl:text-8xl">
-                  Agriculture is Falling Behind
+What If Agriculture Stole a Page
+from Pharma's Playbook?
                 </h1>
             </div>
             <div className=' h-[25vh] sm:h-[40vh]   lg:h-[50vh]  w-[65%] 2xl:w-full'>
